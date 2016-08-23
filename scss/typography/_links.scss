@@ -1,0 +1,21 @@
+a,
+a:active,
+a:visited {
+  color: #009BE7;
+  .transition-property(background-color, 0.1s);
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
+a:hover, a:active {
+  outline: none;
+}
+
+/* j.mp/webkit-tap-highlight-color */
+a:link {
+  -webkit-tap-highlight-color: #009BE7;
+}

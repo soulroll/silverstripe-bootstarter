@@ -1,0 +1,9 @@
+/* Bootstrap */
+$icon-font-path: "../node_modules/bootstrap-sass/assets/fonts/bootstrap/";
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+
+body {
+  padding-bottom: 30px;
+  padding-top: 70px;
+}
