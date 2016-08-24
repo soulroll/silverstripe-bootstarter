@@ -8,12 +8,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Bootstrap theme</a>
+          <a class="navbar-brand" href="home">Bootstrap theme</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <% loop Menu(1) %>
-                <li><a href="$Link">$Title</a></li>
+            <% loop $Menu(1) %>
+                <li<% if LinkOrCurrent = current %> class="active"<% end_if %>><a href="$Link" title="$Title.XML">$MenuTitle.XML</a></li>
             <% end_loop %>
           </ul>
         </div><!--/.nav-collapse -->
