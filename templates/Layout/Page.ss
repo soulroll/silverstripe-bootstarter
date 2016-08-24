@@ -1,5 +1,7 @@
     <div class="container theme-showcase" role="main">
 
+      <% include Tiles %>
+
       <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron">
         <h1>Theme example</h1>

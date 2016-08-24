@@ -1,5 +1,15 @@
-p {
-  font-size: 14px;
-  line-height: 21px;
-  margin: 0 0 9px;
+/* Space after paragraphs */
+p + ul {
+  margin-top: -25px;
+}
+p + ol {
+  margin-top: -25px;
+}
+
+/* Space after lists */
+ul + p {
+  margin-top: 22px;
+}
+ol + p {
+  margin-top: 22px;
 }

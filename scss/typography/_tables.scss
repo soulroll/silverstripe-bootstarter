@@ -1,0 +1,13 @@
+// Table styles
+table {
+  tr:nth-child(odd) {
+    background-color: #fff;
+  }
+  tr:nth-child(even){
+    background-color: #eee;
+  }
+}
+// Container added by javascript to make the table scrollable on mobile devices
+.scrollable-table {
+  overflow-x: auto;
+}
