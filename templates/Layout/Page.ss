@@ -6,7 +6,12 @@
                 $Content
                 $Form
             </div>
-            <% include KitchenSink %>
+            <% include Tabs %>
+            <% include Collapse %>
+            <% include Accordion %>
+            <% include Typography %>
+            <% include Modal %>
+            <% include Carousel %>
         </div>
     </div>
 </div>
