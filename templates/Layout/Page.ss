@@ -6,6 +6,7 @@
                 $Content
                 $Form
             </div>
+            <% include Breadcrumbs %>
             <% include Tabs %>
             <% include Collapse %>
             <% include Accordion %>
