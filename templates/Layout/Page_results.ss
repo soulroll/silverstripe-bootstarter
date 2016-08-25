@@ -52,7 +52,7 @@
                             <div class="content">
                                 <ul class="breadcrumb-list">$Breadcrumbs</ul>
                                 <p>$ExcerptOrIntro($Excerpt).NoHTML().LimitCharacters(150, '...')</p>
-                            </div>               
+                            </div>
                             <!-- Call function to output the excerpt or the intro or content of the page
                                 Note the intro of page is output if the excerpt is the page title as having the
                                 page title twice just looks weird. HTML needs to be stripped which means the search
