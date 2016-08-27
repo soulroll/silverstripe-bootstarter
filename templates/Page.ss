@@ -20,14 +20,9 @@
         $Layout
         <% include Footer %>
 
+        <%-- Please move: Theme javascript (below) should be moved to mysite/code/page.php  --%>
         <script src="$ThemeDir/node_modules/jquery/dist/jquery.min.js"></script>
         <script src="$ThemeDir/js/app.bundle.js"></script>
-
-        <%--
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="$ThemeDir/node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
-        <script src="$ThemeDir/js/app.bundle.js"></script>
-        --%>
 
     </body>
 </html>
