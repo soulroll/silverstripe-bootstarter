@@ -2,7 +2,7 @@
 Front-end boilerplate theme for SilverStripe projects
 
 ## Why another boilerplate?
-I wasn't happy with the current selection. They lacked basic kicthen sink examples or menus / breadcrumbs tied into SilverStripes menus loops and also required lengthy installation steps.
+I wasn't happy with the current selection out there. They lacked basic kicthen sink examples or menus / breadcrumbs tied into SilverStripes menus loops and also required lengthy installation steps. This one also has a proper sass folder structure with the Gulp ready to go
 
 ## Requirements
 1. NodeJS (sudo apt-get install nodejs)
@@ -12,5 +12,5 @@ I wasn't happy with the current selection. They lacked basic kicthen sink exampl
 ## Installation
 1. Clone or download the respository into your SilverStripe themes directory
 2. Run npm install to get all of the node dependancies, this will also install Gulp for compiling scss and js-source
-3. Change the theme in SilverStripe
+3. Change to the theme in SilverStripe
 4. Run "gulp" via the cmd line to compile sass and js / watch for changes (building on top of the theme)
