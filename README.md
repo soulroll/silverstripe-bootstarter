@@ -13,4 +13,7 @@ I wasn't happy with the current selection out there. They lacked basic kicthen s
 1. Clone or download the respository into your SilverStripe themes directory
 2. Run 'npm install' inside of the theme folder to get all of the node dependancies, this will also install Gulp for compiling scss and js-source
 3. Change to the theme in SilverStripe
-4. You can then run "gulp" via the cmd line in the themes folder to compile sass and js / watch for changes (building on top of the theme)
+4. Running "gulp" via the cmd line in the themes folder will compile sass and js into css and js/dist/ and will also watch for changes in the scss and js folder (building on top of the theme)
+
+## Extra
+You can run "gulp jslint" to check for javascript errors in js/src/ from your .jshintrc file

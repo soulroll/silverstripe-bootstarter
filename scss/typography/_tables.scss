@@ -1,13 +1,13 @@
-// Table styles
+/* Tables */
 table {
-  tr:nth-child(odd) {
-    background-color: #fff;
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid $table-border-color;
+  th, td {
+    padding: $table-cell-padding;
+    border-top: 1px solid $table-border-color;
   }
-  tr:nth-child(even){
-    background-color: #eee;
+  tr:nth-of-type(even) {
+    background-color: $table-bg-accent;
   }
-}
-// Container added by javascript to make the table scrollable on mobile devices
-.scrollable-table {
-  overflow-x: auto;
 }

@@ -1,12 +1,13 @@
 /* Bootstrap */
 $icon-font-path: "../node_modules/bootstrap-sass/assets/fonts/bootstrap/";
 @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "bootstrap/variables"; // Overide bootstraps variables here
 
-@import "typography/headings"
-@import "typography/links"
-@import "typography/lists"
-@import "typography/paragraphs"
-@import "typography/tables"
+@import "typography/headings";
+@import "typography/links";
+@import "typography/lists";
+@import "typography/paragraphs";
+@import "typography/tables";
 
 body {
   padding-bottom: 30px;

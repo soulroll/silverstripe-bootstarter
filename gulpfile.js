@@ -1,7 +1,7 @@
-// Include gulp
+// Include Gulp
 var gulp = require('gulp');
 
-// Polyfill so we don't need >= node 0.12
+// Polyfill so you don't need >= node 0.12
 require('es6-promise').polyfill();
 
 // Include plugins
@@ -9,7 +9,7 @@ var sass = require('gulp-sass');
 var minifyCSS = require('gulp-clean-css');
 var autoprefixer = require('gulp-autoprefixer');
 var bless = require('gulp-bless');
-
+var jshint = require('gulp-jshint');
 var browserify = require('browserify');
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
@@ -19,8 +19,9 @@ var glob = require('glob');
 var es = require('event-stream');
 var flatten = require('gulp-flatten');
 
+// Compile and minify Javascript into one bundle file
 gulp.task('js', function(done) {
-    gulp.src('js-source/*.js', function(err, files) {
+    gulp.src('js/src/*.js', function(err, files) {
         if(err) done(err);
 
         var tasks = files.map(function(entry) {
@@ -33,14 +34,20 @@ gulp.task('js', function(done) {
                 .pipe(buffer())
                 .pipe(uglify())
                 .pipe(flatten())
-                .pipe(gulp.dest('js/'));
+                .pipe(gulp.dest('js/dist/'));
             });
         es.merge(tasks).on('end', done);
     })
 });
 
+// Check Javascript for code errors
+gulp.task('jshint', function() {
+    return gulp.src('./js/src/app.js')
+        .pipe(jshint())
+        .pipe(jshint.reporter('default'));
+});
 
-// Turn sass into css, prefix, minify and bless
+// Turn Scss into Css, prefix, bless and minify
 gulp.task('scss', function () {
   return gulp.src('scss/**/*.scss')
     .pipe(sass().on('error', sass.logError))
@@ -54,10 +61,10 @@ gulp.task('scss', function () {
     .pipe(gulp.dest('css/'));
 });
 
-// Watch files for changes
+// Watch files for saved changes
 gulp.task('watch', function() {
     gulp.watch('scss/**/*.scss', ['scss']);
-    gulp.watch('js-source/**/*.js', ['js']);
+    gulp.watch('js/src/**/*.js', ['js']);
 });
 
 // Default task (recompile on init before watching)

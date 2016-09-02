@@ -23,6 +23,8 @@
     "event-stream": "~3.3.2",
     "jquery": "~2.2.3",
     "bootstrap-sass": "~3.3.7",
-    "font-awesome": "~4.6.3"
+    "font-awesome": "~4.6.3",
+    "jshint": "~2.9.3",
+    "gulp-jshint": "~2.0.1"
   }
 }
