@@ -1,22 +1,14 @@
 /* Bootstrap */
-$icon-font-path: "../node_modules/bootstrap-sass/assets/fonts/bootstrap/";
 @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
-@import "bootstrap/variables"; // Overide bootstraps variables here
+@import "bootstrap/variables"; // Overide Bootstraps variables here
+@import "bootstrap/silverstripefixes"; // SilverStripe Bootstrap fixes
 
-/* Bootstrap silverstripe checkbox fix */
-.checkbox input[type=checkbox], .checkbox-inline input[type=checkbox], .radio input[type=radio], .radio-inline input[type=radio] {
-  margin-left: 0px;
-  position: absolute;
-  top: -2px;
-}
+/* Base */
+@import "base/global";
 
+/* Typography */
 @import "typography/headings";
 @import "typography/links";
 @import "typography/lists";
 @import "typography/paragraphs";
 @import "typography/tables";
-
-body {
-  padding-bottom: 30px;
-  padding-top: 70px;
-}

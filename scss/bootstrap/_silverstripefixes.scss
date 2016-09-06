@@ -1,0 +1,9 @@
+/* Icons fix */
+$icon-font-path: "../node_modules/bootstrap-sass/assets/fonts/bootstrap/";
+
+/* Bootstrap silverstripe checkbox fix */
+.checkbox input[type=checkbox], .checkbox-inline input[type=checkbox], .radio input[type=radio], .radio-inline input[type=radio] {
+  margin-left: 0px;
+  position: absolute;
+  top: -2px;
+}
