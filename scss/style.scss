@@ -3,6 +3,13 @@ $icon-font-path: "../node_modules/bootstrap-sass/assets/fonts/bootstrap/";
 @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 @import "bootstrap/variables"; // Overide bootstraps variables here
 
+/* Bootstrap silverstripe checkbox fix */
+.checkbox input[type=checkbox], .checkbox-inline input[type=checkbox], .radio input[type=radio], .radio-inline input[type=radio] {
+  margin-left: 0px;
+  position: absolute;
+  top: -2px;
+}
+
 @import "typography/headings";
 @import "typography/links";
 @import "typography/lists";

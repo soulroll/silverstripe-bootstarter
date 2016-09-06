@@ -25,6 +25,13 @@
                     </li>
                 <% end_loop %>
             </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <% if CurrentMember %>
+                    <li><a href="Security/logout">Logout</a></li>
+                <% else %>
+                    <li><a href="admin">Login</a></li>
+                <% end_if %>
+            </ul>
         </div>
     </div>
 </nav>

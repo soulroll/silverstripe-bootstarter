@@ -1,15 +1,11 @@
 /* Space after paragraphs */
 p + ul {
-  margin-top: -25px;
 }
 p + ol {
-  margin-top: -25px;
 }
 
 /* Space after lists */
 ul + p {
-  margin-top: 22px;
 }
 ol + p {
-  margin-top: 22px;
 }
