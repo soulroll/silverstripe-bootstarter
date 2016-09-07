@@ -1,13 +1,14 @@
-<br/>
-
-<h3>Unordered list</h3>
+<div class="page-header">
+  <h3>Lists</h3>
+</div>
+<h4>Unordered list</h4>
 <ul>
   <li>Coffee</li>
   <li>Tea</li>
   <li>Milk</li>
   <li>Coke</li>
 </ul>
-<h3>Ordered list</h3>
+<h4>Ordered list</h4>
 <ol>
   <li>Coffee</li>
   <li>Tea</li>

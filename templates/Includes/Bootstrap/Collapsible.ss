@@ -1,6 +1,10 @@
-<br/><br/>
+<div class="page-header">
+  <h3>Collapsible</h3>
+</div>
 
-<button data-toggle="collapse" data-target="#demo">Collapsible</button>
+<button data-toggle="collapse" data-target="#demo" class="btn btn-default dropdown-toggle">Open collapsible dropdown
+<span class="caret"></span></button>
+
 <div id="demo" class="collapse">
     Lorem ipsum dolor text....
 </div>

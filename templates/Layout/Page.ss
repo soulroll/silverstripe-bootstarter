@@ -7,7 +7,9 @@
         $Content
         $Form
       </div>
-      <% include KitchenSink %>
+      <% if URLSegment = 'home' %>
+        <% include KitchenSink %>
+      <% end_if %>
     </div>
   </div>
 </div>

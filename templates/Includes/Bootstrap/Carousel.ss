@@ -1,5 +1,6 @@
-<br/><br/><br/>
-
+<div class="page-header">
+  <h3>Carousel</h3>
+</div>
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">

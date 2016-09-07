@@ -1,5 +1,6 @@
-<br/><br/><br/>
-
+<div class="page-header">
+  <h3>Tables</h3>
+</div>
 <table>
   <div>
     <tr>
