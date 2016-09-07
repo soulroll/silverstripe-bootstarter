@@ -1,3 +1,3 @@
 <% if level(2) %>
-    $Breadcrumbs
+  $Breadcrumbs
 <% end_if %>

@@ -3,7 +3,7 @@ $icon-font-path: "../node_modules/bootstrap-sass/assets/fonts/bootstrap/";
 /* Bootstrap */
 @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 @import "bootstrap/variables"; // Overide Bootstraps variables here
-@import "bootstrap/silverstripefixes"; // SilverStripe Bootstrap fixes
+@import "bootstrap/silverstripe-fixes"; // SilverStripe Bootstrap fixes
 
 /* Base */
 @import "base/global";
