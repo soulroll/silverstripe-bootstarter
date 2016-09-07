@@ -5,14 +5,14 @@ Front-end boilerplate theme for SilverStripe projects
 I wasn't happy with the current selection out there, they all lacked in different areas and also required lengthy installation steps.
 
 ## Features
-- Npm for frontend package managemnet
+- Npm for front-end package managemnet
 - Gulp for SASS and JS Compiling
 - JShint for testing javascript
-- Menu loops are properly integrated with Bootstraps navbar and dropdowns
+- Menu loops properly integrated with Bootstraps navbar and dropdowns
 - SilverStripe form checkbox fix
 - Kitchen sink of common elements
-- Responsive tables that output from the CMS
-- Proper folder structure
+- Responsive tables that output from the CMS (JS wraps all table elements with the correct .class)
+- Proper SASS folder structure
 
 ## Requirements
 1. NodeJS (sudo apt-get install nodejs)
