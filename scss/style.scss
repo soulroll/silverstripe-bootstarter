@@ -1,12 +1,11 @@
-$icon-font-path: "../node_modules/bootstrap-sass/assets/fonts/bootstrap/";
-
 /* Bootstrap */
-@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 @import "bootstrap/variables"; // Overide Bootstraps variables here
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap"; // Brings in Bootstrap
 @import "bootstrap/silverstripe-fixes"; // SilverStripe Bootstrap fixes
 
 /* Base */
 @import "base/global";
+@import "base/mixins";
 
 /* Typography */
 @import "typography/headings";

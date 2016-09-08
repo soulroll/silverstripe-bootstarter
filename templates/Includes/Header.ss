@@ -1,7 +1,6 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-12">
-
       <header role="banner">
         <div class="pull-left">
           <a href="$BaseHref" class="brand" rel="home">
@@ -19,7 +18,6 @@
           <% end_if %>
         </div>
       </header>
-
     </div>
   </div>
 </div>
