@@ -13,7 +13,6 @@
     <% else %>
       <div class="col-lg-12">
     <% end_if %>
-        <h1>$Title</h1>
         $Content
         $Form
         <% if URLSegment = 'home' %>

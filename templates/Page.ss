@@ -17,6 +17,7 @@
   <body>
     <% include Header %>
     <% include Navigation %>
+    <% include PageBanner %>
     $Layout
     <% include Footer %>
     <%-- Please move: Theme javascript (below) should be moved to mysite/code/page.php  --%>

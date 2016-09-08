@@ -4,6 +4,8 @@ h1 {
   font-weight: 500;
   line-height: 1.1;
   color: #000;
+  /* Extra small devices (phones, less than 768px) */
+  /* No media query since this is the default in Bootstrap */
   /* Small devices (tablets, 768px and up) */
   @media (min-width: $screen-sm-min) {
   }
@@ -15,7 +17,6 @@ h1 {
   }
 }
 h2 {
-  font-size: 30px;
   font-weight: 500;
   line-height: 1.1;
   color: #000;

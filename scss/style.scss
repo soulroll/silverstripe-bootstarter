@@ -4,6 +4,7 @@
 @import "bootstrap/silverstripe-fixes"; // SilverStripe Bootstrap fixes
 
 /* Base */
+@import "base/variables";
 @import "base/global";
 @import "base/mixins";
 
@@ -15,4 +16,5 @@
 @import "typography/tables";
 
 /* Components */
+@import "components/page-banner";
 @import "components/sidebar";

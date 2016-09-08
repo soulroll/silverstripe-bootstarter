@@ -1,11 +1,12 @@
 /* Bootstrap silverstripe checkbox fix */
 .checkbox input[type=checkbox], .checkbox-inline input[type=checkbox], .radio input[type=radio], .radio-inline input[type=radio] {
-  margin-left: 0px;
+  margin-left: 0;
   position: absolute;
   top: -2px;
 }
 
 /* Bootstrap navbar rounded border fix */
 .navbar {
-  border-radius: 0px;
+  border-radius: 0;
+  margin-bottom: 0;
 }
