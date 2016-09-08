@@ -1,19 +1,46 @@
 /* Headings */
 h1 {
-
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1.1;
+  color: #000;
+  /* Small devices (tablets, 768px and up) */
+  @media (min-width: $screen-sm-min) {
+  }
+  /* Medium devices (desktops, 992px and up) */
+  @media (min-width: $screen-md-min) {
+  }
+  /* Large devices (large desktops, 1200px and up) */
+  @media (min-width: $screen-lg-min) {
+  }
 }
 h2 {
-
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.1;
+  color: #000;
 }
 h3 {
-
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.1;
+  color: #000;
 }
 h4 {
-
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.1;
+  color: #000;
 }
 h5 {
-
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.1;
+  color: #000;
 }
 h6 {
-
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.1;
+  color: #000;
 }
