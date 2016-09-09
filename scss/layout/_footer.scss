@@ -1,5 +1,12 @@
 footer {
   margin-top: 20px;
+  border-top:1px solid #ccc;
+}
+.first-footer {
+  background-color: #eee;
   padding: 20px 0px 20px 0px;
-  background-color: #ccc;
+}
+.secondary-footer {
+  background-color: #ddd;
+  padding: 20px 0px 20px 0px;
 }

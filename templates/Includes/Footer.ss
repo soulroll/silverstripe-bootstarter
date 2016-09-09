@@ -1,9 +1,79 @@
 <footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        © Copyright
+  <div class="first-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2">
+          <h4>Topic</h4>
+          <ul>
+            <li><a href="#">Secondary link</a></li>
+            <li><a href="#">Secondary link</a></li>
+            <li><a href="#">Secondary link</a></li>
+            <li><a href="#">Secondary link</a></li>
+            <li><a href="#">Secondary link</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2">
+          <h4>Topic</h4>
+          <ul>
+            <li><a href="#">Secondary link</a></li>
+            <li><a href="#">Secondary link</a></li>
+            <li><a href="#">Secondary link</a></li>
+            <li><a href="#">Secondary link</a></li>
+            <li><a href="#">Secondary link</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2">
+          <h4>Topic</h4>
+          <ul>
+            <li><a href="#">Secondary link</a></li>
+            <li><a href="#">Secondary link</a></li>
+            <li><a href="#">Secondary link</a></li>
+            <li><a href="#">Secondary link</a></li>
+            <li><a href="#">Secondary link</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2">
+          <h4>Topic</h4>
+          <ul>
+            <li><a href="#">Secondary link</a></li>
+            <li><a href="#">Secondary link</a></li>
+            <li><a href="#">Secondary link</a></li>
+            <li><a href="#">Secondary link</a></li>
+            <li><a href="#">Secondary link</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2">
+          <h4>Topic</h4>
+          <ul>
+            <li><a href="#">Secondary link</a></li>
+            <li><a href="#">Secondary link</a></li>
+            <li><a href="#">Secondary link</a></li>
+            <li><a href="#">Secondary link</a></li>
+            <li><a href="#">Secondary link</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2">
+          <h4>Topic</h4>
+          <ul>
+            <li><a href="#">Secondary link</a></li>
+            <li><a href="#">Secondary link</a></li>
+            <li><a href="#">Secondary link</a></li>
+            <li><a href="#">Secondary link</a></li>
+            <li><a href="#">Secondary link</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="secondary-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          Copyright
+        </div>
       </div>
     </div>
   </div>
 </footer>
+
+
