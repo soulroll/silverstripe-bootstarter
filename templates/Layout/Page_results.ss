@@ -1,7 +1,6 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-12">
-      <h1>$Title</h1>
       <% if $Query %>
         <p class="searchQuery">You searched for &quot;{$Query}&quot;</p>
       <% end_if %>

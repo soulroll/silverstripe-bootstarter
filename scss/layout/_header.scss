@@ -1,2 +1,13 @@
-header {
+.header-background {
+  width: 100%;
+  background-color: #fff;
+  padding:20px 0px 20px 0px;
+}
+.site-title,
+.site-tagline {
+  margin: 0;
+}
+.admin-login {
+  float: right;
+  margin-top: 20px;
 }

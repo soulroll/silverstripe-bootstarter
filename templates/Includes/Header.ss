@@ -1,25 +1,29 @@
-<div class="container">
-  <div class="row">
-    <div class="col-lg-12">
-      <header role="banner">
-        <div class="pull-left">
-          <a href="$BaseHref" class="brand" rel="home">
-            <h1>$SiteConfig.Title</h1>
-            <% if $SiteConfig.Tagline %>
-            <p>$SiteConfig.Tagline</p>
-            <% end_if %>
-          </a>
-        </div>
-        <div class="pull-right" style="margin-top:35px;">
-          <% if CurrentMember %>
-            <a href="Security/logout" class="pull-right">Logout</a>
-          <% else %>
-            <a href="admin">
-              <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Login
+<div class="header-background">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <header role="banner">
+          <div class="pull-left">
+            <a href="$BaseHref" class="brand" rel="home">
+              <h1 class="site-title">$SiteConfig.Title</h1>
+              <% if $SiteConfig.Tagline %>
+                <p class="site-tagline">$SiteConfig.Tagline</p>
+              <% end_if %>
             </a>
-          <% end_if %>
-        </div>
-      </header>
+          </div>
+          <div class="pull-right">
+            <% if CurrentMember %>
+              <a class="admin-login" href="Security/logout" class="pull-right">
+                <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> Logout
+              </a>
+            <% else %>
+              <a class="admin-login" href="admin">
+                <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Login
+              </a>
+            <% end_if %>
+          </div>
+        </header>
+      </div>
     </div>
   </div>
 </div>
