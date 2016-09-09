@@ -15,6 +15,12 @@
 @import "typography/paragraphs";
 @import "typography/tables";
 
+/* Layout */
+@import "layout/header";
+@import "layout/page";
+@import "layout/footer";
+
 /* Components */
 @import "components/page-banner";
 @import "components/sidebar";
+@import "components/breadcrumbs";

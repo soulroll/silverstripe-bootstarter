@@ -1,14 +1,9 @@
-<aside>
-  <% if $Menu(2) %>
-    <nav class="secondary">
-      <% with $Level(1) %>
-        <h3>
-          $MenuTitle
-        </h3>
-        <ul class="sidebar">
-          <% include SidebarMenu %>
-        </ul>
-      <% end_with %>
-    </nav>
-  <% end_if %>
-</aside>
+<% if $Menu(2) %>
+  <div class="col-lg-3">
+    <% with $Level(1) %>
+      <ul class="sidebar">
+        <% include SidebarMenu %>
+      </ul>
+    <% end_with %>
+  </div>
+<% end_if %>

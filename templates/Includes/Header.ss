@@ -14,7 +14,9 @@
           <% if CurrentMember %>
             <a href="Security/logout" class="pull-right">Logout</a>
           <% else %>
-            <a href="admin">Login</a>
+            <a href="admin">
+              <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Login
+            </a>
           <% end_if %>
         </div>
       </header>

@@ -1,3 +1,9 @@
 .sidebar {
-  background-color: #eee;
+  padding-left: 0;
+  li {
+    list-style: none;
+  }
+  ul {
+    padding-left: 22px;
+  }
 }
