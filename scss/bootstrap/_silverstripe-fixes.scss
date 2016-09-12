@@ -8,9 +8,9 @@
 /* Bootstrap navbar rounded border fix */
 .navbar {
   border-radius: 0;
-  margin-bottom: 0;
 }
 
+/* Make dropdowns hover on Desktop */
 @media (min-width: $screen-sm-min) {
   .dropdown:hover .dropdown-menu {
     display: block;
