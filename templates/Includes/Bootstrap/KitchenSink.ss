@@ -7,6 +7,7 @@
     <li><a data-toggle="tab" href="#lists">Lists</a></li>
     <li><a data-toggle="tab" href="#tables">Tables</a></li>
     <li><a data-toggle="tab" href="#buttons">Buttons</a></li>
+    <li><a data-toggle="tab" href="#glyphicons">Glyphicons</a></li>
   </ul>
   <div class="tab-content">
     <div id="headings" class="tab-pane fade in active">
@@ -24,8 +25,8 @@
     <div id="buttons" class="tab-pane fade">
       <% include Buttons %>
     </div>
-    <div id="buttons" class="tab-pane fade">
-      <% include Buttons %>
+    <div id="glyphicons" class="tab-pane fade">
+      <% include Glyphicons %>
     </div>
   </div>
   <br/>

@@ -7,7 +7,7 @@
       <% if $Menu(2) %>
         <% include SideBar %>
       <% end_if %>
-      <% if $Menu(2) %><div class="col-lg-9"><% else %><div class="col-lg-12"><% end_if %>
+      <% if $Menu(2) %><div class="col-lg-9 col-md-9 col-sm-9"><% else %><div class="col-lg-12 col-md-12 col-sm-12"><% end_if %>
         $Content
         $Form
         <% include KitchenSink %>
