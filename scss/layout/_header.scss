@@ -11,3 +11,16 @@
   float: right;
   margin-top: 20px;
 }
+header {
+  @media (max-width: $screen-xs-min) {
+    float:left;
+    width:100%;
+    text-align:center;
+  }
+}
+.logo {
+  float: left;
+  @media (max-width: $screen-xs-min) {
+    float: none;
+  }
+}

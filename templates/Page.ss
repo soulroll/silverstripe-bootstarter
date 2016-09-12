@@ -18,7 +18,9 @@
     <% include Header %>
     <% include Navigation %>
     <% include PageBanner %>
-    $Layout
+    <div class="page-background">
+      $Layout
+    </div>
     <% include Footer %>
     <%-- Please move: Theme javascript (below) should be moved to mysite/code/page.php  --%>
     <script src="$ThemeDir/node_modules/jquery/dist/jquery.min.js"></script>

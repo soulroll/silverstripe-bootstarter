@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-lg-12">
         <header role="banner">
-          <div class="pull-left">
+          <div class="logo">
             <a href="$BaseHref" class="brand" rel="home">
               <h1 class="site-title">$SiteConfig.Title</h1>
               <% if $SiteConfig.Tagline %>
