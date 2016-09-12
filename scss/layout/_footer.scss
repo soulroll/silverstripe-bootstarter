@@ -1,12 +1,17 @@
 footer {
   margin-top: 20px;
-  border-top:1px solid #ccc;
+  border-top: 1px solid #ccc;
 }
 .first-footer {
   background-color: #eee;
   padding: 20px 0px 20px 0px;
+  ul {
+    padding-left: 0;
+    list-style: none;
+  }
 }
 .secondary-footer {
+  border-top: 1px solid #ccc;
   background-color: #ddd;
   padding: 20px 0px 20px 0px;
 }

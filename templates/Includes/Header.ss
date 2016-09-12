@@ -11,7 +11,7 @@
               <% end_if %>
             </a>
           </div>
-          <div class="pull-right">
+          <div class="pull-rights hidden-xs">
             <% if CurrentMember %>
               <a class="admin-login" href="Security/logout" class="pull-right">
                 <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> Logout
