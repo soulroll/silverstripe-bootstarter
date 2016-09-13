@@ -24,6 +24,7 @@
     <% include Footer %>
     <%-- Please move: Theme javascript (below) should be moved to mysite/code/page.php  --%>
     <script src="$ThemeDir/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="$ThemeDir/node_modules/jquery-match-height/dist/jquery.matchHeight-min.js"></script>
     <script src="$ThemeDir/js/dist/app.bundle.js"></script>
   </body>
 </html>

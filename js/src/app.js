@@ -51,3 +51,6 @@ $(window).resize(function() {
 });
 
 bindNavbar();
+
+/* Match height */
+$('.footer-list').matchHeight();

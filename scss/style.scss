@@ -1,7 +1,7 @@
 /* Bootstrap */
 @import "bootstrap/variables"; // Overide Bootstraps variables here
 @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap"; // Brings in Bootstrap
-@import "bootstrap/silverstripe-fixes"; // SilverStripe Bootstrap fixes
+@import "bootstrap/fixes"; // SilverStripe Bootstrap fixes
 
 /* Base */
 @import "base/variables";
@@ -21,6 +21,7 @@
 @import "layout/footer";
 
 /* Components */
+@import "components/navbar";
 @import "components/page-banner";
 @import "components/sidebar";
 @import "components/breadcrumbs";
