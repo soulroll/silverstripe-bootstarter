@@ -82,7 +82,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          Copyright
+          &copy; Copyright
         </div>
       </div>
     </div>

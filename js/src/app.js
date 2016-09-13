@@ -30,7 +30,7 @@ $('table').each(function() {
 /* Make Bootstrap dropdown parents clickable */
 function bindNavbar() {
   if ($(window).width() > 768) {
-    $('.navbar-default .dropdown').on('mouseover', function(){
+    $('.navbar-nav .dropdown').on('mouseover', function(){
       $('.dropdown-toggle', this).next('.dropdown-menu').show();
     }).on('mouseout', function(){
       $('.dropdown-toggle', this).next('.dropdown-menu').hide();
@@ -42,7 +42,7 @@ function bindNavbar() {
     });
   }
   else {
-    $('.navbar-default .dropdown').off('mouseover').off('mouseout');
+    $('.navbar-nav .dropdown').off('mouseover').off('mouseout');
   }
 }
 
