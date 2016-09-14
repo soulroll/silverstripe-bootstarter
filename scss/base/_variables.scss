@@ -1,1 +1,15 @@
-$font-size-base: 16px;
+/* Breakpoints */
+
+// Min Width
+$mobile-min: 320px;
+$tablet-min: 480px;
+$laptop-min: 768px;
+$desktop-min: 922px;
+$widescreen-min: 1200px;
+
+// Max Width
+$mobile-max: 319px;
+$tablet-max: 479px;
+$laptop-max: 767px;
+$desktop-max: 921px;
+$widescreen-max: 1199px;

@@ -7,6 +7,19 @@
     .dropwdown-link {
       color: #fff;
     }
+    @media (min-width: $screen-sm-min) {
+      .dropdown-menu {
+        display: block;
+      }
+    }
+  }
+}
+@media (max-width: $laptop-max) {
+  .dropdown-item.open {
+    background-color:#222 !important;
+    .glyphicon-menu-down:before {
+      content: "\e260";
+    }
   }
 }
 .dropwdown-link {
@@ -22,10 +35,9 @@
   top: 0;
   font-size: 8px;
   line-height: 16px;
-  @media (max-width: $screen-sm-min) {
+  @media (max-width: $laptop-max) {
     background-color: #333;
     padding: 12px 15px 12px 15px;
-
   }
 }
 
