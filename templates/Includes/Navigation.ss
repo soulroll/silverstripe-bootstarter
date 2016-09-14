@@ -9,22 +9,46 @@
         </button>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
+
         <ul class="nav navbar-nav">
+
           <% loop $Menu(1) %>
-            <li class="<% if LinkOrCurrent = current %>active<% end_if %> <% if Children %>dropdown<% end_if %>">
-              <a href="$Link" title="$Title.XML" <% if Children %>class="dropdown-toggle" data-toggle="dropdown"<% end_if %>>
-                $MenuTitle.XML <% if Children %><span class="caret"></span><% end_if %>
-              </a>
-              <% if Children %>
+
+            <% if Children %>
+
+              <li class="<% if LinkOrCurrent = current %>active<% end_if %> dropdown-item" title="$Title.XML">
+
+                <a class="dropwdown-link" href="$Link" >
+                  $MenuTitle.XML
+                </a>
+
+                <span class="glyphicon glyphicon-menu-down dropdown-chevron" aria-hidden="true" data-toggle="dropdown"></span>
+
                 <ul class="dropdown-menu">
                   <% loop Children %>
                     <li><a href="$Link" title="$Title.XML">$MenuTitle.XML</a></li>
                   <% end_loop %>
                 </ul>
-              <% end_if %>
-            </li>
+
+              </li>
+
+            <% else %>
+
+              <li class="<% if LinkOrCurrent = current %>active<% end_if %>">
+
+                <a href="$Link" title="$Title.XML">
+                  $MenuTitle.XML
+                </a>
+
+              </li>
+
+            <% end_if %>
+
           <% end_loop %>
+
         </ul>
+
+
         <% if $SearchForm %>
           <form class="navbar-form navbar-right" action="/home/SearchForm" method="get" enctype="application/x-www-form-urlencoded">
             <div class="form-group">

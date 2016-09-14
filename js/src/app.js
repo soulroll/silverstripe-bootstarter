@@ -27,30 +27,5 @@ $('table').each(function() {
   });
 });
 
-/* Make Bootstrap dropdown parents clickable */
-function bindNavbar() {
-  if ($(window).width() > 768) {
-    $('.navbar-nav .dropdown').on('mouseover', function(){
-      $('.dropdown-toggle', this).next('.dropdown-menu').show();
-    }).on('mouseout', function(){
-      $('.dropdown-toggle', this).next('.dropdown-menu').hide();
-    });
-    $('.dropdown-toggle').click(function() {
-      if ($(this).next('.dropdown-menu').is(':visible')) {
-        window.location = $(this).attr('href');
-      }
-    });
-  }
-  else {
-    $('.navbar-nav .dropdown').off('mouseover').off('mouseout');
-  }
-}
-
-$(window).resize(function() {
-  bindNavbar();
-});
-
-bindNavbar();
-
 /* Match height */
 $('.footer-list').matchHeight();
