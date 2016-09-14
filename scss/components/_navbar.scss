@@ -6,6 +6,9 @@
 .dropdown-link {
   padding-right: 25px;
   &:after {
+    position: relative;
+    top: -2px;
+    right: -2px;
     content: "\e259";
     font-family: 'Glyphicons Halflings';
     font-size: 8px;
@@ -57,3 +60,5 @@
     }
   }
 }
+
+
