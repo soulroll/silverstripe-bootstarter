@@ -1,5 +1,7 @@
+/* Navbar changes */
 .navbar {
   margin-bottom: 0;
+  border: 0;
 }
 
 /* Desktop */
@@ -13,7 +15,7 @@
     font-family: 'Glyphicons Halflings';
     font-size: 8px;
     @media (max-width: $laptop-max) {
-      display:none;
+      display: none;
     }
   }
 }
@@ -31,13 +33,13 @@
 
 /* Mobile */
 .dropdown-link-mobile {
-  padding: 9px 15px 9px 15px;
+  padding: 8px 15px 9px 15px;
   position: absolute;
   background-color: #333;
   cursor: pointer;
   display: none;
   @media (max-width: $laptop-max) {
-    display:block;
+    display: block;
   }
   &:after {
     color: #fff;
@@ -53,12 +55,26 @@
 
 /* Chevron swap */
 .dropdown-item.open {
-  background-color: #222;
+  .dropdown-link {
+    background-color: transparent !important;
+  }
   .dropdown-link-mobile {
     &:after {
-      content: "\e260" !important;
+      content: "\e260";
     }
   }
 }
 
-
+/* Navbar States */
+.current,
+.section {
+  .dropdown-link, .normal-link {
+    background-color: #000 !important;
+    color: #fff !important;
+  }
+}
+.current.dropdown-item.open {
+  .dropdown-link {
+    background-color: #000 !important;
+  }
+}
