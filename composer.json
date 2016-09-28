@@ -1,0 +1,15 @@
+{
+  "name": "soulrolll/bootstrap",
+  "description": "A front-end boilerplate theme for starting Bootstrap SilverStripe projects faster",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "license": "MIT License",
+  "keywords": ["Boostrap", "Theme", "SilverStripe", "Gulp", "Boilerplate"],
+  "authors": [
+    {
+      "name": "David Malone",
+      "homepage": "http://www.soulwebdesign.nz",
+      "role": "Front End Developer"
+    }
+  ]
+}
