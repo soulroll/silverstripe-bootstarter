@@ -5,6 +5,7 @@
   "main": "gulpfile.js",
   "author": "David Malone - david@souldesign.net.nz",
   "devDependencies": {
+    "npm": "~3.9.2",
     "browserify": "~13.0.0",
     "es6-promise": "~3.1.2",
     "glob": "~7.0.3",
