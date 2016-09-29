@@ -5,7 +5,7 @@
   "prefer-stable": true,
   "license": "MIT License",
   "type": "silverstripe-theme",
-  "keywords": ["Boostrap", "Theme", "SilverStripe", "Gulp", "Boilerplate"],
+  "keywords": ["Bootstrap", "Theme", "SilverStripe", "Gulp", "Boilerplate", "theme starter", "starter-kit", "starter", "frontend"],
   "authors": [
     {
       "name": "David Malone",
