@@ -1,7 +1,7 @@
 <%-- Loop is all on one line to prevent whitespace bug in older versions of IE --%>
 <% if $Pages %>
   <ol class="breadcrumb">
-    <li><a href="home">Home</a></li>
+    <% if InSection(home) %><% else %><li><a href="home">Home</a></li><% end_if %>
     <% loop $Pages %>
       <% if $Last %>
         <li>$MenuTitle.XML</li>

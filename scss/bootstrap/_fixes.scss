@@ -2,7 +2,7 @@
 .checkbox input[type=checkbox], .checkbox-inline input[type=checkbox], .radio input[type=radio], .radio-inline input[type=radio] {
   margin-left: 0;
   position: absolute;
-  top: -2px;
+  top: 0px;
 }
 
 /* Bootstrap navbar rounded border fix */
@@ -15,4 +15,37 @@
   .navbar-nav.dropdown:hover .dropdown-menu {
     display: block;
   }
+}
+
+/* Merge Bootstrap and SilverStripe styles */
+div {
+  .field {
+    @extend .form-group;
+  }
+}
+#MemberLoginForm_LoginForm {
+  @media (min-width: $screen-sm-min) {
+   width: 40%;
+  }
+}
+.middleColumn {
+  .text {
+    @extend .form-control;
+  }
+}
+.Actions {
+  .action {
+    @extend .btn;
+    @extend .btn-default;
+  }
+  #ForgotPassword {
+    margin-top:20px;
+  }
+}
+.optionset {
+  list-style: none;
+  padding-left: 0;
+}
+.radio {
+  display: inline;
 }
