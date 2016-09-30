@@ -1,4 +1,4 @@
-# SilverStripe Bootstrap Boilerplate Theme
+# SilverStripe Bootstarter Theme
 A front-end boilerplate theme for starting Bootstrap SilverStripe projects faster
 
 ## Why another boilerplate?
