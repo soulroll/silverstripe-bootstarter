@@ -29,7 +29,8 @@ div {
   }
 }
 .middleColumn {
-  .text {
+  .text,
+  .textarea {
     @extend .form-control;
   }
 }
@@ -39,13 +40,14 @@ div {
     @extend .btn-default;
   }
   #ForgotPassword {
-    margin-top:20px;
+    margin-top: 20px;
   }
 }
 .optionset {
   list-style: none;
   padding-left: 0;
-}
-.radio {
-  display: inline;
+  .checkbox,
+  .radio {
+    display: inline;
+  }
 }
