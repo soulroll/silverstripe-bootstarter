@@ -5,15 +5,17 @@ A front-end boilerplate theme for starting Bootstrap SilverStripe projects faste
 I wasn't happy with the current selection of Bootstrap themes out there, they all lacked in different areas and some required lengthy installation steps to get up and running.
 
 ## Features
+- jQuery v2.2.4
 - Bootstrap v3.3.7
 - Npm for front-end package managemnet
 - Gulp for SASS and JS Compiling
 - JShint for testing javascript
-- Menu loops properly integrated with Bootstraps navbar and dropdowns
-- SilverStripe form checkbox fix
-- Kitchen sink on page.ss of common elements
+- Menu loops integrated with Bootstraps navbar and dropdowns
+- Merged Bootstrap form styles with SilverStripes form markup
 - Responsive tables that output from the CMS (JS wraps all table elements with the correct the table-responsive class)
 - Proper SASS folder structure to keep things tidy
+- matchHeight for fixing grid wrapping or unequal columns (Example is the footer)
+- Kitchen sink included on page.ss of featuring common bootstrap elements (Just delete what you dont want)
 
 ## Requirements
 1. NodeJS (sudo apt-get install nodejs)
