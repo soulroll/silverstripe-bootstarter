@@ -1,6 +1,7 @@
 <div class="page-header">
   <h3>Buttons</h3>
 </div>
+
 <p>
   <button type="button" class="btn btn-lg btn-default">Default</button>
   <button type="button" class="btn btn-lg btn-primary">Primary</button>

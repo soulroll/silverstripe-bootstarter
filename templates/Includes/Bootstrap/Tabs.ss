@@ -1,6 +1,7 @@
 <div class="page-header">
   <h3>Tabs</h3>
 </div>
+
 <ul class="nav nav-tabs">
   <li class="active"><a data-toggle="tab" href="#menu1">Menu 1</a></li>
   <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
