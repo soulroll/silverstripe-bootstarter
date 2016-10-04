@@ -16,6 +16,7 @@ I wasn't happy with the current selection of Bootstrap themes out there, they al
 - Basic SASS folder structure to keep things tidy
 - matchHeight for fixing the grid float bug with unequal columns (Check the footer)
 - Kitchen sink included on page.ss featuring common bootstrap elements (Just delete what you dont want)
+- Supports userforms
 
 ## Requirements
 1. NodeJS (sudo apt-get install nodejs)
