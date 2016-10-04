@@ -10,22 +10,24 @@
   border-radius: 0;
 }
 
-/* Make dropdowns hover on Desktop */
+/* Make drop downs hover on Desktop */
 @media (min-width: $screen-sm-min) {
   .navbar-nav.dropdown:hover .dropdown-menu {
     display: block;
   }
 }
 
-/* Merge Bootstrap and SilverStripe styles */
-div {
-  .field {
-    @extend .form-group;
-  }
-}
+/* Confine login form */
 #MemberLoginForm_LoginForm {
   @media (min-width: $screen-sm-min) {
    width: 40%;
+  }
+}
+
+/* Merge Bootstrap and SilverStripe form styles */
+div {
+  .field {
+    @extend .form-group;
   }
 }
 .middleColumn {
@@ -49,5 +51,8 @@ div {
   .checkbox,
   .radio {
     display: inline;
+  }
+  label {
+    padding-left: 7px;
   }
 }
