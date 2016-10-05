@@ -39,13 +39,12 @@ div {
 .Actions {
   .action {
     @extend .btn;
-    @extend .btn-default;
+    @extend .btn-success;
   }
   #ForgotPassword {
     margin-top: 20px;
   }
 }
-
 .optionset {
   list-style: none;
   padding-left: 0;
@@ -62,4 +61,11 @@ div {
       padding-left: 7px;
     }
   }
+}
+.error.message {
+  @extend .help-block;
+}
+.resetformaction {
+  @extend .btn;
+  @extend .btn-default;
 }
