@@ -5,7 +5,8 @@
   "prefer-stable": true,
   "license": "MIT License",
   "type": "silverstripe-theme",
-  "keywords": ["Bootstrap", "Theme", "SilverStripe", "Gulp", "Boilerplate", "theme starter", "starter-kit", "starter", "frontend"],
+  "homepage": "http://www.soulwebdesign.nz",
+  "keywords": ["Bootstrap", "bootstarter", "Theme", "SilverStripe", "Gulp", "Boilerplate", "theme starter", "starter-kit", "starter", "frontend"],
   "authors": [
     {
       "name": "David Malone",
