@@ -1,5 +1,5 @@
 {
-  "name": "bootstrap-frontend-boilerplate",
+  "name": "silverstripe-bootstarter",
   "version": "0.0.0",
   "description": "Bootstrap boilerplate for SilverStripe with Gulp & Font-Awesome",
   "main": "gulpfile.js",
