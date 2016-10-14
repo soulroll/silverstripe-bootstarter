@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
   <head>
     <% base_tag %>
-    <title>$Title / $SiteConfig.Title</title>
+    <title><% if $MetaTitle %>$MetaTitle<% else %>$Title<% end_if %> &raquo; $SiteConfig.Title</title>
     <meta name="description" content="">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -17,10 +17,9 @@
   <body>
     <% include Header %>
     <% include Navigation %>
-    <% include PageBanner %>
-    <div class="page-background">
+    <main role="main">
       $Layout
-    </div>
+    </main>
     <% include Footer %>
     <%-- Please move: Theme javascript (below) should be moved to mysite/code/page.php  --%>
     <script src="$ThemeDir/node_modules/jquery/dist/jquery.min.js"></script>

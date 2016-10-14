@@ -1,3 +1,4 @@
+<% include PageBanner %>
 <div class="container">
   <div class="page">
     <div class="row">

@@ -1,16 +1,13 @@
-/* Links */
-a,
-a:active,
-a:visited {
-  color: #009BE7;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Accessible focus */
-a:hover, a:active {
-  outline: none;
+/* Page links */
+.page {
+  a,
+  a:active,
+  a:visited {
+  }
+  a:hover {
+  }
+  // Accessible focus
+  a:hover, a:active {
+    outline: none;
+  }
 }

@@ -1,5 +1,5 @@
 <footer>
-  <div class="first-footer">
+  <div class="container-full footer-first">
     <div class="container">
       <div class="row">
         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
@@ -78,13 +78,9 @@
       </div>
     </div>
   </div>
-  <div class="secondary-footer">
+  <div class="container-full footer-secondary">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          &copy; Copyright
-        </div>
-      </div>
+      &copy; Copyright
     </div>
   </div>
 </footer>
