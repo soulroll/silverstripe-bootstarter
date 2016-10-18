@@ -13,8 +13,6 @@
     <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <% require themedCSS("style") %>
-    <!-- Roboto font -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
   </head>
   <body>
     <% include Header %>
