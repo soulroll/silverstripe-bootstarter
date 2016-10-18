@@ -1,19 +1,13 @@
 /* Page links */
 .page {
-  a,
-  a:active,
-  a:visited {
-  }
   p {
     a {
       text-decoration: underline;
     }
-  }
-  a:hover {
-    color: $colour-link-hover;
-  }
-  // Accessible focus
-  a:hover, a:active {
-    outline: none;
+    a:hover,
+    a:active {
+      color: $colour-link-hover;
+      outline: none;
+    }
   }
 }

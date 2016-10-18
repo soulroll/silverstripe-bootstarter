@@ -1,9 +1,15 @@
+/* Header */
 header {
   background-color: #fff;
   padding: 20px 0px 20px 0px;
 }
 .logo {
   float: left;
+  color: #000;
+  &:hover {
+    color: #000;
+    text-decoration: none;
+  }
 }
 .site-title,
 .site-tagline {

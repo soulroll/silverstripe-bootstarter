@@ -1,12 +1,8 @@
 /* Tables */
 table {
-  width: 100%;
-  max-width: 100%;
+  @extend .table;
+  margin-bottom: 0;
   border: 1px solid $table-border-color;
-  th, td {
-    padding: $table-cell-padding;
-    border-top: 1px solid $table-border-color;
-  }
   tr:nth-of-type(even) {
     background-color: $table-bg-accent;
   }
