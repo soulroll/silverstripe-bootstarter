@@ -1,13 +1,13 @@
 <%-- Loop is all on one line to prevent whitespace bug in older versions of IE --%>
 <% if $Pages %>
   <ol class="breadcrumb">
-    <% if InSection(home) %><% else %><li><a href="home">Home</a></li><% end_if %>
+    <% if InSection(home) %><% else %><li class="breadcrumb-item"><a href="home" class="breadcrumb-link">Home</a></li><% end_if %>
     <% loop $Pages %>
       <% if $Last %>
-        <li>$MenuTitle.XML</li>
+        <li class="breadcrumb-item">$MenuTitle.XML</li>
       <% else %>
-        <li>
-          <a href="$Link" alt="Go to $MenuTitle.XML page" class="breadcrumb-$Pos $LinkingMode <% if $ID == $Top.Parent.ID %>bold<% end_if %>">
+        <li class="breadcrumb-item">
+          <a href="$Link" alt="Go to $MenuTitle.XML page" class="breadcrumb-link $LinkingMode">
             $MenuTitle.XML
           </a>
         </li>

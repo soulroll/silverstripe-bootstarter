@@ -1,4 +1,21 @@
-/* Page breadcrumbs */
+/* Breadcrumbs */
 .breadcrumb {
   margin-bottom: 30px;
+  .breadcrumb-item {
+    &:before {
+      color: $colour-breadcrumb-divider;
+    }
+  }
+  .breadcrumb-link {
+    color: $colour-breadcrumb-link;
+    &:hover {
+      color: $colour-breadcrumb-link-hover;
+    }
+  }
+  .section {
+    color: $colour-breadcrumb-link;
+    &:hover {
+      color: $colour-breadcrumb-link;
+    }
+  }
 }

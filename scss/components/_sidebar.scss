@@ -1,16 +1,29 @@
+/* Sidebar */
 .sidebar {
   padding-left: 0;
   list-style: none;
   ul {
     padding-left: 22px;
+    list-style: none;
   }
-  .section {
-    color: #009BE7;
-  }
-  .current {
-    color: #009BE7;
-  }
-  .link {
-    color: #009BE7;
+  li {
+    .link {
+      color: $colour-sidebar-link;
+      &:hover {
+        color: $colour-sidebar-link-hover;
+      }
+    }
+    .current {
+      color: $colour-sidebar-link-current;
+      &:hover {
+        color: $colour-sidebar-link-current-hover;
+      }
+    }
+    .section {
+      color: $colour-sidebar-link-section;
+      &:hover {
+        color: $colour-sidebar-link-section-hover;
+      }
+    }
   }
 }

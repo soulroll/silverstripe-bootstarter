@@ -8,7 +8,8 @@
     content: "\e259";
     font-family: 'Glyphicons Halflings';
     font-size: 8px;
-    @media (max-width: $laptop-max) {
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
       display: none;
     }
   }
@@ -16,7 +17,8 @@
 
 /* Desktop hover */
 .dropdown-item {
-  @media (min-width: $laptop-max) {
+  /* Small Devices, Tablets */
+  @media only screen and (min-width : 768px) {
     &:hover {
       .dropdown-menu {
         display: block;
@@ -32,7 +34,8 @@
   background-color: #333;
   cursor: pointer;
   display: none;
-  @media (max-width: $laptop-max) {
+  /* Small Devices, Tablets */
+  @media only screen and (max-width : 768px) {
     display: block;
   }
   &:after {

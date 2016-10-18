@@ -4,7 +4,13 @@
   a:active,
   a:visited {
   }
+  p {
+    a {
+      text-decoration: underline;
+    }
+  }
   a:hover {
+    color: $colour-link-hover;
   }
   // Accessible focus
   a:hover, a:active {

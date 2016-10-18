@@ -1,15 +1,26 @@
-/* Breakpoints */
+/* Variables */
 
-// Min Width
-$mobile-min: 320px;
-$tablet-min: 480px;
-$laptop-min: 768px;
-$desktop-min: 922px;
-$widescreen-min: 1200px;
+// Fonts
+$font-family-body: "Roboto", sans-serif;
+$font-family-headings: "Roboto Slab", serif;
 
-// Max Width
-$mobile-max: 319px;
-$tablet-max: 479px;
-$laptop-max: 767px;
-$desktop-max: 921px;
-$widescreen-max: 1199px;
+// Colours - Text & links
+$colour-text: #333;
+$colour-link: #337ab7;
+$colour-link-hover: #23527c;
+
+// Colours - Breadcrumbs
+$colour-breadcrumb-text: $colour-text;
+$colour-breadcrumb-link: $colour-link;
+$colour-breadcrumb-link-hover: $colour-link-hover;
+$colour-breadcrumb-link-section: $colour-link;
+$colour-breadcrumb-link-section-hover: $colour-link-hover;
+$colour-breadcrumb-divider: #eee;
+
+// Colours - Sidebar
+$colour-sidebar-link: $colour-link;
+$colour-sidebar-link-hover: $colour-link-hover;
+$colour-sidebar-link-section: $colour-link;
+$colour-sidebar-link-section-hover: $colour-link-hover;
+$colour-sidebar-link-current: $colour-link;
+$colour-sidebar-link-current-hover: $colour-link-hover;
