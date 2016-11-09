@@ -1,7 +1,6 @@
+window.$ = window.jQuery = require('jquery');
 var bootstrap = require('bootstrap-sass');
 var matchHeight = require('jquery-match-height');
-
-var $ = require('jquery');
 
 /* Make Bootstrap tables responsive */
 $('table').each(function() {
