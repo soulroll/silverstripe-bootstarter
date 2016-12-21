@@ -31,6 +31,6 @@ I wasn't happy with the current selection of Bootstrap themes out there, they al
 4. Run "gulp" via the cmd line inside bootstarter theme folder, this will compile the sass and js into css and js/dist/ and will watch for changes in the scss and js/src/ directories (building on top of the theme).
 
 ## Instructions
-- Run "gulp watch" to watch for scss and js changes.
 - Run "gulp" to compile once.
+- Run "gulp watch" to watch for scss and js changes.
 - Run "gulp jshint" to check for javascript errors in js/src/ from your .jshintrc file.
