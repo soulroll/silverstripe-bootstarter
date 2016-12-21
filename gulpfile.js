@@ -68,4 +68,4 @@ gulp.task('watch', function() {
 });
 
 // Default task (recompile on init before watching)
-gulp.task('default', ['scss', 'js', 'watch']);
+gulp.task('default', ['scss', 'js']);
