@@ -21,7 +21,8 @@ I wasn't happy with the current selection of Bootstrap themes out there, they al
 ## Requirements
 1. NodeJS (sudo apt-get install nodejs)
 2. NPM (sudo apt-get install npm)
-2. Gulp (sudo npm install gulp -g)
+3. NPM legacy (sudo apt-get install nodejs-legacy)
+4. Gulp (sudo npm install gulp -g)
 
 ## Installation
 1. Clone or download the respository into your SilverStripe themes directory.
