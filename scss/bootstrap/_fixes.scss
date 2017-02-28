@@ -2,7 +2,7 @@
 .checkbox input[type=checkbox], .checkbox-inline input[type=checkbox], .radio input[type=radio], .radio-inline input[type=radio] {
   margin-left: 0;
   position: absolute;
-  top: 0px;
+  top: 0;
 }
 
 /* Bootstrap navbar rounded border fix */
@@ -44,7 +44,7 @@ div {
     @extend .btn-success;
   }
   #ForgotPassword {
-    margin-top: 20px;
+    @include rem(margin-top, 20px);
   }
 }
 .optionset {
@@ -60,7 +60,7 @@ div {
   .odd,
   .even {
     label {
-      padding-left: 7px;
+      @include rem(padding-left, 7px);
     }
   }
 }

@@ -1,18 +1,19 @@
 /* Footer */
 .footer-first {
+  @include rem(margin-top, 15px);
+  @include rem(padding, 20px 0px 20px 0px);
   background-color: #eee;
-  padding: 20px 0px 20px 0px;
   ul {
     padding-left: 0;
     list-style: none;
   }
 }
 .footer-secondary {
+  @include rem(padding, 20px 0px 20px 0px);
   background-color: #ddd;
-  padding: 20px 0px 20px 0px;
 }
 
 // Matching heights
 .footer-list {
-  margin-bottom: 30px;
+  @include rem(margin-bottom, 30px);
 }

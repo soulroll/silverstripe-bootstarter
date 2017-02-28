@@ -4,5 +4,5 @@
   list-style: none;
 }
 .search-results-listing {
-  margin-bottom: 30px;
+  @include rem(margin-bottom, 30px);
 }

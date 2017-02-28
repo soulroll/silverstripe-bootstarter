@@ -1,3 +1,6 @@
+/* Mixins */
+@import "mixins/rem";
+
 /* Bootstrap */
 @import "bootstrap/variables"; // Overide Bootstraps variables here
 @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap"; // Brings in Bootstrap
@@ -27,3 +30,20 @@
 @import "components/page-banner";
 @import "components/sidebar";
 @import "components/breadcrumbs";
+
+/*
+.sticky {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  border-top: 0;
+}
+*/
+
+#site-navigation.fixed{
+  position:fixed;
+  z-index: 9999;
+  top:0;
+}

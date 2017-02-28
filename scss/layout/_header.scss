@@ -1,14 +1,14 @@
 /* Header */
 header {
+  @include rem(padding, 20px 0px 20px 0px);
   background-color: #fff;
-  padding: 20px 0px 20px 0px;
 }
 .logo {
   float: left;
   color: #000;
   &:hover {
-    color: #000;
     text-decoration: none;
+    color: #000;
   }
 }
 .site-title,
@@ -16,9 +16,9 @@ header {
   margin: 0;
 }
 .site-title {
-  font-size: 28px;
+  @include rem(font-size, 28px);
 }
 .admin-login {
   float: right;
-  margin-top: 15px;
+  @include rem(margin-top, 15px);
 }
