@@ -1,6 +1,6 @@
 /* Desktop */
 .dropdown-link {
-  padding-right: 25px;
+  @include rem(padding-right, 25px);
   &:after {
     position: relative;
     top: -2px;
@@ -29,21 +29,21 @@
 
 /* Mobile */
 .dropdown-link-mobile {
-  padding: 9px 15px 9px 15px;
+  display: none;
   position: absolute;
+  @include rem(padding, 10px 15px 10px 15px);
   background-color: #333;
   cursor: pointer;
-  display: none;
   /* Small Devices, Tablets */
   @media only screen and (max-width : 768px) {
     display: block;
   }
   &:after {
-    color: #fff;
     content: "\e259";
     font-family: 'Glyphicons Halflings';
-    font-size: 8px;
+    font-size: 12px;
     cursor: pointer;
+    color: #fff;
   }
   z-index: 22;
   right: 0;

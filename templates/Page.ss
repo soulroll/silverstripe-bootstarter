@@ -15,10 +15,6 @@
     <% include Header %>
     <% include Navigation %>
     <main role="main">
-      <div class="test-container">
-        <div class="test">
-        </div>
-      </div>
       $Layout
     </main>
     <% include Footer %>

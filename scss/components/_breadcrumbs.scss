@@ -1,6 +1,6 @@
 /* Breadcrumbs */
 .breadcrumb {
-  margin-bottom: 30px;
+  @include rem(margin-bottom, 30px);
   .breadcrumb-item {
     &:before {
       color: $colour-breadcrumb-divider;

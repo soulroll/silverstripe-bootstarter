@@ -3,7 +3,7 @@
   padding-left: 0;
   list-style: none;
   ul {
-    padding-left: 22px;
+    @include rem(padding-left, 22px);
     list-style: none;
   }
   li {
