@@ -1,8 +1,4 @@
-window.$ = window.jQuery = require('jquery');
-var bootstrap = require('bootstrap-sass');
-var matchHeight = require('jquery-match-height');
-
-/* Make Bootstrap tables responsive */
+/* Make all tables responsive */
 $('table').each(function() {
   var element = $(this);
   // Create the wrapper element
@@ -27,25 +23,3 @@ $('table').each(function() {
     }
   });
 });
-
-/* Match height */
-$('.footer-list').matchHeight();
-
-
-
-
-
-
-/* Sticky navbar
-jQuery(function(){
-  var menuOffset = jQuery('#site-navigation')[0].offsetTop;
-  jQuery(document).bind('ready scroll',function() {
-    var docScroll = jQuery(document).scrollTop();
-    if(docScroll &gt;= menuOffset) {
-      jQuery('#site-navigation').addClass('fixed').css('width',jQuery('#masthead').width());
-    } else {
-      jQuery('#site-navigation').removeClass('fixed').removeAttr(&quot;width&quot;);
-    }
-   });
-});
-*/

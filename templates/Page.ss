@@ -9,7 +9,7 @@
     <!--[if IE 11><meta http-equiv="X-UA-Compatible" content="IE=10"><![endif]-->
     <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <% require themedCSS("style") %>
+    <link rel="stylesheet" type="text/css" href="{$ThemeDir}/dist/css/style.css">
   </head>
   <body>
     <% include Header %>
@@ -18,7 +18,6 @@
       $Layout
     </main>
     <% include Footer %>
-    <%-- Please move: Theme javascript (below) should be moved to mysite/code/page.php  --%>
-    <script src="$ThemeDir/js/dist/app.bundle.js"></script>
+    <script src="{$ThemeDir}/dist/js/main.js"></script>
   </body>
 </html>

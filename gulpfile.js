@@ -1,71 +1,87 @@
-// Include Gulp
-var gulp = require('gulp');
+// Include gulp & plugins
+const gulp = require('gulp');
+const autoprefixer = require('gulp-autoprefixer');
+const minifyCSS = require('gulp-clean-css');
+const minifyJS = require('gulp-uglify');
+const concatJS = require('gulp-concat');
+const nodesass = require('gulp-sass');
+const exec = require('child_process').exec;
 
-// Polyfill so you don't need >= node 0.12
-require('es6-promise').polyfill();
+// Paths setup
+const PATHS = {
+  'src': {
+    'css': './src/scss/**/*.scss',
+    'js': './src/js/**/*.js',
+    'img': './src/img/**/*',
+    'fonts': './src/fonts/**/*',
+    'favicons': './src/favicons/**/*'
+  },
+  'dist': {
+    'css': './dist/css/',
+    'js': './dist/js/',
+    'img': './dist/img/',
+    'fonts': './dist/fonts/',
+    'favicons': './dist/'
+  }
+}
 
-// Include plugins
-var sass = require('gulp-sass');
-var minifyCSS = require('gulp-clean-css');
-var autoprefixer = require('gulp-autoprefixer');
-var bless = require('gulp-bless');
-var jshint = require('gulp-jshint');
-var browserify = require('browserify');
-var source = require('vinyl-source-stream');
-var buffer = require('vinyl-buffer');
-var uglify = require('gulp-uglify');
-var rename = require('gulp-rename');
-var glob = require('glob');
-var es = require('event-stream');
-var flatten = require('gulp-flatten');
-
-// Compile and minify Javascript into one bundle file
-gulp.task('js', function(done) {
-    gulp.src('js/src/*.js', function(err, files) {
-        if(err) done(err);
-
-        var tasks = files.map(function(entry) {
-            return browserify({ entries: [entry] })
-                .bundle()
-                .pipe(source(entry))
-                .pipe(rename({
-                    extname: '.bundle.js'
-                }))
-                .pipe(buffer())
-                .pipe(uglify())
-                .pipe(flatten())
-                .pipe(gulp.dest('js/dist/'));
-            });
-        es.merge(tasks).on('end', done);
+// Turn sass into css, autoprefix and minify
+gulp.task('scss', () => {
+  return gulp.src(PATHS.src.css)
+    .pipe(nodesass({
+      includePaths: [] // any node_modules css file paths can be included here so they are available for @import statements in .scss files
     })
-});
-
-// Check Javascript for code errors
-gulp.task('jshint', function() {
-    return gulp.src('./js/src/app.js')
-        .pipe(jshint())
-        .pipe(jshint.reporter('default'));
-});
-
-// Turn Scss into Css, prefix, bless and minify
-gulp.task('scss', function () {
-  return gulp.src('scss/**/*.scss')
-    .pipe(sass().on('error', sass.logError))
+    .on('error', nodesass.logError))
     .pipe(autoprefixer({
-      browsers: ['last 4 versions'],
+      browsers: ['last 2 versions'],
       cascade: false,
-      remove: false // set this to true if parsing library or legacy css code
+      remove: false
     }))
-    .pipe(bless())
     .pipe(minifyCSS())
-    .pipe(gulp.dest('css/'));
+    .pipe(gulp.dest(PATHS.dist.css));
 });
 
-// Watch files for saved changes
-gulp.task('watch', function() {
-    gulp.watch('scss/**/*.scss', ['scss']);
-    gulp.watch('js/src/**/*.js', ['js']);
+// Concatenate all project JS files and minify them
+gulp.task('js', () => {
+    return gulp.src([
+      'node_modules/jquery/dist/jquery.min.js',
+      'node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js',
+      'node_modules/jquery-match-height/dist/jquery.matchHeight-min.js',
+      PATHS.src.js
+    ])
+    .pipe(concatJS('main.js')) // where `main.js` is the name of the output file
+    .pipe(gulp.dest(PATHS.dist.js))
+    .pipe(minifyJS({
+      mangle: false
+    }))
+    .pipe(gulp.dest(PATHS.dist.js));
 });
 
-// Default task (recompile on init before watching)
-gulp.task('default', ['scss', 'js']);
+// Copy image files
+gulp.task('copy-img', () => {
+  return gulp.src(PATHS.src.img)
+    .pipe(gulp.dest(PATHS.dist.img));
+});
+
+// Copy font files
+gulp.task('copy-fonts', () => {
+  return gulp.src(PATHS.src.fonts)
+    .pipe(gulp.dest(PATHS.dist.fonts));
+});
+
+// Copy favicon files
+gulp.task('copy-favicons', () => {
+  return gulp.src(PATHS.src.favicons)
+    .pipe(gulp.dest(PATHS.dist.favicons));
+});
+
+// Watch files for changes
+gulp.task('watch', () => {
+  gulp.watch('src/**/*', ['scss', 'js', 'copy-fonts', 'copy-img', 'copy-favicons']);
+});
+
+// Build
+gulp.task('build', ['scss', 'js', 'copy-fonts', 'copy-img', 'copy-favicons']);
+
+// Default task (build before watching)
+gulp.task('default', ['build', 'watch']);

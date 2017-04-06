@@ -1,4 +1,7 @@
 /* Breadcrumbs */
+.breadcrumbs {
+  @include rem(margin-bottom, 20px);
+}
 .breadcrumb {
   @include rem(margin-bottom, 30px);
   .breadcrumb-item {
