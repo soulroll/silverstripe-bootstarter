@@ -41,6 +41,8 @@
     <li><a data-toggle="tab" href="#carousel">Carousel</a></li>
     <li><a data-toggle="tab" href="#modal">Modal</a></li>
     <li><a data-toggle="tab" href="#tabs">Tabs</a></li>
+    <li><a data-toggle="tab" href="#tooltips">Tooltips</a></li>
+    <li><a data-toggle="tab" href="#popovers">Popovers</a></li>
     <li><a data-toggle="tab" href="#dropdowns">Dropdowns</a></li>
     <li class="active"><a data-toggle="tab" href="#forms">Forms</a></li>
   </ul>
@@ -56,6 +58,12 @@
     </div>
     <div id="tabs" class="tab-pane fade">
       <% include Tabs %>
+    </div>
+    <div id="tooltips" class="tab-pane fade">
+      <% include Tooltips %>
+    </div>
+    <div id="popovers" class="tab-pane fade">
+      <% include Popovers %>
     </div>
     <div id="dropdowns" class="tab-pane fade">
       <% include Dropdowns %>
