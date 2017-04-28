@@ -18,6 +18,6 @@
       $Layout
     </main>
     <% include Footer %>
-    <script src="{$ThemeDir}/dist/js/main.js"></script>
+    <script src="{$ThemeDir}/dist/js/main.min.js"></script>
   </body>
 </html>

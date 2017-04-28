@@ -5,16 +5,18 @@
   "main": "gulpfile.js",
   "author": "David Malone - david@souldesign.net.nz",
   "devDependencies": {
-    "bootstrap-sass": "~3.3.7",
     "font-awesome": "~4.7.0",
+    "bootstrap-sass": "~3.3.7",
+    "autoprefixer": "~6.7.7",
+    "cssnano": "~3.10.0",
+    "postcss-flexbugs-fixes": "~2.1.0",
     "gulp": "~3.9.1",
-    "gulp-autoprefixer": "~3.1.1",
-    "gulp-clean-css": "~3.0.4",
     "gulp-concat": "~2.6.1",
+    "gulp-postcss": "~6.4.0",
     "gulp-sass": "~3.1.0",
+    "gulp-sourcemaps": "~2.6.0",
     "gulp-uglify": "~2.1.2",
     "jquery": "~2.2.3",
-    "jquery-match-height": "~0.7.2",
-    "rootrequire": "^1.0.0"
+    "jquery-match-height": "~0.7.2"
   }
 }
