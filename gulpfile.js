@@ -14,6 +14,7 @@ const PATHS = {
     'js': './src/js/**/*.js',
     'img': './src/img/**/*',
     'fonts': './src/fonts/**/*',
+    'fontawesome': './node_modules/font-awesome/fonts/**/*',
     'favicons': './src/favicons/**/*'
   },
   'dist': {
@@ -21,6 +22,7 @@ const PATHS = {
     'js': './dist/js/',
     'img': './dist/img/',
     'fonts': './dist/fonts/',
+    'fontawesome': './dist/fonts/',
     'favicons': './dist/'
   }
 }
@@ -107,25 +109,29 @@ gulp.task('copy-fonts', () => {
     .pipe(gulp.dest(PATHS.dist.fonts));
 });
 
+// Copy fontawesome font files
+gulp.task('copy-fontawesome', () => {
+  return gulp.src(PATHS.src.fontawesome)
+    .pipe(gulp.dest(PATHS.dist.fonts));
+});
+
 // Copy favicon files
 gulp.task('copy-favicons', () => {
   return gulp.src(PATHS.src.favicons)
     .pipe(gulp.dest(PATHS.dist.favicons));
 });
 
-
 // Watch files for changes
 gulp.task('watch', () => {
-  gulp.watch('src/**/*', ['scss', 'js', 'copy-fonts', 'copy-img', 'copy-favicons']);
+  gulp.watch('src/**/*', ['scss', 'js', 'copy-fonts', 'copy-fontawesome', 'copy-img', 'copy-favicons']);
 });
 
-
 // Build development
-gulp.task('build-development', ['scss-source-maps', 'js-source-maps', 'copy-fonts', 'copy-img', 'copy-favicons']);
+gulp.task('build-development', ['scss-source-maps', 'js-source-maps', 'copy-fonts', 'copy-fontawesome', 'copy-img', 'copy-favicons']);
 
 
 // Build production
-gulp.task('build-production', ['scss', 'js', 'copy-fonts', 'copy-img', 'copy-favicons']);
+gulp.task('build-production', ['scss', 'js', 'copy-fonts', 'copy-fontawesome', 'copy-img', 'copy-favicons']);
 
 
 // Default task (build before watching)

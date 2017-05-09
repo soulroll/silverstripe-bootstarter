@@ -1,0 +1,48 @@
+/**
+ * Select styles
+ */
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+  background: transparent;
+  width: 100%;
+  z-index: 1;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  color: #555;
+  display: block;
+  font-size: 14px;
+  height: 34px;
+  line-height: 1.42857;
+  padding: 6px 12px;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+  &::-ms-expand {
+    display: none;
+  }
+}
+
+.select-wrapper {
+  position: relative;
+  &:after {
+    pointer-events: none;
+    position: absolute;
+    z-index: 22;
+    top: 5px;
+    right: 10px;
+    content: "\f078";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    text-align: center;
+  }
+}
+.select-wrapper-ajax {
+  &:after {
+    top: -3px !important;
+  }
+}

@@ -7,6 +7,9 @@
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap"; // Brings in Bootstrap
 @import "bootstrap/fixes"; // SilverStripe Bootstrap fixes
 
+/* Font Awesome */
+@import "../../node_modules/font-awesome/scss/font-awesome.scss";
+
 /* Base */
 @import "base/variables";
 @import "base/global";
@@ -31,3 +34,6 @@
 @import "components/page-banner";
 @import "components/sidebar";
 @import "components/breadcrumbs";
+
+/* Forms */
+@import "forms/select";

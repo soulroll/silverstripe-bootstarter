@@ -8,6 +8,7 @@
     <li><a data-toggle="tab" href="#tables">Tables</a></li>
     <li><a data-toggle="tab" href="#buttons">Buttons</a></li>
     <li><a data-toggle="tab" href="#glyphicons">Glyphicons</a></li>
+    <li><a data-toggle="tab" href="#fontawesome">Font Awesome</a></li>
     <li><a data-toggle="tab" href="#grid">Grid</a></li>
   </ul>
   <div class="tab-content">
@@ -28,6 +29,9 @@
     </div>
     <div id="glyphicons" class="tab-pane fade">
       <% include Glyphicons %>
+    </div>
+    <div id="fontawesome" class="tab-pane fade">
+      <% include FontAwesome %>
     </div>
     <div id="grid" class="tab-pane fade">
       <% include Grid %>
