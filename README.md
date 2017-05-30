@@ -5,6 +5,7 @@ A front-end boilerplate theme for starting Bootstrap SilverStripe projects faste
 I wasn't happy with the current selection of Bootstrap themes out there, they all lacked in different areas and some required lengthy installation steps to get up and running.
 
 ## Features
+- BrowserSync
 - jQuery v2.2.4
 - Bootstrap v3.3.7
 - NPM for front-end package managemnet
@@ -29,8 +30,9 @@ I wasn't happy with the current selection of Bootstrap themes out there, they al
 2. Run 'npm install' via cmd line inside the bootstarter theme folder to get all of the node dependancies, this will also install Gulp for compiling scss and js.
 3. Change to the Bootstarter theme in the SilverStripe CMS.
 4. Run "gulp" via the cmd line inside bootstarter theme folder, this will compile the sass and js into css and js/dist/ and will watch for changes in the scss and js/src/ directories (building on top of the theme).
+5. Run "gulp build" for production, this will minify scss and js.
 
 ## Instructions
 - Run "gulp" to compile once.
-- Run "gulp watch" to watch for scss and js changes.
+- Run "gulp watch" to watch for scss and javascript changes working with browsersync.
 - Run "gulp jshint" to check for javascript errors in js/src/ from your .jshintrc file.
