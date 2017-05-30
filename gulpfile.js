@@ -1,14 +1,19 @@
-const gulp = require('gulp');
-const sass = require('gulp-sass');
-const postcss = require('gulp-postcss');
-const sourcemaps = require('gulp-sourcemaps');
-const autoprefixer = require('autoprefixer');
-const flexfixes = require('postcss-flexbugs-fixes');
-const cssnano = require('cssnano');
-const concatjs = require('gulp-concat');
-const uglifyjs = require('gulp-uglify');
+var gulp = require('gulp');
+var sass = require('gulp-sass');
+var postcss = require('gulp-postcss');
+var sourcemaps = require('gulp-sourcemaps');
+var autoprefixer = require('autoprefixer');
+var flexfixes = require('postcss-flexbugs-fixes');
+var cssnano = require('cssnano');
+var concatjs = require('gulp-concat');
+var uglifyjs = require('gulp-uglify');
+var browsersync = require('browser-sync').create();
 
-const PATHS = {
+// Silverstripe Project URL (Needed for BrowserSync)
+var PROXY_URL = 'bootstarter.davidm.wgtn.cat-it.co.nz';
+
+// Source and Distributed Paths
+var PATHS = {
   'src': {
     'css': './src/scss/**/*.scss',
     'js': './src/js/**/*.js',
@@ -27,43 +32,7 @@ const PATHS = {
   }
 }
 
-gulp.task('scss-source-maps', () => {
-  return gulp.src(PATHS.src.css)
-    .pipe(sass({
-        includePaths: [
-        ]
-      })
-      .on('error', sass.logError)
-    )
-    .pipe(sourcemaps.init())
-    .pipe(postcss([
-      autoprefixer({
-        browsers: ['last 2 versions'],
-        cascade: false,
-        remove: false
-      }),
-      flexfixes(),
-      cssnano()
-    ]))
-    .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest(PATHS.dist.css));
-});
-
-gulp.task('js-source-maps', function() {
-  return gulp.src([
-      './node_modules/jquery/dist/jquery.min.js',
-      './node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js',
-      './node_modules/jquery-match-height/dist/jquery.matchHeight-min.js',
-      PATHS.src.js
-    ])
-    .pipe(sourcemaps.init())
-    .pipe(concatjs('main.min.js'))
-    .pipe(uglifyjs({ mangle: false }))
-    .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest(PATHS.dist.js));
-});
-
-
+// SCSS
 gulp.task('scss', () => {
   return gulp.src(PATHS.src.css)
     .pipe(sass({
@@ -78,12 +47,13 @@ gulp.task('scss', () => {
         cascade: false,
         remove: false
       }),
-      flexfixes(),
-      cssnano()
+      flexfixes()
     ]))
-    .pipe(gulp.dest(PATHS.dist.css));
+    .pipe(gulp.dest(PATHS.dist.css))
+    .pipe(browsersync.reload({stream:true}))
 });
 
+// JS
 gulp.task('js', function() {
   return gulp.src([
       './node_modules/jquery/dist/jquery.min.js',
@@ -92,10 +62,61 @@ gulp.task('js', function() {
       PATHS.src.js
     ])
     .pipe(concatjs('main.min.js'))
-    .pipe(uglifyjs({ mangle: false }))
-    .pipe(gulp.dest(PATHS.dist.js));
+    .pipe(gulp.dest(PATHS.dist.js))
+    .pipe(browsersync.reload({stream:true}))
 });
 
+// Watch
+gulp.task('watch', function () {
+  browsersync.init({
+    proxy: PROXY_URL,
+    files: [
+        '././mysite/**/*.php',
+        '././mysite/**/*.js',
+        'templates/**/*.ss'
+    ],
+    notify: true
+  });
+  gulp.watch('src/**/*', ['scss'],['js']);
+});
+
+// SCSS Build
+gulp.task('scss-build', () => {
+  return gulp.src(PATHS.src.css)
+    .pipe(sass({
+        includePaths: [
+        ]
+      })
+      .on('error', sass.logError)
+    )
+    .pipe(sourcemaps.init())
+    .pipe(postcss([
+      autoprefixer({
+        browsers: ['last 2 versions'],
+        cascade: false,
+        remove: false
+      }),
+      flexfixes(),
+      cssnano()
+    ]))
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest(PATHS.dist.css))
+});
+
+// JS Build
+gulp.task('js-build', () => {
+  return gulp.src([
+      './node_modules/jquery/dist/jquery.min.js',
+      './node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js',
+      './node_modules/jquery-match-height/dist/jquery.matchHeight-min.js',
+      PATHS.src.js
+    ])
+    .pipe(sourcemaps.init())
+    .pipe(concatjs('main.min.js'))
+    .pipe(uglifyjs({ mangle: false }))
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest(PATHS.dist.js));
+});
 
 // Copy image files
 gulp.task('copy-img', () => {
@@ -121,18 +142,11 @@ gulp.task('copy-favicons', () => {
     .pipe(gulp.dest(PATHS.dist.favicons));
 });
 
-// Watch files for changes
-gulp.task('watch', () => {
-  gulp.watch('src/**/*', ['scss', 'js', 'copy-fonts', 'copy-fontawesome', 'copy-img', 'copy-favicons']);
-});
+// Development
+gulp.task('serve', ['scss', 'js', 'copy-img', 'copy-fonts', 'copy-fontawesome', 'copy-favicons']);
 
-// Build development
-gulp.task('build-development', ['scss-source-maps', 'js-source-maps', 'copy-fonts', 'copy-fontawesome', 'copy-img', 'copy-favicons']);
+// Production
+gulp.task('build', ['scss-build', 'js-build', 'copy-img', 'copy-fonts', 'copy-fontawesome', 'copy-favicons']);
 
-
-// Build production
-gulp.task('build-production', ['scss', 'js', 'copy-fonts', 'copy-fontawesome', 'copy-img', 'copy-favicons']);
-
-
-// Default task (build before watching)
-gulp.task('default', ['build-development', 'watch']);
+// Default task (Serve and then watch for changes)
+gulp.task('default', ['serve','watch']);
