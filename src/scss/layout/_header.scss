@@ -1,8 +1,7 @@
 /* Header */
 header {
   @include rem(padding, 20px 0px 20px 0px);
-  padding: 50px;
-  background-color: blue;
+  background-color: #fff;
 }
 .logo {
   float: left;

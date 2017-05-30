@@ -2,18 +2,123 @@
 .footer-first {
   @include rem(margin-top, 15px);
   @include rem(padding, 20px 0px 20px 0px);
-  background-color: #eee;
+  background-color: #222;
+  h4 {
+    color: #fff;
+  }
+  a {
+    color: #9d9d9d;
+  }
   ul {
     padding-left: 0;
     list-style: none;
   }
 }
-.footer-secondary {
-  @include rem(padding, 20px 0px 20px 0px);
-  background-color: #ddd;
-}
 
 // Matching heights
 .footer-list {
   @include rem(margin-bottom, 30px);
+}
+
+.footer-secondary {
+  @include rem(padding, 20px 0px 20px 0px);
+  background-color: #111;
+  color: #9d9d9d;
+}
+
+.footer-links {
+  @include rem(margin-top, 5px);
+  @include rem(margin-bottom, 6px);
+  float: left;
+  padding-left: 0;
+  @media (max-width: $screen-sm-min) {
+    width: 100%;
+    text-align: center;
+    float: none;
+  }
+  li {
+    @include rem(margin-right, 10px);
+    display: inline;
+  }
+  a {
+    color: #fff;
+  }
+}
+
+.footer-copyright {
+  float: left;
+  display: block;
+  clear: both;
+  color: #9d9d9d;
+  @media (max-width: $screen-sm-min) {
+    width: 100%;
+    text-align: center;
+    float: none;
+  }
+}
+
+.footer-social-media {
+  @include rem(margin-top, 10px);
+  padding: 0;
+  float: right;
+  @media (max-width: $screen-sm-min) {
+    width: 100%;
+    text-align: center;
+    float: none;
+  }
+  li {
+    display: inline;
+  }
+  a {
+    @include rem(margin-left, 7px);
+    @include rem(width, 36px);
+    @include rem(height, 36px);
+    @include rem(line-height, 36px);
+    float: right;
+    display: block;
+    border-radius: 10%;
+    background-color: #222;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    @media (max-width: $screen-sm-min) {
+      @include rem(margin-left, 0);
+      float: none;
+      display: inline;
+    }
+  }
+  li:last-child a{
+    margin-left: 0;
+  }
+  .twitter {
+    background-color: #039BE5;
+  }
+  .facebook {
+    background-color: #39589B;
+  }
+  .google-plus {
+    background-color: #DD4D3F;
+  }
+  .email {
+    background-color: #CD1D22;
+  }
+  .instagram {
+    background-color: #845A4F;
+  }
+
+
+  @media (max-width: $screen-sm-min) {
+    .twitter {
+      @include rem(padding, 5px 8px 5px 8px);
+    }
+    .facebook {
+      @include rem(padding, 5px 12px 5px 12px);
+    }
+    .google-plus {
+      @include rem(padding, 5px);
+    }
+    .email {
+      @include rem(padding, 5px 8px 5px 8px);
+    }
+  }
 }
