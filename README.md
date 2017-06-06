@@ -10,7 +10,6 @@ I wasn't happy with the current selection of Bootstrap themes out there, they al
 - Bootstrap v3.3.7
 - NPM for front-end package managemnet
 - Gulp for SASS and JS Compiling
-- JShint for testing javascript
 - Menu loops integrated with Bootstraps navbar and dropdowns
 - Merged Bootstrap form styles with SilverStripes form markup
 - Responsive tables that output from the CMS (JS wraps all table elements with the table-responsive class)
@@ -26,13 +25,12 @@ I wasn't happy with the current selection of Bootstrap themes out there, they al
 4. Gulp (sudo npm install gulp -g)
 
 ## Installation
-1. Clone or download the respository into your SilverStripe themes directory.
-2. Run 'npm install' via cmd line inside the bootstarter theme folder to get all of the node dependancies, this will also install Gulp for compiling scss and js.
+1. Clone or download this respository into your SilverStripe themes directory.
+2. Run 'npm install' via cmd line inside the Bootstarter theme folder to get all of the node dependancies, this will also install Gulp for compiling scss and js.
 3. Change to the Bootstarter theme in the SilverStripe CMS.
-4. Run "gulp" via the cmd line inside bootstarter theme folder, this will compile the sass and js into css and js/dist/ and will watch for changes in the scss and js/src/ directories (building on top of the theme).
-5. Run "gulp build" for production, this will minify scss and js.
+4. Run "gulp" via the cmd line inside Bootstarter theme folder, this will compile the sass and js into css and /dist/ and will also start Browsersync to watch for changes.
+5. Run "gulp build" for production, this will minify the scss and js files (you can auto run this from composer).
 
 ## Instructions
-- Run "gulp" to compile once.
-- Run "gulp watch" to watch for scss and javascript changes working with browsersync.
-- Run "gulp jshint" to check for javascript errors in js/src/ from your .jshintrc file.
+- Run "gulp" to watch for scss and javascript changes with Browsersync.
+- Run "gulp build" to compile for production.
