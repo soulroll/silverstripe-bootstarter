@@ -89,7 +89,7 @@
             <li><a href="#" target="_blank" rel="noopener noreferrer">Link two</a></li>
             <li><a href="#" target="_blank" rel="noopener noreferrer">Link three</a></li>
           </ul>
-          <p class="footer-copyright">&copy; Copyright</p>
+          <p class="footer-copyright">&copy; Copyright Company</p>
         </div>
 
         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">

@@ -7,6 +7,10 @@
     list-style: none;
   }
   li {
+    a {
+      @include rem(padding, 2px 0px 2px 0px);
+      display: block;
+    }
     .link {
       color: $colour-sidebar-link;
       &:hover {

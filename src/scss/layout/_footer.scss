@@ -1,13 +1,16 @@
 /* Footer */
 .footer-first {
   @include rem(margin-top, 15px);
-  @include rem(padding, 20px 0px 20px 0px);
+  @include rem(padding, 25px 0px 25px 0px);
   background-color: #222;
   h4 {
     color: #fff;
   }
   a {
     color: #9d9d9d;
+  }
+  a:hover {
+    color: #ccc;
   }
   ul {
     padding-left: 0;
@@ -17,11 +20,11 @@
 
 // Matching heights
 .footer-list {
-  @include rem(margin-bottom, 30px);
+  @include rem(margin-bottom, 25px);
 }
 
 .footer-secondary {
-  @include rem(padding, 20px 0px 20px 0px);
+  @include rem(padding, 25px 0px 25px 0px);
   background-color: #111;
   color: #9d9d9d;
 }
@@ -105,8 +108,6 @@
   .instagram {
     background-color: #845A4F;
   }
-
-
   @media (max-width: $screen-sm-min) {
     .twitter {
       @include rem(padding, 5px 8px 5px 8px);
@@ -119,6 +120,9 @@
     }
     .email {
       @include rem(padding, 5px 8px 5px 8px);
+    }
+    .instagram {
+      @include rem(padding, 5px 9px 5px 9px);
     }
   }
 }

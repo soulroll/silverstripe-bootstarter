@@ -6,14 +6,13 @@
         <p class="site-tagline">$SiteConfig.Tagline</p>
       <% end_if %>
     </a>
-    <% if CurrentMember %>
-      <a class="admin-login" href="Security/logout">
-        <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> Logout
-      </a>
-    <% else %>
-      <a class="admin-login" href="admin">
-        <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Login
-      </a>
+    <% if $SearchForm %>
+      <form class="navbar-form-desktop navbar-form navbar-right" action="/home/SearchForm" method="get" enctype="application/x-www-form-urlencoded">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search" name="Search">
+        </div>
+        <button type="submit" class="btn btn-default" name="action_results" value="Search" id="SearchForm_SearchForm_action_results">Search</button>
+      </form>
     <% end_if %>
   </div>
 </header>

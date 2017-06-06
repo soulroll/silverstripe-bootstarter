@@ -9,6 +9,14 @@
         </button>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
+        <% if $SearchForm %>
+          <form class="navbar-form-mobile" action="/home/SearchForm" method="get" enctype="application/x-www-form-urlencoded">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search" name="Search">
+            </div>
+            <button type="submit" class="btn btn-default" name="action_results" value="Search" id="SearchForm_SearchForm_action_results">Search</button>
+          </form>
+        <% end_if %>
         <ul class="nav navbar-nav">
           <% loop $Menu(1) %>
             <% if Children %>
@@ -32,14 +40,19 @@
             <% end_if %>
           <% end_loop %>
         </ul>
-        <% if $SearchForm %>
-          <form class="navbar-form navbar-right" action="/home/SearchForm" method="get" enctype="application/x-www-form-urlencoded">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search" name="Search">
-            </div>
-            <button type="submit" class="btn btn-default" name="action_results" value="Search" id="SearchForm_SearchForm_action_results">Search</button>
-          </form>
-        <% end_if %>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+          <% if CurrentMember %>
+            <a class="admin-login" href="Security/logout">
+              Logout
+            </a>
+          <% else %>
+            <a class="admin-login" href="admin">
+              Login
+            </a>
+          <% end_if %>
+          </li>
+        </ul>
       </div>
     </div>
   </div>

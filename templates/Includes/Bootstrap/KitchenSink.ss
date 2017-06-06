@@ -10,6 +10,7 @@
     <li><a data-toggle="tab" href="#glyphicons">Glyphicons</a></li>
     <li><a data-toggle="tab" href="#fontawesome">Font Awesome</a></li>
     <li><a data-toggle="tab" href="#grid">Grid</a></li>
+    <li><a data-toggle="tab" href="#alerts">Alerts</a></li>
   </ul>
   <div class="tab-content">
     <div id="headings" class="tab-pane fade in active">
@@ -36,22 +37,26 @@
     <div id="grid" class="tab-pane fade">
       <% include Grid %>
     </div>
+    <div id="alerts" class="tab-pane fade">
+      <% include Alerts %>
+    </div>
   </div>
   <br/>
   <h2>Components</h2>
   <br/>
   <ul class="nav nav-tabs">
-    <li><a data-toggle="tab" href="#collapsible">Collapsible</a></li>
+    <li class="active"><a data-toggle="tab" href="#collapsible">Collapsible</a></li>
     <li><a data-toggle="tab" href="#carousel">Carousel</a></li>
     <li><a data-toggle="tab" href="#modal">Modal</a></li>
     <li><a data-toggle="tab" href="#tabs">Tabs</a></li>
     <li><a data-toggle="tab" href="#tooltips">Tooltips</a></li>
     <li><a data-toggle="tab" href="#popovers">Popovers</a></li>
     <li><a data-toggle="tab" href="#dropdowns">Dropdowns</a></li>
-    <li class="active"><a data-toggle="tab" href="#forms">Forms</a></li>
+    <li><a data-toggle="tab" href="#forms">Forms</a></li>
+    <li><a data-toggle="tab" href="#pagination">Pagination</a></li>
   </ul>
   <div class="tab-content">
-    <div id="collapsible" class="tab-pane fade">
+    <div id="collapsible" class="tab-pane fade in active">
       <% include Collapsible %>
     </div>
     <div id="carousel" class="tab-pane fade">
@@ -72,8 +77,11 @@
     <div id="dropdowns" class="tab-pane fade">
       <% include Dropdowns %>
     </div>
-    <div id="forms" class="tab-pane fade in active">
+    <div id="forms" class="tab-pane fade">
       <% include Forms %>
+    </div>
+    <div id="pagination" class="tab-pane fade">
+      <% include Pagination %>
     </div>
   </div>
 <% end_if %>

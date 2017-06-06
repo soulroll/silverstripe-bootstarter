@@ -71,3 +71,11 @@ div {
   @extend .btn;
   @extend .btn-default;
 }
+
+#popovers,
+#tooltips {
+  .btn {
+    @include rem(margin-right, 5px);
+    float: left;
+  }
+}

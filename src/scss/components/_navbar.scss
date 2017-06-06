@@ -4,7 +4,7 @@
   &:after {
     position: relative;
     top: -2px;
-    right: -2px;
+    right: -1px;
     content: "\e259";
     font-family: 'Glyphicons Halflings';
     font-size: 8px;
@@ -29,9 +29,9 @@
 
 /* Mobile */
 .dropdown-link-mobile {
+  @include rem(padding, 10px 15px 10px 15px);
   display: none;
   position: absolute;
-  @include rem(padding, 10px 15px 10px 15px);
   background-color: #333;
   cursor: pointer;
   /* Small Devices, Tablets */
