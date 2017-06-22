@@ -1,0 +1,31 @@
+/* Panel */
+.panel {
+  margin-bottom: 30px;
+}
+.card {
+  margin-bottom: 5px;
+}
+.card-title,
+.card-block {
+  margin: 0;
+}
+.card-header {
+  cursor: pointer;
+}
+.card-title:after {
+  /* symbol for "opening" panels */
+  font-family: 'FontAwesome';  /* essential for enabling glyphicon */
+  content: "\f106";    /* adjust as needed, taken from bootstrap.css */
+  float: right;        /* adjust as needed */
+  color: grey;         /* adjust as needed */
+}
+.card-title.collapsed:after {
+  /* symbol for "collapsed" panels */
+  content: "\f107";    /* adjust as needed, taken from bootstrap.css */
+}
+.collapsing {
+  -webkit-transition: height 0.3s ease;
+  -moz-transition: height 0.3s ease;
+  -o-transition: height 0.3s ease;
+  transition: height 0.3s ease;
+}

@@ -57,7 +57,8 @@ gulp.task('scss', () => {
 gulp.task('js', function() {
   return gulp.src([
       './node_modules/jquery/dist/jquery.min.js',
-      './node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js',
+      './node_modules/tether/dist/js/tether.min.js',
+      './node_modules/bootstrap/dist/js/bootstrap.min.js',
       './node_modules/jquery-match-height/dist/jquery.matchHeight-min.js',
       PATHS.src.js
     ])
@@ -107,7 +108,8 @@ gulp.task('scss-build', () => {
 gulp.task('js-build', () => {
   return gulp.src([
       './node_modules/jquery/dist/jquery.min.js',
-      './node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js',
+      './node_modules/tether/dist/js/tether.min.js',
+      './node_modules/bootstrap/dist/js/bootstrap.min.js',
       './node_modules/jquery-match-height/dist/jquery.matchHeight-min.js',
       PATHS.src.js
     ])

@@ -1,5 +1,5 @@
 .navbar-form-desktop {
-  @media (max-width: $screen-sm-min) {
+  @include media-breakpoint-down(sm) {
     display: none;
   }
 }
@@ -16,7 +16,7 @@
     top: 0;
     right: 0;
   }
-  @media (max-width: $screen-sm-min) {
-    display: block;
+  @include media-breakpoint-down(sm) {
+    display: none;
   }
 }

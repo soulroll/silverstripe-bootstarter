@@ -1,0 +1,28 @@
+/* Back to top */
+.back-to-top {
+  @include transition(color, 0.5s, ease-in-out);
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
+  display: block;
+  z-index: 99999;
+  background-color: #444;
+  color: #fff;
+  padding: 6px 13px 10px 13px;
+  border-radius: 100%;
+  &:focus,
+  &:visited {
+    color: #fff;
+    background-color: #555;
+  }
+  &:hover {
+    background-color: #555;
+    color: #fff;
+  }
+}
+@include media-breakpoint-down(md) {
+  .back-to-top {
+    display: none !important;
+  }
+}

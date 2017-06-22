@@ -1,18 +1,20 @@
 <header role="banner">
   <div class="container">
-    <a href="$BaseHref" class="logo" rel="home">
-      <h1 class="site-title">$SiteConfig.Title</h1>
-      <% if $SiteConfig.Tagline %>
-        <p class="site-tagline">$SiteConfig.Tagline</p>
-      <% end_if %>
-    </a>
-    <% if $SearchForm %>
-      <form class="navbar-form-desktop navbar-form navbar-right" action="/home/SearchForm" method="get" enctype="application/x-www-form-urlencoded">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search" name="Search">
-        </div>
-        <button type="submit" class="btn btn-default" name="action_results" value="Search" id="SearchForm_SearchForm_action_results">Search</button>
-      </form>
-    <% end_if %>
+    <div class="row">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <a href="$BaseHref" class="logo" rel="home">
+          <h1 class="site-title">$SiteConfig.Title</h1>
+          <% if $SiteConfig.Tagline %>
+            <p class="site-tagline">$SiteConfig.Tagline</p>
+          <% end_if %>
+        </a>
+        <% if $SearchForm %>
+          <form action="/home/SearchForm" method="get" enctype="application/x-www-form-urlencoded" class="form-inline site-search hidden-sm-down">
+            <input class="form-control" type="text" placeholder="Search" name="Search">
+            <button class="btn btn-outline-success site-search-btn" type="submit" name="action_results" id="SearchForm_SearchForm_action_results">Search</button>
+          </form>
+        <% end_if %>
+      </div>
+    </div>
   </div>
 </header>

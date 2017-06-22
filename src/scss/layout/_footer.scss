@@ -17,24 +17,21 @@
     list-style: none;
   }
 }
-
 // Matching heights
 .footer-list {
   @include rem(margin-bottom, 25px);
 }
-
 .footer-secondary {
   @include rem(padding, 25px 0px 25px 0px);
   background-color: #111;
   color: #9d9d9d;
 }
-
 .footer-links {
   @include rem(margin-top, 5px);
   @include rem(margin-bottom, 6px);
   float: left;
   padding-left: 0;
-  @media (max-width: $screen-sm-min) {
+  @include media-breakpoint-down(sm) {
     width: 100%;
     text-align: center;
     float: none;
@@ -47,24 +44,22 @@
     color: #fff;
   }
 }
-
 .footer-copyright {
   float: left;
   display: block;
   clear: both;
   color: #9d9d9d;
-  @media (max-width: $screen-sm-min) {
+  @include media-breakpoint-down(sm) {
     width: 100%;
     text-align: center;
     float: none;
   }
 }
-
 .footer-social-media {
   @include rem(margin-top, 10px);
   padding: 0;
   float: right;
-  @media (max-width: $screen-sm-min) {
+  @include media-breakpoint-down(sm) {
     width: 100%;
     text-align: center;
     float: none;
@@ -84,10 +79,13 @@
     text-align: center;
     color: #fff;
     font-size: 20px;
-    @media (max-width: $screen-sm-min) {
+    @include media-breakpoint-down(sm) {
       @include rem(margin-left, 0);
       float: none;
       display: inline;
+    }
+    @include media-breakpoint-down(sm) {
+      @include rem(margin-bottom, 8px);
     }
   }
   li:last-child a{
@@ -108,7 +106,7 @@
   .instagram {
     background-color: #845A4F;
   }
-  @media (max-width: $screen-sm-min) {
+  @include media-breakpoint-down(sm) {
     .twitter {
       @include rem(padding, 5px 8px 5px 8px);
     }

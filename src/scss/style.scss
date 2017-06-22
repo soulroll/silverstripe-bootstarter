@@ -4,7 +4,7 @@
 
 /* Bootstrap */
 @import "bootstrap/variables"; // Overide Bootstraps variables here
-@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap"; // Brings in Bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap"; // Brings in Bootstrap
 @import "bootstrap/fixes"; // SilverStripe Bootstrap fixes
 
 /* Font Awesome */
@@ -34,7 +34,13 @@
 @import "components/page-banner";
 @import "components/sidebar";
 @import "components/breadcrumbs";
+@import "components/panel";
+@import "components/back-to-top";
 
 /* Forms */
 @import "forms/select";
 @import "forms/search";
+
+/* Modules */
+@import "modules/blog/blog";
+@import "modules/events/events";

@@ -1,22 +1,18 @@
-<div class="page-header">
-  <h3>Grid</h3>
-</div>
-
-<!-- Stack the columns on mobile by making one full-width and the other half-width -->
+<h3 class="mt-4 mb-4">Grid</h3>
 <div class="row">
-  <div class="col-xs-12 col-md-8"><span style="float:left; background-color:#eee; width:100%; margin:5px 0px 5px 0px;">.col-xs-12 .col-md-8</span></div>
-  <div class="col-xs-6 col-md-4"><span style="float:left; background-color:#eee; width:100%; margin:5px 0px 5px 0px;">.col-xs-6 .col-md-4</span></div>
+  <div class="col"><span style="float:left; background-color:#eee; width:100%;">col</span></div>
+  <div class="col"><span style="float:left; background-color:#eee; width:100%;">col</span></div>
+  <div class="col"><span style="float:left; background-color:#eee; width:100%;">col</span></div>
+  <div class="col"><span style="float:left; background-color:#eee; width:100%;">col</span></div>
 </div>
-
-<!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+<br/>
 <div class="row">
-  <div class="col-xs-6 col-md-4"><span style="float:left; background-color:#eee; width:100%; margin:5px 0px 5px 0px;">.col-xs-6 .col-md-4</span></div>
-  <div class="col-xs-6 col-md-4"><span style="float:left; background-color:#eee; width:100%; margin:5px 0px 5px 0px;">.col-xs-6 .col-md-4</span></div>
-  <div class="col-xs-6 col-md-4"><span style="float:left; background-color:#eee; width:100%; margin:5px 0px 5px 0px;">.col-xs-6 .col-md-4</span></div>
+  <div class="col-8"><span style="float:left; background-color:#eee; width:100%;">col-8</span></div>
+  <div class="col-4"><span style="float:left; background-color:#eee; width:100%;">col-4</span></div>
 </div>
-
-<!-- Columns are always 50% wide, on mobile and desktop -->
+<br/>
 <div class="row">
-  <div class="col-xs-6"><span style="float:left; background-color:#eee; width:100%; margin:5px 0px 5px 0px;">.col-xs-6</span></div>
-  <div class="col-xs-6"><span style="float:left; background-color:#eee; width:100%; margin:5px 0px 5px 0px;">.col-xs-6</span></div>
+  <div class="col-6 col-md-4"><span style="float:left; background-color:#eee; width:100%;">.col-6 .col-md-4</span></div>
+  <div class="col-6 col-md-4"><span style="float:left; background-color:#eee; width:100%;">.col-6 .col-md-4</span></div>
+  <div class="col-6 col-md-4"><span style="float:left; background-color:#eee; width:100%;">.col-6 .col-md-4</span></div>
 </div>

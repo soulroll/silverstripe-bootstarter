@@ -1,15 +1,11 @@
-<div class="page-header">
-  <h3>Dropdowns</h3>
-</div>
-
-<div class="dropdown">
-  <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Tutorials
-  <span class="caret"></span></button>
-  <ul class="dropdown-menu">
-    <li><a href="#">HTML</a></li>
-    <li><a href="#">CSS</a></li>
-    <li><a href="#">JavaScript</a></li>
-    <li class="divider"></li>
-    <li><a href="#">About Us</a></li>
-  </ul>
+<h3 class="mt-4 mb-4">Dropdowns</h3>
+<div class="dropdown show">
+  <a class="btn btn-secondary dropdown-toggle" href="https://example.com" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Dropdown link
+  </a>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </div>
 </div>

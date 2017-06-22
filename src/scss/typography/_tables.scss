@@ -1,9 +1,28 @@
 /* Tables */
 table {
   @extend .table;
-  margin-bottom: 0;
+}
+
+
+/*
+table {
+  @extend .table;
   border: 1px solid $table-border-color;
   tr:nth-of-type(even) {
     background-color: $table-bg-accent;
   }
 }
+.calendar-widget-table {
+  padding:2px;
+
+}
+.calendar-widget table th {
+  border: 0 !important;
+}
+.calendar-width-table tbody {
+  border: 1px solid #ccc !important;
+}
+tbody {
+  border: 1px solid #ccc !important;
+}
+*/

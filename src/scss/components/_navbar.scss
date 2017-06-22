@@ -1,77 +1,17 @@
-/* Desktop */
-.dropdown-link {
-  @include rem(padding-right, 25px);
-  &:after {
-    position: relative;
-    top: -2px;
-    right: -1px;
-    content: "\e259";
-    font-family: 'Glyphicons Halflings';
-    font-size: 8px;
-    /* Small Devices, Tablets */
-    @media only screen and (max-width : 768px) {
-      display: none;
-    }
-  }
-}
-
-/* Desktop hover */
-.dropdown-item {
-  /* Small Devices, Tablets */
-  @media only screen and (min-width : 768px) {
-    &:hover {
-      .dropdown-menu {
-        display: block;
-      }
-    }
-  }
-}
-
-/* Mobile */
-.dropdown-link-mobile {
-  @include rem(padding, 10px 15px 10px 15px);
-  display: none;
-  position: absolute;
-  background-color: #333;
-  cursor: pointer;
-  /* Small Devices, Tablets */
-  @media only screen and (max-width : 768px) {
+.navbar {
+  padding: 6px 0px 6px 0px;
+  @include media-breakpoint-down(sm) {
     display: block;
   }
-  &:after {
-    content: "\e259";
-    font-family: 'Glyphicons Halflings';
-    font-size: 12px;
-    cursor: pointer;
-    color: #fff;
-  }
-  z-index: 22;
-  right: 0;
-  top: 0;
-}
-
-/* Chevron swap */
-.dropdown-item.open {
-  .dropdown-link {
-    background-color: transparent !important;
-  }
-  .dropdown-link-mobile {
-    &:after {
-      content: "\e260";
+  @include media-breakpoint-up(lg) {
+    .nav-link {
+      padding: 8px 12px 8px 12px !important;
     }
-  }
-}
-
-/* Navbar States */
-.current,
-.section {
-  .dropdown-link, .normal-link {
-    background-color: #000 !important;
-    color: #fff !important;
-  }
-}
-.current.dropdown-item.open {
-  .dropdown-link {
-    background-color: #000 !important;
+    .first {
+      padding: 8px 12px 8px 0px !important;
+    }
+    .last {
+      padding: 8px 12px 8px 0px !important;
+    }
   }
 }

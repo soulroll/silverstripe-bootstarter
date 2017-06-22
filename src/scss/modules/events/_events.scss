@@ -1,0 +1,24 @@
+#Form_MonthJumpForm_Month_Holder {
+  float: left;
+  width: 49%;
+  @include media-breakpoint-down(md) {
+    width: 100%;
+  }
+}
+#Form_MonthJumpForm_Year_Holder {
+  float: right;
+  width: 49%;
+  @include media-breakpoint-down(md) {
+    width: 100%;
+  }
+}
+
+.event-calendar-controls {
+}
+.event-calendar-quick-nav {
+  list-style: none;
+  padding: 0;
+  li {
+    display: inline;
+  }
+}

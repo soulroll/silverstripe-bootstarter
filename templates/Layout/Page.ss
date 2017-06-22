@@ -17,6 +17,12 @@
           $Content
           $Form
           <% include KitchenSink %>
+          <div class="blog-footer mt-5">
+            <span class="blog-last-modified">Last modified: {$LastEdited.Format(jS F Y)}</span>
+            <a href="#" class="blog-print fa fa-print" onclick="window.print(); return false;">
+              <span class="sr-only"><%t TableListField.Print "Print" %></span>
+            </a>
+          </div>
         </div>
       </div>
     </div>

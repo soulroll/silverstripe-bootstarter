@@ -1,87 +1,129 @@
 <% if URLSegment = 'home' %>
-  <h2>Typography</h2>
-  <br/>
-  <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#headings">Headings</a></li>
-    <li><a data-toggle="tab" href="#paragraph">Paragraph</a></li>
-    <li><a data-toggle="tab" href="#lists">Lists</a></li>
-    <li><a data-toggle="tab" href="#tables">Tables</a></li>
-    <li><a data-toggle="tab" href="#buttons">Buttons</a></li>
-    <li><a data-toggle="tab" href="#glyphicons">Glyphicons</a></li>
-    <li><a data-toggle="tab" href="#fontawesome">Font Awesome</a></li>
-    <li><a data-toggle="tab" href="#grid">Grid</a></li>
-    <li><a data-toggle="tab" href="#alerts">Alerts</a></li>
+
+  <!-- SilverStripe Bootstrap Anchor Bugs -->
+  <!-- https://docs.silverstripe.org/en/3.2/developer_guides/templates/how_tos/disable_anchor_links/ -->
+  <!-- SSViewer::setOption('rewriteHashlinks', false); -->
+
+  <h2 class="mt-5 mb-4">Typography</h2>
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs flex-wrap" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="tab" href="#headings" role="tab">Headings</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#paragraph" role="tab">Paragraph</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#lists" role="tab">Lists</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#tables" role="tab">Tables</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#buttons" role="tab">Buttons</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#fontawesome" role="tab">Font Awesome</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#grid" role="tab">Grid</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#alerts" role="tab">Alerts</a>
+    </li>
   </ul>
+
+  <!-- Tab panes -->
   <div class="tab-content">
-    <div id="headings" class="tab-pane fade in active">
+    <div class="tab-pane active" id="headings" role="tabpanel">
       <% include Headings %>
     </div>
-    <div id="paragraph" class="tab-pane fade">
+    <div class="tab-pane" id="paragraph" role="tabpanel">
       <% include Paragraph %>
     </div>
-    <div id="lists" class="tab-pane fade">
+    <div class="tab-pane" id="lists" role="tabpanel">
       <% include Lists %>
     </div>
-    <div id="tables" class="tab-pane fade">
+    <div class="tab-pane" id="tables" role="tabpanel">
       <% include Tables %>
     </div>
-    <div id="buttons" class="tab-pane fade">
+    <div class="tab-pane" id="buttons" role="tabpanel">
       <% include Buttons %>
     </div>
-    <div id="glyphicons" class="tab-pane fade">
-      <% include Glyphicons %>
-    </div>
-    <div id="fontawesome" class="tab-pane fade">
+    <div class="tab-pane" id="fontawesome" role="tabpanel">
       <% include FontAwesome %>
     </div>
-    <div id="grid" class="tab-pane fade">
+    <div class="tab-pane" id="grid" role="tabpanel">
       <% include Grid %>
     </div>
-    <div id="alerts" class="tab-pane fade">
+    <div class="tab-pane" id="alerts" role="tabpanel">
       <% include Alerts %>
     </div>
   </div>
-  <br/>
-  <h2>Components</h2>
-  <br/>
-  <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#collapsible">Collapsible</a></li>
-    <li><a data-toggle="tab" href="#carousel">Carousel</a></li>
-    <li><a data-toggle="tab" href="#modal">Modal</a></li>
-    <li><a data-toggle="tab" href="#tabs">Tabs</a></li>
-    <li><a data-toggle="tab" href="#tooltips">Tooltips</a></li>
-    <li><a data-toggle="tab" href="#popovers">Popovers</a></li>
-    <li><a data-toggle="tab" href="#dropdowns">Dropdowns</a></li>
-    <li><a data-toggle="tab" href="#forms">Forms</a></li>
-    <li><a data-toggle="tab" href="#pagination">Pagination</a></li>
+
+  <h2 class="mt-5 mb-4">Components</h2>
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs flex-wrap" role="tablist">
+    <li class="nav-item active">
+      <a class="nav-link" data-toggle="tab" href="#collapse" role="tab">Collapse</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#carousel" role="tab">Carousel</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#modal" role="tab">Modal</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#tabs" role="tab">Tabs</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#tooltips" role="tab">Tooltips</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#popovers" role="tab">Popovers</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#dropdowns" role="tab">Dropdowns</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#forms" role="tab">Forms</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#pagination" role="tab">Pagination</a>
+    </li>
   </ul>
+
+  <!-- Tab panes -->
   <div class="tab-content">
-    <div id="collapsible" class="tab-pane fade in active">
-      <% include Collapsible %>
+    <div class="tab-pane active" id="collapse" role="tabpanel">
+      <% include Collapse %>
     </div>
-    <div id="carousel" class="tab-pane fade">
+    <div class="tab-pane" id="carousel" role="tabpanel">
       <% include Carousel %>
     </div>
-    <div id="modal" class="tab-pane fade">
+    <div class="tab-pane" id="modal" role="tabpanel">
       <% include Modal %>
     </div>
-    <div id="tabs" class="tab-pane fade">
+    <div class="tab-pane" id="tabs" role="tabpanel">
       <% include Tabs %>
     </div>
-    <div id="tooltips" class="tab-pane fade">
+    <div class="tab-pane" id="tooltips" role="tabpanel">
       <% include Tooltips %>
     </div>
-    <div id="popovers" class="tab-pane fade">
+    <div class="tab-pane" id="popovers" role="tabpanel">
       <% include Popovers %>
     </div>
-    <div id="dropdowns" class="tab-pane fade">
+    <div class="tab-pane" id="dropdowns" role="tabpanel">
       <% include Dropdowns %>
     </div>
-    <div id="forms" class="tab-pane fade">
+    <div class="tab-pane" id="forms" role="tabpanel">
       <% include Forms %>
     </div>
-    <div id="pagination" class="tab-pane fade">
-      <% include Pagination %>
+    <div class="tab-pane" id="pagination" role="tabpanel">
+      <% include BootstarterPagination %>
     </div>
   </div>
+
 <% end_if %>

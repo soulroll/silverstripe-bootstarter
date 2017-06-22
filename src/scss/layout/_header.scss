@@ -21,3 +21,10 @@ header {
 .site-tagline {
   @include rem(font-size, 16px);
 }
+.site-search {
+  @include rem(margin-top, 6px);
+  float: right;
+}
+.site-search-btn {
+  @include rem(margin-left, 5px);
+}
