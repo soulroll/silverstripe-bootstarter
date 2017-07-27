@@ -1,5 +1,3 @@
-<% if URLSegment = 'home' %>
-
   <!-- SilverStripe Bootstrap Anchor Bugs -->
   <!-- https://docs.silverstripe.org/en/3.2/developer_guides/templates/how_tos/disable_anchor_links/ -->
   <!-- SSViewer::setOption('rewriteHashlinks', false); -->
@@ -125,5 +123,3 @@
       <% include BootstarterPagination %>
     </div>
   </div>
-
-<% end_if %>

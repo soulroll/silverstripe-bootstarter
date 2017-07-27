@@ -2,8 +2,10 @@
   <div class="container">
     <div class="page">
 
+      <!--
       $CalendarWidget
       $MonthJumper
+      -->
 
       <p><a href="$Parent.Link">&laquo; Back to $Parent.Title</a></p>
 

@@ -1,0 +1,29 @@
+#Form_RegistrationForm {
+  .CompositeField {
+    float: left;
+    .CompositeField {
+      float: left;
+      width: 50%;
+    }
+  }
+}
+.middleColumn {
+  border: 0;
+  .field.text {
+    border: 0;
+    margin-bottom: 0rem;
+  }
+}
+
+.forum-features {
+  // border:1px solid red;
+}
+
+.forum-topics {
+  tbody {
+    tr {
+    }
+  }
+  td {
+  }
+}

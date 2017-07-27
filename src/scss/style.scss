@@ -36,6 +36,7 @@
 @import "components/breadcrumbs";
 @import "components/panel";
 @import "components/back-to-top";
+@import "components/calendar";
 
 /* Forms */
 @import "forms/select";
@@ -44,3 +45,4 @@
 /* Modules */
 @import "modules/blog/blog";
 @import "modules/events/events";
+@import "modules/forum/forum";

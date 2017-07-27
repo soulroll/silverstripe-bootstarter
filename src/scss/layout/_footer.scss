@@ -124,3 +124,25 @@
     }
   }
 }
+.page-footer {
+  clear: both;
+  float: left;
+  width: 100%;
+  border-top: 1px solid #eee;
+  @include rem(margin-top, 30px);
+  @include rem(padding, 10px 0px 10px 0px);
+}
+.page-footer-last-modified {
+  float: left;
+}
+.page-footer-print {
+  position: relative;
+  top: 3px;
+  float: right;
+  color: #292b2c;
+  font-size: 18px;
+  &:hover{
+    text-decoration: none;
+    color: #292b2c;
+  }
+}
