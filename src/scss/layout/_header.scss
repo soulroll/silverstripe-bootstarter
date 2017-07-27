@@ -1,6 +1,6 @@
 /* Header */
 header {
-  @include rem(padding, 20px 0px 20px 0px);
+  @include rem(padding, 30px 0px 30px 0px);
 }
 .logo {
   float: left;
@@ -27,3 +27,126 @@ header {
 .site-search-btn {
   @include rem(margin-left, 5px);
 }
+
+
+
+
+  @include media-breakpoint-down(sm) {
+
+  }
+  @include media-breakpoint-up(sm) {
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.justified-navigation-background {
+  background: #eee;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.justified-navigation-container {
+  @include media-breakpoint-down(xs) {
+    padding: 0;
+  }
+}
+.justified-navigation {
+  width: 100%;
+  @include media-breakpoint-up(sm) {
+    display: table;
+    table-layout: fixed;
+  }
+}
+.justified-navigation ul {
+  margin: 0;
+  padding: 0;
+  @include media-breakpoint-up(sm) {
+    display: table-row;
+  }
+}
+.justified-navigation ul li {
+  list-style: none;
+  @include media-breakpoint-down(xs) {
+    border-bottom: 1px solid #ccc;
+  }
+  @include media-breakpoint-up(sm) {
+    display: table-cell;
+    text-align: center;
+    border-right: 1px solid #ccc;
+    width: 1%;
+  }
+}
+.justified-navigation ul li:last-child {
+  border-bottom: 0px;
+}
+.justified-navigation ul li:first-child {
+  @include media-breakpoint-up(sm) {
+    border-left: 1px solid #ccc;
+  }
+}
+.justified-navigation ul li a {
+  display: block;
+  text-decoration: none;
+  color: #616161;
+  padding: 10px 0;
+  @include media-breakpoint-down(xs) {
+    padding: 15px 15px 15px 15px;
+  }
+.justified-navigation-link.has-subcategory {
+  @include rem(padding-right, 26px !important);
+  &:after {
+    content: "red";
+    font-family: FontAwesome;
+    font-size: 12px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+/* Left Navigation
+.left-navigation-background {
+  float:left;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.left-navigation {
+  padding: 0;
+  float: left;
+  margin: 0;
+  width: 100%;
+}
+.left-navigation li {
+  float: left;
+  position: relative;
+  display: block;
+}
+.left-navigation li a {
+  float:left;
+  display: block;
+  text-decoration: none;
+  color: #616161;
+  padding: 10px 0;
+
+}
+*/

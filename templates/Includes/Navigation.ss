@@ -1,3 +1,4 @@
+<!--
 <div class="bg-inverse">
   <div class="container">
 
@@ -8,7 +9,7 @@
       </button>
 
       <div class="navbar-collapse collapse" id="navbarsExampleContainer" aria-expanded="false">
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav">
           <% loop $Menu(1) %>
           <li class="nav-item">
             <a class="nav-link <% if First %>first<% end_if %> <% if First %>last<% end_if %>" href="$Link">$MenuTitle.XML</a>
@@ -26,4 +27,31 @@
     </nav>
 
   </div>
+</div>
+-->
+
+<a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+  Link with href
+</a>
+
+<div class="collapse" id="collapseExample">
+
+  <div class="container-full justified-navigation-background">
+    <div class="container justified-navigation-container">
+
+      <div class="justified-navigation">
+        <ul>
+          <% loop $Menu(1) %>
+            <li>
+              <a class="justified-navigation-link <% if Children %>has-subcategory<% end_if %>" href="$Link">$MenuTitle.XML</a>
+              <% if Children %>
+                <span class="dropdown-chevron-mobile"></span>
+              <% end_if %>
+            </li>
+          <% end_loop %>
+        </ul>
+      </div>
+    </div>
+  </div>
+
 </div>
