@@ -82,7 +82,9 @@
 <div class="navigation collapse" id="navigation">
   <div class="container navigation-container">
 
-    <div class="justified-navigation">
+      <div class="justified-navigation">
+
+<!--  <div class="left-navigation"> -->
 
       <ul class="navigation-menu">
         <% loop $Menu(1) %>
