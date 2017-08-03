@@ -14,6 +14,10 @@
             <button class="btn btn-outline-success site-search-btn" type="submit" name="action_results" id="SearchForm_SearchForm_action_results">Search</button>
           </form>
         <% end_if %>
+
+        <button class="navigation-toggle" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-controls="navigation">
+        </button>
+
       </div>
     </div>
   </div>
