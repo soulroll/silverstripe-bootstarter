@@ -82,9 +82,8 @@
 <div class="navigation collapse" id="navigation">
   <div class="container navigation-container">
 
-      <div class="justified-navigation">
-
-<!--  <div class="left-navigation"> -->
+<!--<div class="justified-navigation">-->
+    <div class="left-navigation">
 
       <ul class="navigation-menu">
         <% loop $Menu(1) %>
@@ -113,8 +112,9 @@
           </li>
         <% end_loop %>
       </ul>
-
     </div>
+
+    <div style="clear:both;"></div>
 
   </div>
 </div>
