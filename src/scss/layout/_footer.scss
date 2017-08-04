@@ -131,6 +131,7 @@
   border-top: 1px solid #eee;
   @include rem(margin-top, 30px);
   @include rem(padding, 10px 0px 10px 0px);
+  color: #999;
 }
 .page-footer-last-modified {
   float: left;
@@ -139,7 +140,7 @@
   position: relative;
   top: 3px;
   float: right;
-  color: #292b2c;
+  color: #999;
   font-size: 18px;
   &:hover{
     text-decoration: none;

@@ -1,5 +1,4 @@
 <h3 class="mt-4 mb-4">Pagination</h3>
-
 <nav aria-label="Page navigation">
   <ul class="pagination">
     <li class="page-item disabled">

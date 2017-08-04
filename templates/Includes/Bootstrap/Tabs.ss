@@ -1,5 +1,4 @@
 <h3 class="mt-4 mb-4">Tabs</h3>
-
 <!-- Nav tabs -->
 <ul class="nav nav-tabs flex-wrap" role="tablist">
   <li class="nav-item">
@@ -9,7 +8,6 @@
     <a class="nav-link" data-toggle="tab" href="#menu2" role="tab">Menu 2</a>
   </li>
 </ul>
-
 <!-- Tab panes -->
 <div class="tab-content">
   <div class="tab-pane active" id="menu1" role="tabpanel">

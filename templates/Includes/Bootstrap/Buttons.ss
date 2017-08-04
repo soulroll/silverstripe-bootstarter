@@ -1,5 +1,4 @@
 <h3 class="mt-4 mb-4">Buttons</h3>
-
 <p>
   <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
   <button type="button" class="btn btn-primary">Primary</button>

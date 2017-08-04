@@ -1,5 +1,4 @@
 <h3 class="mt-4 mb-3">Alerts</h3>
-
 <div class="alert alert-success" role="alert">
   <strong>Well done!</strong> You successfully read <a href="#" class="alert-link">this important alert message</a>.
 </div>

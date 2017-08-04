@@ -30,25 +30,44 @@
           <p>Sorry, your search query did not return any results.</p>
         <% end_if %>
         <% if $Results.MoreThanOnePage %>
+        <nav aria-label="Page navigation">
           <ul class="pagination">
             <% if $Results.NotFirstPage %>
-              <li><a class="prev" href="$Results.PrevLink">&laquo;</a></li>
+            <li class="page-item">
+              <a class="page-link" href="$Results.PrevLink">Previous</a>
+            </li>
+            <% else %>
+            <li class="page-item disabled">
+              <span class="page-link">Previous</span>
+            </li>
             <% end_if %>
             <% loop $Results.Pages %>
               <% if $CurrentBool %>
-                <li class="active"><span>$PageNum</span></li>
+                <li class="page-item active">
+                  <span class="page-link">
+                    $PageNum
+                    <span class="sr-only">(current)</span>
+                  </span>
+                </li>
               <% else %>
                 <% if $Link %>
-                  <li><a href="$Link">$PageNum</a></li>
+                  <li class="page-item"><a class="page-link" href="$Link">$PageNum</a></li>
                 <% else %>
                   ...
                 <% end_if %>
               <% end_if %>
             <% end_loop %>
             <% if $Results.NotLastPage %>
-              <li><a class="next" href="$Results.NextLink">&raquo;</a></li>
+            <li class="page-item">
+              <a class="page-link" href="$Results.NextLink">Next</a>
+            </li>
+            <% else %>
+            <li class="page-item disabled">
+              <span class="page-link">Next</span>
+            </li>
             <% end_if %>
           </ul>
+        </nav>
         <% end_if %>
       </div>
     </div>

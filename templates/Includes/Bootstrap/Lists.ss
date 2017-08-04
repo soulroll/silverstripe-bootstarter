@@ -1,5 +1,4 @@
 <h3 class="mt-4 mb-4">Lists</h3>
-
 <div class="row">
   <div class="col-xl-3">
     <h5>Unordered list</h5>

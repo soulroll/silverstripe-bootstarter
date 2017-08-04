@@ -37,8 +37,9 @@
 /* Navigation toggle */
 .navigation-toggle {
   float: right;
-  border: 1px solid #ccc;
-  padding: 2px 12px 2px 12px;
+  border: none;
+  padding: 4px 12px 4px 12px;
+  background-color: #eee;
   @include media-breakpoint-up(md) {
     display: none;
   }
@@ -47,6 +48,9 @@
     content: "\f0c9";
     font-family: FontAwesome;
     font-size: 24px;
+  }
+  &:hover {
+    background-color: #ddd;
   }
 }
 
@@ -59,9 +63,16 @@
 .navigation {
   background-color: #eee;
   border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
   @include media-breakpoint-up(md) {
+    border-bottom: 1px solid #ccc;
     display: block;
+  }
+  @include media-breakpoint-down(sm) {
+    border-top: 0;
+    padding-bottom: 30px;
+  }
+  @include media-breakpoint-down(xs) {
+    padding-bottom: 0;
   }
 }
 
@@ -75,9 +86,20 @@
 }
 .navigation-submenu,
 .navigation-sub-submenu {
-  border-top: 1px solid #ccc;
+  @include media-breakpoint-down(xs) {
+    border-top: 1px solid #ccc;
+  }
   @include media-breakpoint-up(md) {
-    display: none !important;
+    position: absolute;
+    display: block;
+    z-index: 99;
+    left: -1px;
+    transition: opacity 0.2s ease-out;
+    width: 220px;
+    border: 1px solid #ccc;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
     background-color: #eee;
   }
 }
@@ -109,12 +131,9 @@
     }
     &:hover {
       .navigation-submenu {
-        position: absolute;
-        z-index: 99;
-        left: -1px;
-        display: block !important;
-        width: 220px;
-        border: 1px solid #ccc;
+        visibility: visible;
+        opacity: 1;
+        height: auto;
       }
     }
     &:last-child,
