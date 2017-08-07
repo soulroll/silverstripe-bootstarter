@@ -54,6 +54,24 @@
   }
 }
 
+.site-search-mobile-container {
+  position: relative;
+  @include rem(padding, 10px 0 10px 0);
+  @include media-breakpoint-down(xs) {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 15px 10px 15px;
+  }
+}
+.site-search-mobile {
+  position: relative;
+  @include rem(padding-right, 95px);
+  .site-search-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
 /* Containers */
 .navigation-container {
   @include media-breakpoint-down(xs) {
