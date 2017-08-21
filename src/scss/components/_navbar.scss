@@ -1,4 +1,55 @@
+/* Megamenu */
+.megamenu-dropdown {
+  @include rem(min-height, 450px);
+  position: absolute;
+  width: 100%;
+  background-color: #ccc;
+  z-index: 199;
+  left: 0;
+  top: 44px;
+  text-align: left;
+  display: block;
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+}
+
 /* Navigation style */
+.megamenu-navigation {
+  @include media-breakpoint-up(md) {
+    position: relative;
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+  }
+  .navigation-menu {
+    @include media-breakpoint-up(md) {
+      width: 100%;
+      .navigation-item {
+        position: static;
+        display: table-cell;
+        text-align: center;
+        width: 1%;
+        &:hover {
+          .navigation-submenu {
+            visibility: hidden;
+            opacity: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
 .justified-navigation {
   @include media-breakpoint-up(md) {
     width: 100%;
@@ -28,7 +79,7 @@
         float: left;
       }
       .navigation-link {
-        padding: 10px 18px 10px 18px;
+        @include rem(padding, 10px 18px 10px 18px);
       }
     }
   }
@@ -38,33 +89,32 @@
 .navigation-toggle {
   float: right;
   border: none;
-  padding: 4px 12px 4px 12px;
   background-color: #eee;
+  @include rem(padding, 4px 12px 4px 12px);
   @include media-breakpoint-up(md) {
     display: none;
   }
   &:after {
+    @include rem(font-size, 24px);
     position: relative;
     content: "\f0c9";
     font-family: FontAwesome;
-    font-size: 24px;
   }
   &:hover {
     background-color: #ddd;
   }
 }
 
+/* Site Search */
 .site-search-mobile-container {
-  position: relative;
-  @include rem(padding, 10px 0 10px 0);
+  @include rem(padding, 20px 0px 10px 0px);
   @include media-breakpoint-down(xs) {
-    border-bottom: 1px solid #ccc;
-    padding: 10px 15px 10px 15px;
+    @include rem(padding, 20px 15px 10px 15px);
   }
 }
 .site-search-mobile {
-  position: relative;
   @include rem(padding-right, 95px);
+  position: relative;
   .site-search-btn {
     position: absolute;
     top: 0;
@@ -86,8 +136,8 @@
     display: block;
   }
   @include media-breakpoint-down(sm) {
+    @include rem(padding-bottom, 30px);
     border-top: 0;
-    padding-bottom: 30px;
   }
   @include media-breakpoint-down(xs) {
     padding-bottom: 0;
@@ -108,16 +158,17 @@
     border-top: 1px solid #ccc;
   }
   @include media-breakpoint-up(md) {
+    @include rem(width, 220px);
     position: absolute;
     display: block;
     z-index: 99;
     left: -1px;
     transition: opacity 0.2s ease-out;
-    width: 220px;
     border: 1px solid #ccc;
     visibility: hidden;
     opacity: 0;
     height: 0;
+    width: 0;
     background-color: #eee;
   }
 }
@@ -149,6 +200,7 @@
     }
     &:hover {
       .navigation-submenu {
+        @include rem(width, 220px);
         visibility: visible;
         opacity: 1;
         height: auto;
@@ -158,6 +210,7 @@
     &:nth-last-child(2) {
       &:hover {
         .navigation-submenu {
+          @include rem(width, 220px);
           right: -1px;
           left: auto;
         }
@@ -170,10 +223,10 @@
 .navigation-link,
 .navigation-submenu-link,
 .navigation-sub-submenu-link {
+  @include rem(padding, 10px 0);
   display: block;
   text-decoration: none;
   color: #616161;
-  padding: 10px 0;
   &:hover,
   &:focus,
   &:visited
@@ -182,40 +235,40 @@
     color: #000;
   }
   @include media-breakpoint-down(xs) {
-    padding: 10px 15px 10px 15px;
+    @include rem(padding, 10px 15px 10px 15px);
   }
 }
 
 .navigation-submenu-link,
 .navigation-sub-submenu-link {
   @include media-breakpoint-up(md) {
-    padding: 5px 15px 5px 15px;
+    @include rem(padding, 5px 15px 5px 15px);
   }
 }
 
 .navigation-submenu-link {
   @include media-breakpoint-down(sm) {
-    padding-left: 35px;
+    @include rem(padding-left, 35px);
   }
 }
 .navigation-sub-submenu-link {
   @include media-breakpoint-down(sm) {
-    padding-left: 65px;
+    @include rem(padding-left, 65px);
   }
 }
 
 /* Dropdown chevrons */
 .navigation-chevron {
+  @include rem(padding, 10px 16px 10px 16px);
   position: absolute;
   right: 0;
   top: 0;
   border: none;
-  padding: 10px 16px 10px 16px;
   background-color: transparent;
   &:after {
+    @include rem(font-size, 12px);
     content: "\f077";
     font-family: FontAwesome;
-    font-size: 12px;
   }
   &.collapsed {
     &:after {
@@ -233,12 +286,12 @@
 .navigation-link.has-children {
   @include media-breakpoint-up(md) {
     &:after {
+      @include rem(font-size, 10px);
       position: relative;
       top: -2px;
       right: -4px;
       content: "\f078";
       font-family: FontAwesome;
-      font-size: 10px;
     }
   }
 }

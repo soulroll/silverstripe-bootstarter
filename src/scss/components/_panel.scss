@@ -1,9 +1,9 @@
 /* Panel */
 .panel {
-  margin-bottom: 30px;
+  @include rem(margin-bottom, 30px);
 }
 .card {
-  margin-bottom: 5px;
+  @include rem(margin-bottom, 5px);
 }
 .card-title,
 .card-block {

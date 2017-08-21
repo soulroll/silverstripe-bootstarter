@@ -3,9 +3,9 @@
 @import "mixins/fonts";
 
 /* Bootstrap */
-@import "bootstrap/variables"; // Overide Bootstraps variables here
 @import "../../node_modules/bootstrap/scss/bootstrap"; // Brings in Bootstrap
 @import "bootstrap/fixes"; // SilverStripe Bootstrap fixes
+@import "bootstrap/variables"; // Overide Bootstraps variables here
 
 /* Font Awesome */
 @import "../../node_modules/font-awesome/scss/font-awesome.scss";

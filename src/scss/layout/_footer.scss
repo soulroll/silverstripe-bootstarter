@@ -56,9 +56,9 @@
   }
 }
 .footer-social-media {
-  @include rem(margin-top, 10px);
   padding: 0;
   float: right;
+  @include rem(margin-top, 10px);
   @include media-breakpoint-down(sm) {
     width: 100%;
     text-align: center;
@@ -72,13 +72,13 @@
     @include rem(width, 36px);
     @include rem(height, 36px);
     @include rem(line-height, 36px);
+    @include rem(font-size, 20px);
     float: right;
     display: block;
     border-radius: 10%;
     background-color: #222;
     text-align: center;
     color: #fff;
-    font-size: 20px;
     @include media-breakpoint-down(sm) {
       @include rem(margin-left, 0);
       float: none;
@@ -134,15 +134,15 @@
   color: #999;
 }
 .page-footer-last-modified {
+  @include rem(font-size, 14px);
   float: left;
-  font-size: 14px;
 }
 .page-footer-print {
+  @include rem(font-size, 18px);
   position: relative;
-  top: 0px;
+  top: 0;
   float: right;
   color: #999;
-  font-size: 18px;
   &:hover{
     text-decoration: none;
     color: #292b2c;

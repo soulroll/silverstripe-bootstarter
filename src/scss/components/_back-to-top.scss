@@ -1,6 +1,7 @@
 /* Back to top */
 .back-to-top {
   @include transition(color, 0.5s, ease-in-out);
+  @include rem(padding, 6px 13px 10px 13px);
   position: fixed;
   right: 20px;
   bottom: 20px;
@@ -9,7 +10,6 @@
   z-index: 99999;
   background-color: #444;
   color: #fff;
-  padding: 6px 13px 10px 13px;
   border-radius: 100%;
   &:focus,
   &:visited {

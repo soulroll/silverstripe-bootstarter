@@ -15,14 +15,22 @@ header {
   margin: 0;
 }
 .site-title {
-  @include rem(font-size, 28px);
+  @include rem(font-size, 22px);
 }
 .site-tagline {
   @include rem(font-size, 16px);
 }
+.site-search-mobile-container {
+  @include media-breakpoint-up(md) {
+    display: none;
+  }
+}
 .site-search {
   @include rem(margin-top, 6px);
   float: right;
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
 }
 .site-search-btn {
   @include rem(margin-left, 5px);

@@ -2,7 +2,7 @@
 .post-summary {
   float: left;
   width: 100%;
-  margin-bottom: 60px;
+  @include rem(margin-bottom, 60px);
   h2 {
     display: inline;
     text-decoration: underline;
@@ -18,12 +18,12 @@
   }
   img {
     @include media-breakpoint-up(sm) {
-      max-width: 180px;
+      @include rem(max-width, 180px);
     }
   }
 }
 .post-author {
-  margin-top: 10px;
+  @include rem(margin-top, 10px);
   clear: left;
   color: #999;
   a {
@@ -31,12 +31,12 @@
   }
 }
 .tag {
-  padding: 4px 6px 4px 6px;
+  @include rem(padding, 4px 6px 4px 6px);
+  @include rem(border-radius, 3px);
+  @include rem(font-size, 12px);
   background-color: #0275d8;
   color: #fff;
   text-decoration: none !important;
-  border-radius: 3px;
-  font-size: 12px;
   &:hover,
   &:focus {
     background-color: #094c6b;
@@ -44,10 +44,10 @@
   }
 }
 .blog-footer {
+  @include rem(padding, 15px 0px 15px 0px);
   float: left;
   width: 100%;
   border-top: 1px solid #ccc;
-  padding: 15px 0px 15px 0px;
 }
 .blog-last-modified {
   float: left;
@@ -60,9 +60,9 @@
   }
 }
 #Form_CommentsForm {
-  margin-bottom: 20px;
+  @include rem(margin-bottom, 20px);
 }
 .start-topic-header {
-  display:block;
-  margin-top: 30px;
+  @include rem(margin-top, 30px);
+  display: block;
 }

@@ -18,16 +18,14 @@
         <% else %>
         <div class="col-lg-12 col-md-12 col-sm-12">
         <% end_if %>
-
           $Content
           $Form
 
           <% if URLSegment = 'home' %>
-          <% include KitchenSink %>
+            <% include KitchenSink %>
           <% end_if %>
 
           <% include PageFooter %>
-
         </div>
       </div>
     </div>
