@@ -1,15 +1,27 @@
 <h3 class="mt-4 mb-3">Alerts</h3>
+<div class="alert alert-primary" role="alert">
+  This is a primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+</div>
+<div class="alert alert-secondary" role="alert">
+  This is a secondary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+</div>
 <div class="alert alert-success" role="alert">
-  <strong>Well done!</strong> You successfully read <a href="#" class="alert-link">this important alert message</a>.
-</div>
-<div class="alert alert-info" role="alert">
-  <strong>Heads up!</strong> This <a href="#" class="alert-link">alert needs your attention</a>, but it's not super important.
-</div>
-<div class="alert alert-warning" role="alert">
-  <strong>Warning!</strong> Better check yourself, you're <a href="#" class="alert-link">not looking too good</a>.
+  This is a success alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
 </div>
 <div class="alert alert-danger" role="alert">
-  <strong>Oh snap!</strong> <a href="#" class="alert-link">Change a few things up</a> and try submitting again.
+  This is a danger alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+</div>
+<div class="alert alert-warning" role="alert">
+  This is a warning alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+</div>
+<div class="alert alert-info" role="alert">
+  This is a info alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+</div>
+<div class="alert alert-light" role="alert">
+  This is a light alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+</div>
+<div class="alert alert-dark" role="alert">
+  This is a dark alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
 </div>
 <h3 class="mt-5 mb-3">Dismissible alerts</h3>
 <div class="alert alert-warning alert-dismissible fade show" role="alert">

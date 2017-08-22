@@ -8,7 +8,7 @@
   left: 0;
   top: 44px;
   text-align: left;
-  display: block;
+  display: none;
   @include media-breakpoint-down(sm) {
     display: none;
   }

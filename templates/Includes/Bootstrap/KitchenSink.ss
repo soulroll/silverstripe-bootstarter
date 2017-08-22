@@ -25,6 +25,9 @@
   <li class="nav-item">
     <a class="nav-link" id="alerts-tab" data-toggle="tab" href="#alerts" role="tab" aria-controls="alerts">Alerts</a>
   </li>
+  <li class="nav-item">
+    <a class="nav-link" id="badges-tab" data-toggle="tab" href="#badges" role="tab" aria-controls="badges">Badges</a>
+  </li>
 </ul>
 
 <div class="tab-content" id="typographyTabContent">
@@ -52,6 +55,9 @@
   <div class="tab-pane fade" id="alerts" role="tabpanel" aria-labelledby="alerts-tab">
     <% include Alerts %>
   </div>
+  <div class="tab-pane fade" id="badges" role="tabpanel" aria-labelledby="badges-tab">
+    <% include Badges %>
+  </div>
 </div>
 
 <br/></br>
@@ -75,6 +81,10 @@
     <a class="nav-link" id="dropdowns-tab" data-toggle="tab" href="#dropdowns" role="tab" aria-controls="dropdowns">Dropdowns</a>
   </li>
 
+  <li class="nav-item">
+    <a class="nav-link" id="cards-tab" data-toggle="tab" href="#cards" role="tab" aria-controls="dropdowns">Cards</a>
+  </li>
+
 </ul>
 
 <div class="tab-content" id="componentsTabContent">
@@ -93,6 +103,10 @@
 
   <div class="tab-pane fade" id="dropdowns" role="tabpanel" aria-labelledby="dropdowns-tab">
     <% include Dropdowns %>
+  </div>
+
+  <div class="tab-pane fade" id="cards" role="tabpanel" aria-labelledby="cards-tab">
+    <% include Cards %>
   </div>
 
 </div>
