@@ -1,8 +1,8 @@
 <div class="navigation collapse" id="navigation">
   <div class="container navigation-container">
 
+<!--
     <div class="megamenu-navigation">
-
       <% if $SearchForm %>
       <div class="site-search-mobile-container">
         <form action="/home/SearchForm" method="get" enctype="application/x-www-form-urlencoded" class="site-search-mobile">
@@ -11,19 +11,18 @@
         </form>
       </div>
       <% end_if %>
-
       <ul class="navigation-menu">
         <% loop $Menu(1) %>
-          <li class="navigation-item">
-
-            <a class="navigation-link <% if Children %>has-children<% end_if %>" href="$Link">$MenuTitle.XML</a>
-
+          <li class="navigation-item <% if Children %>has-children<% end_if %>">
+            <a class="navigation-link" href="$Link">$MenuTitle.XML</a>
             <% if Children %>
-
-              <div class="megamenu-dropdown">
-                test
+              <button class="navigation-link megamenu-btn" data-toggle="dropdown">$MenuTitle.XML</button>
+              <div class="dropdown-menu test" aria-labelledby="navbarDropdownMenuLink">
+                $Title
+                <% loop $Children %>
+                <a class="dropdown-item" href="$Link">$MenuTitle.XML</a>
+                <% end_loop %>
               </div>
-
               <%-- Mobile Navigation --%>
               <button class="navigation-chevron collapsed" data-toggle="collapse" data-target="#navigation-submenu-$ID" aria-expanded="false" aria-controls="navigation-submenu-$ID"></button>
               <ul class="navigation-submenu collapse" id="navigation-submenu-$ID">
@@ -43,17 +42,14 @@
                   </li>
                 <% end_loop %>
               </ul>
-
             <% end_if %>
-
           </li>
         <% end_loop %>
       </ul>
-
     </div>
+  -->
 
-
-<!--  <div class="justified-navigation">
+<!--  <div class="justified-navigation"> -->
       <div class="left-navigation">
 
       <% if $SearchForm %>
@@ -67,8 +63,8 @@
 
       <ul class="navigation-menu">
         <% loop $Menu(1) %>
-          <li class="navigation-item">
-            <a class="navigation-link <% if Children %>has-children<% end_if %>" href="$Link">$MenuTitle.XML</a>
+          <li class="navigation-item <% if Children %>has-children<% end_if %>" >
+            <a class="navigation-link" href="$Link">$MenuTitle.XML</a>
             <% if Children %>
               <button class="navigation-chevron collapsed" data-toggle="collapse" data-target="#navigation-submenu-$ID" aria-expanded="false" aria-controls="navigation-submenu-$ID"></button>
               <ul class="navigation-submenu collapse" id="navigation-submenu-$ID">
@@ -94,8 +90,9 @@
       </ul>
 
     </div>
--->
+
     <div class="clearfix"></div>
+
 
   </div>
 </div>

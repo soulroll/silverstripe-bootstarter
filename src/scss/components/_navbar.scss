@@ -8,9 +8,14 @@
   left: 0;
   top: 44px;
   text-align: left;
-  display: none;
+  // visibility: hidden;
+  // opacity: 0;
   @include media-breakpoint-down(sm) {
     display: none;
+  }
+  &.open {
+    // visibility: visible;
+    // opacity: 100;
   }
 }
 
@@ -22,6 +27,27 @@
     display: table;
     table-layout: fixed;
   }
+  .navigation-item.has-children {
+    .megamenu-btn {
+      width: 100%;
+      border: 0;
+      background-color: transparent;
+    }
+    @include media-breakpoint-up(md) {
+      .navigation-link {
+        display: none;
+      }
+      .megamenu-btn {
+        display: block;
+      }
+    }
+    @include media-breakpoint-down(sm) {
+      .megamenu-btn {
+        display: none;
+      }
+    }
+  }
+
   .navigation-menu {
     @include media-breakpoint-up(md) {
       width: 100%;
@@ -40,15 +66,6 @@
     }
   }
 }
-
-
-
-
-
-
-
-
-
 
 .justified-navigation {
   @include media-breakpoint-up(md) {
@@ -79,7 +96,7 @@
         float: left;
       }
       .navigation-link {
-        @include rem(padding, 10px 18px 10px 18px);
+        @include rem(padding, 10px 20px 10px 20px);
       }
     }
   }
@@ -242,7 +259,7 @@
 .navigation-submenu-link,
 .navigation-sub-submenu-link {
   @include media-breakpoint-up(md) {
-    @include rem(padding, 5px 15px 5px 15px);
+    @include rem(padding, 8px 20px 8px 20px);
   }
 }
 
@@ -283,15 +300,17 @@
   }
 }
 
-.navigation-link.has-children {
-  @include media-breakpoint-up(md) {
-    &:after {
-      @include rem(font-size, 10px);
-      position: relative;
-      top: -2px;
-      right: -4px;
-      content: "\f078";
-      font-family: FontAwesome;
+.navigation-item.has-children {
+  .navigation-link {
+    @include media-breakpoint-up(md) {
+      &:after {
+        @include rem(font-size, 10px);
+        position: relative;
+        top: -2px;
+        right: -4px;
+        content: "\f078";
+        font-family: FontAwesome;
+      }
     }
   }
 }

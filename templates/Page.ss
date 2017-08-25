@@ -14,9 +14,11 @@
   <body>
     <% include Header %>
     <% include Navigation %>
+
     <main role="main">
       $Layout
     </main>
+
     <% include Footer %>
     <script src="{$ThemeDir}/dist/js/main.min.js"></script>
   </body>
