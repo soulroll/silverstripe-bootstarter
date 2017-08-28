@@ -1,24 +1,3 @@
-/* Megamenu */
-.megamenu-dropdown {
-  @include rem(min-height, 450px);
-  position: absolute;
-  width: 100%;
-  background-color: #ccc;
-  z-index: 199;
-  left: 0;
-  top: 44px;
-  text-align: left;
-  // visibility: hidden;
-  // opacity: 0;
-  @include media-breakpoint-down(sm) {
-    display: none;
-  }
-  &.open {
-    // visibility: visible;
-    // opacity: 100;
-  }
-}
-
 /* Navigation style */
 .megamenu-navigation {
   @include media-breakpoint-up(md) {
@@ -38,7 +17,7 @@
         display: none;
       }
       .megamenu-btn {
-        display: block;
+        display: inline-block;
       }
     }
     @include media-breakpoint-down(sm) {
@@ -47,7 +26,6 @@
       }
     }
   }
-
   .navigation-menu {
     @include media-breakpoint-up(md) {
       width: 100%;
@@ -64,6 +42,35 @@
         }
       }
     }
+  }
+  .megamenu-dropdown {
+    top: 42px !important;
+    width: 100%;
+    transform: none !important;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    padding: 25px 15px 15px 15px;
+  }
+  .megamenu-menu {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .megamenu-title {
+    font-size: 26px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  .megamenu-item,
+  .megamenu-sublink-item {
+    list-style: none;
+  }
+  .megamenu-link {
+    font-weight: bold;
+    color: #212529;
+  }
+  .megamenu-sublink-link {
+    color: #212529;
   }
 }
 
