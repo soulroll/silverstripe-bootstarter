@@ -20,6 +20,9 @@
     <a class="nav-link" id="fontawesome-tab" data-toggle="tab" href="#fontawesome" role="tab" aria-controls="buttons">Font Awesome</a>
   </li>
   <li class="nav-item">
+    <a class="nav-link" id="materialdesign-tab" data-toggle="tab" href="#materialdesign" role="tab" aria-controls="buttons">Material Design</a>
+  </li>
+  <li class="nav-item">
     <a class="nav-link" id="grid-tab" data-toggle="tab" href="#grid" role="tab" aria-controls="grid">Grid</a>
   </li>
   <li class="nav-item">
@@ -48,6 +51,9 @@
   </div>
   <div class="tab-pane fade" id="fontawesome" role="tabpanel" aria-labelledby="buttons-tab">
     <% include FontAwesome %>
+  </div>
+  <div class="tab-pane fade" id="materialdesign" role="tabpanel" aria-labelledby="buttons-tab">
+    <% include MaterialDesign %>
   </div>
   <div class="tab-pane fade" id="grid" role="tabpanel" aria-labelledby="grid-tab">
     <% include Grid %>

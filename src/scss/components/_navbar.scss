@@ -12,6 +12,11 @@
       border: 0;
       background-color: transparent;
     }
+    &.show {
+      .megamenu-btn {
+        background-color: #fff;
+      }
+    }
     @include media-breakpoint-up(md) {
       .navigation-link {
         display: none;
