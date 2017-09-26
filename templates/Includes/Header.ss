@@ -17,7 +17,7 @@
           </form>
         <% end_if %>
 
-        <button class="navigation-toggle" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-controls="navigation">
+        <button class="navigation-toggle d-print-none" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-controls="navigation">
         </button>
 
       </div>

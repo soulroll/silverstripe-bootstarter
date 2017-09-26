@@ -13,8 +13,6 @@
       <li><i class="material-icons">&#xE7F4;</i> notifications</li>
       <li><i class="material-icons">&#xE87D;</i> favourite</li>
       <li><i class="material-icons">&#xE894;</i> language</li>
-
-
     </ul>
   </div>
   <div class="col">
