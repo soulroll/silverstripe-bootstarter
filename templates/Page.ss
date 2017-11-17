@@ -9,17 +9,15 @@
     <!--[if IE 11><meta http-equiv="X-UA-Compatible" content="IE=10"><![endif]-->
     <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="stylesheet" type="text/css" href="{$ThemeDir}/dist/css/style.css">
+    <link rel="stylesheet" type="text/css" href="themes/silverstripe-bootstarter/dist/css/style.css">
   </head>
   <body>
     <% include Header %>
     <% include Navigation %>
-
     <main role="main">
       $Layout
     </main>
-
     <% include Footer %>
-    <script src="{$ThemeDir}/dist/js/main.min.js"></script>
+    <script src="themes/silverstripe-bootstarter/dist/js/main.min.js"></script>
   </body>
 </html>

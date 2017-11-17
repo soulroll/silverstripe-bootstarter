@@ -35,34 +35,34 @@
 
 <div class="tab-content" id="typographyTabContent">
   <div class="tab-pane fade show active" id="headings" role="tabpanel" aria-labelledby="headings-tab">
-    <% include Headings %>
+    <% include Includes/Bootstrap/Headings %>
   </div>
   <div class="tab-pane fade" id="paragraph" role="tabpanel" aria-labelledby="paragraph-tab">
-    <% include Paragraph %>
+    <% include Includes/Bootstrap/Paragraph %>
   </div>
   <div class="tab-pane fade" id="lists" role="tabpanel" aria-labelledby="lists-tab">
-    <% include Lists %>
+    <% include Includes/Bootstrap/Lists %>
   </div>
   <div class="tab-pane fade" id="tables" role="tabpanel" aria-labelledby="tables-tab">
-    <% include Tables %>
+    <% include Includes/Bootstrap/Tables %>
   </div>
   <div class="tab-pane fade" id="buttons" role="tabpanel" aria-labelledby="buttons-tab">
-    <% include Buttons %>
+    <% include Includes/Bootstrap/Buttons %>
   </div>
   <div class="tab-pane fade" id="fontawesome" role="tabpanel" aria-labelledby="buttons-tab">
-    <% include FontAwesome %>
+    <% include Includes/Bootstrap/FontAwesome %>
   </div>
   <div class="tab-pane fade" id="materialdesign" role="tabpanel" aria-labelledby="buttons-tab">
-    <% include MaterialDesign %>
+    <% include Includes/Bootstrap/MaterialDesign %>
   </div>
   <div class="tab-pane fade" id="grid" role="tabpanel" aria-labelledby="grid-tab">
-    <% include Grid %>
+    <% include Includes/Bootstrap/Grid %>
   </div>
   <div class="tab-pane fade" id="alerts" role="tabpanel" aria-labelledby="alerts-tab">
-    <% include Alerts %>
+    <% include Includes/Bootstrap/Alerts %>
   </div>
   <div class="tab-pane fade" id="badges" role="tabpanel" aria-labelledby="badges-tab">
-    <% include Badges %>
+    <% include Includes/Bootstrap/Badges %>
   </div>
 </div>
 
@@ -96,23 +96,23 @@
 <div class="tab-content" id="componentsTabContent">
 
   <div class="tab-pane fade show active" id="collapse" role="tabpanel" aria-labelledby="collapse-tab">
-    <% include Collapse %>
+    <% include Includes/Bootstrap/Collapse %>
   </div>
 
   <div class="tab-pane fade" id="forms" role="tabpanel" aria-labelledby="forms-tab">
-    <% include Forms %>
+    <% include Includes/Bootstrap/Forms %>
   </div>
 
   <div class="tab-pane fade" id="modal" role="tabpanel" aria-labelledby="modal-tab">
-    <% include Modal %>
+    <% include Includes/Bootstrap/Modal %>
   </div>
 
   <div class="tab-pane fade" id="dropdowns" role="tabpanel" aria-labelledby="dropdowns-tab">
-    <% include Dropdowns %>
+    <% include Includes/Bootstrap/Dropdowns %>
   </div>
 
   <div class="tab-pane fade" id="cards" role="tabpanel" aria-labelledby="cards-tab">
-    <% include Cards %>
+    <% include Includes/Bootstrap/Cards %>
   </div>
 
 </div>

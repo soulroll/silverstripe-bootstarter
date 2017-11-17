@@ -5,7 +5,6 @@
       <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
           <div class="breadcrumbs">
-            <% include Breadcrumbs %>
           </div>
         </div>
       </div>
@@ -20,11 +19,7 @@
         <% end_if %>
           $Content
           $Form
-
-          <% if URLSegment = 'home' %>
-            <% include KitchenSink %>
-          <% end_if %>
-
+          <% include KitchenSink %>
           <% include PageFooter %>
         </div>
       </div>
