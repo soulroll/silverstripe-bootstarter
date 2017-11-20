@@ -22,7 +22,9 @@
           <% end_if %>
           $Content
           $Form
-          <% include KitchenSink %>
+          <% if URLSegment = home %>
+            <% include KitchenSink %>
+          <% end_if %>
           <% include PageFooter %>
         </div>
       </div>
