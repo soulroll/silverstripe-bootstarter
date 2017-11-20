@@ -17,6 +17,9 @@
         <% else %>
         <div class="col-lg-12 col-md-12 col-sm-12">
         <% end_if %>
+          <% if level(2) %>
+            <% include Breadcrumbs %>
+          <% end_if %>
           $Content
           $Form
           <% include KitchenSink %>
