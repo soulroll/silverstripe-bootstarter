@@ -12,7 +12,7 @@
   float: right;
   @include rem(margin-left, 40px);
   @include media-breakpoint-down(sm) {
-    @include rem(margin, 0px 0px 30px 0px);
+    @include rem(margin, 0 0 30px 0px);
     text-align: center;
     width: 100%;
   }
@@ -44,7 +44,7 @@
   }
 }
 .blog-footer {
-  @include rem(padding, 15px 0px 15px 0px);
+  @include rem(padding, 15px 0 15px 0);
   float: left;
   width: 100%;
   border-top: 1px solid #ccc;

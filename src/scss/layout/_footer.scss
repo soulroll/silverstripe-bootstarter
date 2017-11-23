@@ -1,7 +1,7 @@
 /* Footer */
 .footer-first {
   @include rem(margin-top, 15px);
-  @include rem(padding, 25px 0px 25px 0px);
+  @include rem(padding, 25px 0 25px 0);
   background-color: #222;
   h4 {
     color: #fff;
@@ -22,7 +22,7 @@
   @include rem(margin-bottom, 25px);
 }
 .footer-secondary {
-  @include rem(padding, 25px 0px 25px 0px);
+  @include rem(padding, 25px 0 25px 0);
   background-color: #111;
   color: #9d9d9d;
 }
@@ -130,7 +130,7 @@
   width: 100%;
   border-top: 1px solid #eee;
   @include rem(margin-top, 30px);
-  @include rem(padding, 15px 0px 15px 0px);
+  @include rem(padding, 15px 0 15px 0);
   color: #999;
 }
 .page-footer-last-modified {

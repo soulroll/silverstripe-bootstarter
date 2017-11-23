@@ -1,5 +1,4 @@
 <h3 class="mt-4 mb-4">Cards</h3>
-
 <div class="row">
   <div class="col-sm-6 col-md-4">
     <div class="card mb-4">
@@ -70,7 +69,6 @@
     </div>
   </div>
 </div>
-
 <h3 class="mt-4 mb-4">Card decks - equal heights</h3>
 <div class="card-deck">
   <div class="card">
@@ -93,14 +91,12 @@
       <small class="text-muted">Last updated 3 mins ago</small>
     </div>
   </div>
-  <div class="card">
-    <img class="card-img-top" src="http://via.placeholder.com/350x150" alt="Card image cap">
-    <div class="card-body">
+  <div class="card bg-dark text-white">
+    <img class="card-img" src="http://via.placeholder.com/350x350" alt="Card image">
+    <div class="card-img-overlay">
       <h4 class="card-title">Card title</h4>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-    </div>
-    <div class="card-footer">
-      <small class="text-muted">Last updated 3 mins ago</small>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p class="card-text">Last updated 3 mins ago</p>
     </div>
   </div>
 </div>

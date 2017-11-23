@@ -1,8 +1,7 @@
 <h3 class="mt-4 mb-4">Material Design</h3>
-
 <div class="row">
   <div class="col">
-    <ul style="list-style: none; padding-left: 0;">
+    <ul class="material-icon-list">
       <li><i class="material-icons">&#xE853;</i> account circle</li>
       <li><i class="material-icons">&#xE851;</i> account box</li>
       <li><i class="material-icons">&#xE863;</i> autorenew</li>
@@ -16,7 +15,7 @@
     </ul>
   </div>
   <div class="col">
-    <ul style="list-style: none; padding-left: 0;">
+    <ul class="material-icon-list">
       <li><i class="material-icons">&#xE887;</i> help</li>
       <li><i class="material-icons">&#xE88A;</i> home</li>
       <li><i class="material-icons">&#xE884;</i> get app</li>
@@ -30,7 +29,7 @@
     </ul>
   </div>
   <div class="col">
-    <ul style="list-style: none; padding-left: 0;">
+    <ul class="material-icon-list">
       <li><i class="material-icons">&#xE8B5;</i> schedule</li>
       <li><i class="material-icons">&#xE8B8;</i> settings</li>
       <li><i class="material-icons">&#xE8B6;</i> search</li>

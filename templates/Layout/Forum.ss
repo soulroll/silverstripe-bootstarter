@@ -3,30 +3,24 @@
     <h1>$Parent.Title</h1>
   </div>
 </div>
-
 <div class="container-full page-background">
   <div class="container">
     <div class="page">
-
       <% include ForumHeader %>
-
       <% if ForumAdminMsg %>
         <p class="forum-message-admin">$ForumAdminMsg</p>
       <% end_if %>
-
       <% if CurrentMember.isSuspended %>
         <p class="forum-message-suspended">
           $CurrentMember.ForumSuspensionMessage
         </p>
       <% end_if %>
-
       <% if ForumPosters = NoOne %>
         <p class="message error"><% _t('Forum_ss.READONLYFORUM', 'This Forum is read only. You cannot post replies or start new threads') %></p>
       <% end_if %>
       <% if canPost %>
         <p><a href="{$Link}starttopic" title="<% _t('Forum_ss.NEWTOPIC','Click here to start a new topic') %>"><img src="forum/images/forum_startTopic.gif" alt="<% _t('Forum_ss.NEWTOPICIMAGE','Start new topic') %>" /></a></p>
       <% end_if %>
-
       <div class="forum-features">
         <% if $getStickyTopics(0) %>
           <table class="forum-sticky-topics" class="topicList" summary="List of sticky topics in this forum">
@@ -38,7 +32,6 @@
             <% end_loop %>
           </table>
         <% end_if %>
-
         <table class="forum-topics" summary="List of topics in this forum">
           <tr class="category">
             <td colspan="4"><% _t('Forum_ss.THREADS', 'Threads') %></td>
@@ -58,7 +51,6 @@
           </tr>
           <% end_if %>
         </table>
-
         <% if $Topics.MoreThanOnePage %>
           <p>
             <% if $Topics.PrevLink %>
@@ -78,7 +70,6 @@
         <% end_if %>
         </div><!-- forum-features. -->
         <% include ForumFooter %>
-
     </div>
   </div>
 </div>

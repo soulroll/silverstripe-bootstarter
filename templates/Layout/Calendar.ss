@@ -23,7 +23,6 @@
             $CalendarWidget
           </div>
           $MonthJumper
-
           <br/>
           <br/>
           <p class="feed">
@@ -34,7 +33,6 @@
           <div class="event-calendar-controls">
             <% include QuickNav %>
           </div>
-
         </div>
       </div>
     </div>

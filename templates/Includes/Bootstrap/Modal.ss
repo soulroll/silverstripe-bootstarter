@@ -1,8 +1,6 @@
 <h3 class="mt-4 mb-4">Modal</h3>
-
 <!-- Trigger the modal with a button -->
 <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">Open modal window</button>
-
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -23,10 +21,8 @@
     </div>
   </div>
 </div>
-
 <!-- Trigger the modal with a button -->
 <button type="button" class="btn btn-default" data-toggle="modal" data-target="#mySecondModal">Open modal window with grids</button>
-
 <!-- Modal -->
 <div class="modal fade" id="mySecondModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -72,11 +68,3 @@
     </div>
   </div>
 </div>
-
-
-
-
-
-
-
-

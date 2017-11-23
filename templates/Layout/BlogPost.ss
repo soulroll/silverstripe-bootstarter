@@ -19,41 +19,32 @@
         <% else %>
         <div class="col-lg-12 col-md-12 col-sm-12">
         <% end_if %>
-
           <h1>$Title</h1>
           <hr/>
-
           $Content
           $Form
-
           <!-- Tags and Categories -->
           <p class="blog-post-meta">
-
             <% if $Categories.exists %>
               <%t Blog.PostedIn "Posted in" %>
               <% loop $Categories %>
                 <a href="$Link" title="$Title">$Title</a><% if not Last %>, <% else %>;<% end_if %>
               <% end_loop %>
             <% end_if %>
-
             <br/>
-
             <% if $Tags.exists %>
               Tags
               <% loop $Tags %>
                 <a  href="$Link" title="$Title">$Title</a><% if not Last %>, <% else %>;<% end_if %>
               <% end_loop %>
             <% end_if %>
-
             <% if $Comments.exists %>
               <a href="{$Link}#comments-holder">
                 <%t Blog.Comments "Comments" %>
                 $Comments.count
               </a>;
             <% end_if %>
-
           </p>
-
           <p>
             <%t Blog.Posted "Posted" %> $PublishDate.ago
 
@@ -61,7 +52,6 @@
                 <%t Blog.By "by" %>
                 <% loop $Credits %><% if not $First && not $Last %>, <% end_if %><% if not $First && $Last %> <%t Blog.AND "and" %> <% end_if %><% if $URLSegment %><a href="$URL">$Name.XML</a><% else %>$Name.XML<% end_if %><% end_loop %>
             <% end_if %>
-
             <% if $Comments.exists %>
                  | <a href="{$Link}#comments-holder">
                     $Comments.count
@@ -72,18 +62,13 @@
                     <% end_if %>
                 </a>
             <% end_if %>
-
             <%-- Month archive link
             <a href="$MonthlyArchiveLink">View month archive</a> --%>
           </p>
-
           <hr/>
-
           </br>
           $CommentsForm
-
         </div>
-
       </div>
     </div>
   </div>

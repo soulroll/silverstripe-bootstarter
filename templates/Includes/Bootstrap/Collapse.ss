@@ -1,5 +1,4 @@
 <h3 class="mt-4 mb-4">Collapse</h3>
-
 <div id="accordion" role="tablist">
   <div class="card">
     <div class="card-header" role="tab" id="headingOne">
@@ -44,14 +43,11 @@
     </div>
   </div>
 </div>
-
 <br/><br/>
-
 <h3 class="mt-4 mb-4">Multiple items</h3>
-
-  <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
-  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle second element</button>
-  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
+<a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle second element</button>
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
 <br/><br/>
 <div class="row">
   <div class="col">

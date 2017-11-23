@@ -1,6 +1,6 @@
 /* Header */
 header {
-  @include rem(padding, 30px 0px 30px 0px);
+  @include rem(padding, 30px 0 30px 0);
 }
 .logo {
   float: left;

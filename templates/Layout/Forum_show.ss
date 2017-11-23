@@ -3,13 +3,10 @@
     <h1>$Parent.Title</h1>
   </div>
 </div>
-
 <div class="container-full page-background">
   <div class="container">
     <div class="page">
-
       <% include ForumHeader %>
-
       <table class="forum-topics">
         <tr class="category">
           <td class="page-numbers">
@@ -47,11 +44,9 @@
           </td>
         </tr>
       </table>
-
       <% loop $Posts %>
         <% include SinglePost %>
       <% end_loop %>
-
       <table class="forum-topics">
         <tr class="author">
           <td class="author">&nbsp;</td>
@@ -75,7 +70,6 @@
             <% if $ForumThread.canCreate %>
               <a href="$ReplyLink" title="<% _t('Forum_show_ss.CLICKREPLY', 'Click to Reply') %>"><% _t('Forum_show_ss.REPLY', 'Reply') %></a>
             <% end_if %>
-
             <% if $Posts.MoreThanOnePage %>
               <% if Posts.NotLastPage %>
                 <a class="next" href="$Posts.NextLink" title="<% _t('Forum_show_ss.NEXTTITLE','View the next page') %>"><% _t('Forum_show_ss.NEXTLINK','Next') %> &gt;</a>
@@ -84,16 +78,13 @@
           </td>
         </tr>
       </table>
-
       <% if $AdminFormFeatures %>
       <div class="forum-admin-features">
         <h3>Forum Admin Features</h3>
         $AdminFormFeatures
       </div>
       <% end_if %>
-
       <% include ForumFooter %>
-
     </div>
   </div>
 </div>

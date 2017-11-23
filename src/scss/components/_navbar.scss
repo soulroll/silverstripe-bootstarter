@@ -136,7 +136,7 @@
 
 /* Site Search */
 .site-search-mobile-container {
-  @include rem(padding, 20px 0px 10px 0px);
+  @include rem(padding, 20px 0 10px 0);
   @include media-breakpoint-down(xs) {
     @include rem(padding, 20px 15px 10px 15px);
   }

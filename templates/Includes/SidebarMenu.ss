@@ -1,4 +1,4 @@
-<%--Include SidebarMenu recursively --%>
+<%-- Include SidebarMenu recursively --%>
 <% if LinkOrSection = section %>
   <% if $Children %>
     <% loop $Children %>

@@ -1,6 +1,5 @@
 <h3 class="mt-4 mb-5">Tables</h3>
 <h5>SilverStripe</h5>
-
 <table>
   <thead>
     <tr>
@@ -27,10 +26,8 @@
     </tr>
   </tbody>
 </table>
-
 <br/>
 <h5>Inverse</h5>
-
 <table class="table table-inverse">
   <thead>
     <tr>
@@ -61,10 +58,8 @@
     </tr>
   </tbody>
 </table>
-
 <br/>
 <h5>Table head options</h5>
-
 <table class="table">
   <thead class="thead-default">
     <tr>
@@ -95,10 +90,8 @@
     </tr>
   </tbody>
 </table>
-
 <br/>
 <h5>Table striped</h5>
-
 <table class="table table-striped">
   <thead>
     <tr>
@@ -129,10 +122,8 @@
     </tr>
   </tbody>
 </table>
-
 <br/>
 <h5>Table bordered</h5>
-
 <table class="table table-bordered">
   <thead>
     <tr>
