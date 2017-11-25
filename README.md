@@ -7,7 +7,7 @@ I wasn't happy with the current selection of Bootstrap themes out there, they al
 ## Features
 - BrowserSync
 - jQuery v2.2.4
-- Bootstrap 4 beta
+- Bootstrap 4 Beta
 - NPM for front-end package managemnet
 - Gulp for SASS and JS Compiling
 - JShint for testing javascript
