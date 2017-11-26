@@ -3,7 +3,6 @@
     <h1>$Title</h1>
   </div>
 </div>
-
 <div class="container-full page-background">
   <div class="container">
     <div class="page">
