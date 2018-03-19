@@ -12,9 +12,7 @@
 }
 
 #MemberLoginForm_LoginForm {
-  @include media-breakpoint-down(sm) {
-    width: 40%;
-  }
+  max-width: 500px;
 }
 
 /* Merge Bootstrap and SilverStripe form styles */

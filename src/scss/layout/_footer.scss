@@ -17,15 +17,18 @@
     list-style: none;
   }
 }
+
 // Matching heights
 .footer-list {
   @include rem(margin-bottom, 25px);
 }
+
 .footer-secondary {
   @include rem(padding, 25px 0 25px 0);
   background-color: #111;
   color: #9d9d9d;
 }
+
 .footer-links {
   @include rem(margin-top, 5px);
   @include rem(margin-bottom, 6px);
@@ -44,6 +47,7 @@
     color: #fff;
   }
 }
+
 .footer-copyright {
   float: left;
   display: block;
@@ -55,6 +59,7 @@
     float: none;
   }
 }
+
 .footer-social-media {
   padding: 0;
   float: right;
@@ -124,6 +129,7 @@
     }
   }
 }
+
 .page-footer {
   clear: both;
   float: left;
@@ -133,10 +139,12 @@
   @include rem(padding, 15px 0 15px 0);
   color: #999;
 }
+
 .page-footer-last-modified {
   @include rem(font-size, 14px);
   float: left;
 }
+
 .page-footer-print {
   @include rem(font-size, 18px);
   position: relative;

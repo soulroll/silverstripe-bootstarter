@@ -2,6 +2,7 @@
 .page-banner-background {
   background-color: #ddd;
 }
+
 .page-banner {
   @include rem(padding-top, 15px);
   @include rem(padding-bottom, 15px);

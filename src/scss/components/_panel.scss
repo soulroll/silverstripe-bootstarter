@@ -2,6 +2,7 @@
 .panel {
   @include rem(margin-bottom, 30px);
 }
+
 .collapsing {
   -webkit-transition: height 0.3s ease;
   -moz-transition: height 0.3s ease;

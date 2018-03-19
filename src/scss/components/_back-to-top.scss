@@ -12,15 +12,13 @@
   color: #fff;
   border-radius: 100%;
   &:focus,
-  &:visited {
-    color: #fff;
-    background-color: #555;
-  }
+  &:visited,
   &:hover {
-    background-color: #555;
     color: #fff;
+    background-color: #555;
   }
 }
+
 @include media-breakpoint-down(md) {
   .back-to-top {
     display: none !important;

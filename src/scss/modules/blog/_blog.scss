@@ -12,7 +12,7 @@
   float: right;
   @include rem(margin-left, 40px);
   @include media-breakpoint-down(sm) {
-    @include rem(margin, 0 0 30px 0px);
+    @include rem(margin, 0 0 30px 0);
     text-align: center;
     width: 100%;
   }
