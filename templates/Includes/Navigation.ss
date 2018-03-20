@@ -1,4 +1,4 @@
-<div class="navigation collapse" id="navigation">
+<div class="navigation collapse d-print-none" id="navigation">
   <div class="container navigation-container">
     <!--
     <% include NavigationMegamenu %>

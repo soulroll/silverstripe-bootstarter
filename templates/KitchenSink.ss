@@ -115,7 +115,7 @@
 
 <h2 class="mt-5 mb-4">Carousel</h2>
 
-<div id="myCarousel" class="carousel slide bg-inverse" data-ride="carousel">
+<div id="myCarousel" class="carousel slide bg-inverse d-print-none" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
     <li data-target="#myCarousel" data-slide-to="1"></li>
