@@ -1,4 +1,8 @@
-<% include PageBanner %>
+<%-- Showcase logic for Bootstrap 4 --%>
+<% if URLSegment != home %>
+  <% include PageBanner %>
+<% end_if %>
+<%------------------------------------%>
 <div class="container-full page-background">
   <div class="container">
     <div class="page">
@@ -20,12 +24,15 @@
           <% if level(2) %>
             <% include Breadcrumbs %>
           <% end_if %>
-          $Content
-          $Form
+          <%-- Showcase logic for Bootstrap 4 --%>
           <% if URLSegment = home %>
             <% include KitchenSink %>
+          <% else %>
+          <%--------------------------%>
+            $Content
+            $Form
+            <% include PageFooter %>
           <% end_if %>
-          <% include PageFooter %>
         </div>
       </div>
     </div>

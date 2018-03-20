@@ -1,6 +1,9 @@
 /* Header */
 header {
   @include rem(padding, 30px 0 30px 0);
+  @include media-breakpoint-down(sm) {
+    border-bottom: 1px solid #eee;
+  }
 }
 
 .logo {
