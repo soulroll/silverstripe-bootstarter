@@ -119,6 +119,7 @@
   float: right;
   border: none;
   background-color: #eee;
+  border: 1px solid #ccc;
   @include rem(padding, 4px 12px 4px 12px);
   @include media-breakpoint-up(md) {
     display: none;
@@ -170,6 +171,9 @@
   }
   @include media-breakpoint-down(xs) {
     padding-bottom: 0;
+  }
+  @include media-breakpoint-down(sm) {
+    border-bottom: 1px solid #ccc;
   }
 }
 

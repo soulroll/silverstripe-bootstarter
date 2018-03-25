@@ -98,18 +98,33 @@
   }
   .twitter {
     background-color: #039BE5;
+    &:hover {
+      background-color: darken(#039BE5, 10%)
+    }
   }
   .facebook {
     background-color: #39589B;
+    &:hover {
+      background-color: darken(#39589B, 10%)
+    }
   }
   .google-plus {
     background-color: #DD4D3F;
+    &:hover {
+      background-color: darken(#DD4D3F, 10%)
+    }
   }
   .email {
     background-color: #CD1D22;
+    &:hover {
+      background-color: darken(#CD1D22, 10%)
+    }
   }
   .instagram {
     background-color: #845A4F;
+    &:hover {
+      background-color: darken(#845A4F, 10%)
+    }
   }
   @include media-breakpoint-down(sm) {
     .twitter {
