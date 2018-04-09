@@ -33,13 +33,17 @@ I wasn't happy with the current selection of Bootstrap themes out there, they al
 2. Run 'npm install' via cmd line inside the bootstarter theme folder to get all of the node dependancies, this will also install Gulp for compiling scss and js.
 3. Make the following changes to theme.yml
 
-### Name: mytheme
+```
+---
+Name: mytheme
+---
 
 SilverStripe\View\SSViewer:
   themes:
     - 'silverstripe-bootstarter'
     - '$default'
   rewrite_hash_links: false (interferes with bootstraps javascript)
+```
 
 4. Change the var PROXY_URL = 'to your local SilverStripe development url';
 5. Run "gulp" via the cmd line inside bootstarter theme folder, this will compile the sass and js into css and js/dist/ and will watch for changes in the scss and js/src/ directories (building on top of the theme).
