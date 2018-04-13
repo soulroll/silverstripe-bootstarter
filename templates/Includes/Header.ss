@@ -9,10 +9,12 @@
           <% end_if %>
         </a>
         <% if $SearchForm %>
-          <form action="/home/SearchForm" method="get" enctype="application/x-www-form-urlencoded" class="form-inline site-search">
-            <input class="form-control" type="text" placeholder="Search" name="Search">
-            <button class="btn btn-outline-success site-search-btn" type="submit" name="action_results" id="SearchForm_SearchForm_action_results">Search</button>
-          </form>
+          <div role="search">
+            <form action="/home/SearchForm" method="get" enctype="application/x-www-form-urlencoded" class="form-inline site-search">
+              <input class="form-control" type="text" placeholder="Search" name="Search">
+              <button class="btn btn-outline-success site-search-btn" type="submit" name="action_results" id="SearchForm_SearchForm_action_results">Search</button>
+            </form>
+          </div>
         <% end_if %>
         <button class="navigation-toggle d-print-none" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-controls="navigation">
         </button>

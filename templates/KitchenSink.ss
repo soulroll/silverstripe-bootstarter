@@ -1,4 +1,4 @@
-<div id="myCarousel" class="carousel slide bg-inverse d-print-none mt-3" data-ride="carousel">
+<div id="myCarousel" class="carousel carousel-fade slide bg-inverse d-print-none mt-3" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
     <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -36,6 +36,7 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+
 <h2 class="mt-5 mb-4">Typography</h2>
 <ul class="nav nav-tabs" id="typographyTab" role="tablist">
   <li class="nav-item">

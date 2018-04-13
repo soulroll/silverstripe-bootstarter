@@ -163,7 +163,7 @@
   border-top: 1px solid #ccc;
   @include media-breakpoint-up(md) {
     border-bottom: 1px solid #ccc;
-    display: block;
+    display: block !important;
   }
   @include media-breakpoint-down(sm) {
     @include rem(padding-bottom, 30px);
@@ -193,7 +193,7 @@
   @include media-breakpoint-up(md) {
     @include rem(width, 220px);
     position: absolute;
-    display: block;
+    display: block !important;
     z-index: 99;
     left: -1px;
     transition: opacity 0.2s ease-out;
