@@ -1,4 +1,13 @@
 /* Forms */
 #MemberLoginForm_LoginForm {
-  max-width: 500px;
+  @include rem(max-width, 500px);
+}
+#MemberLoginForm_LoginForm_action_doLogin {
+  @include rem(margin-bottom, 20px);
+  @extend .btn;
+}
+#ForgotPassword {
+  float: left;
+  clear: both;
+  width: 100%;
 }

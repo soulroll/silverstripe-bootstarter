@@ -1,4 +1,4 @@
-/* Navigation style */
+/* Navigation styles */
 .megamenu-navigation {
   @include media-breakpoint-up(md) {
     position: relative;
@@ -49,22 +49,22 @@
     }
   }
   .megamenu-dropdown {
+    @include rem(max-width, 25px 15px 15px 15px);
     top: 42px !important;
     width: 100%;
     transform: none !important;
     border: 1px solid #ccc;
     border-radius: 0;
-    padding: 25px 15px 15px 15px;
   }
   .megamenu-menu {
+    @include rem(margin-bottom, 20px);
     padding: 0;
-    margin-bottom: 20px;
   }
   .megamenu-title {
+    @include rem(margin-bottom, 20px);
     font-size: 26px;
     font-weight: bold;
     display: inline-block;
-    margin-bottom: 20px;
   }
   .megamenu-item,
   .megamenu-sublink-item {
@@ -328,5 +328,11 @@
         font-family: FontAwesome;
       }
     }
+  }
+}
+
+@media print {
+  .navigation {
+    display: none !important;
   }
 }

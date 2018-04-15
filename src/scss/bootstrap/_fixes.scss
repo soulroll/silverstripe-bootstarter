@@ -1,20 +1,3 @@
-/* Bootstrap navbar rounded border fix */
-.navbar {
-  margin-bottom: 0;
-  border-radius: 0;
-  border: 0;
-}
-
-@include media-breakpoint-down(sm) {
-  .navbar-nav.dropdown:hover .dropdown-menu {
-    display: block;
-  }
-}
-
-#MemberLoginForm_LoginForm {
-  max-width: 500px;
-}
-
 /* Merge Bootstrap and SilverStripe form styles */
 div {
   .field {
