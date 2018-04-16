@@ -50,7 +50,25 @@ div {
     float: left;
   }
 }
-
 button {
   cursor: pointer;
+}
+#accordion {
+  .card-header {
+    cursor: pointer;
+    padding-right: 40px;
+    &:after {
+      position: absolute;
+      font-family: "FontAwesome";
+      content: "\f077";
+      top: 11px;
+      right: 15px;
+      font-size: 14px;
+    }
+    &.collapsed {
+      &:after {
+        content: "\f078";
+      }
+    }
+  }
 }
