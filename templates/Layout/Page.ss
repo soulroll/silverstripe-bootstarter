@@ -23,7 +23,9 @@
             <% include KitchenSink %>
           <% else %>
           <%--------------------------%>
-            $Content
+            <div class="content">
+              $Content
+            </div>
             $Form
             <% include PageFooter %>
           <% end_if %>

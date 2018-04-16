@@ -11,3 +11,99 @@
     }
   }
 }
+
+/* Adds an icon to the link in content on the page to identify the filetype */
+.content a[href^="http://"], .grid-container a[href^="http://"],
+.content a[href^="https"], .grid-container a[href^="https"]
+.content a.external, .grid-container a.external {
+  padding-right: 13px;
+  margin-right: 4px;
+  position: relative;
+  &:after {
+    font-family: 'FontAwesome';
+    content:'\f08e';
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 10px;
+  }
+}
+
+.content a[href$=".doc"], .grid-container a[href$=".doc"],
+.content a[href$=".DOC"], .grid-container a[href$=".DOC"],
+.content a[href$=".docx"], .grid-container a[href$=".docx"],
+.content a[href$=".DOCX"], .grid-container a[href$=".DOCX"],
+.content .doc, .grid-container .doc {
+  padding-left: 22px;
+  padding-right: 0;
+  position: relative;
+  &:before {
+    font-family: 'FontAwesome';
+    content:'\f1c2';
+    position: absolute;
+    right: 0;
+    left: 0;
+  }
+}
+.content a[href$=".xls"], .grid-container a[href$=".xls"],
+.content a[href$=".XLS"], .grid-container a[href$=".XLS"],
+.content a[href$=".xlsx"], .grid-container a[href$=".xlsx"],
+.content a[href$=".XLSX"], .grid-container a[href$=".XLSX"],
+.content .xls, .grid-container .xls {
+  padding-left: 22px;
+  padding-right: 0;
+  position: relative;
+  &:before {
+    font-family: 'FontAwesome';
+    content:'\f1c3';
+    position: absolute;
+    right: 0;
+    left: 0;
+  }
+}
+.content a[href$=".gz"], .grid-container a[href$=".gz"],
+.content a[href$=".GZ"], .grid-container a[href$=".GZ"],
+.content a[href$=".gzip"], .grid-container a[href$=".gzip"],
+.content a[href$=".GZIP"], .grid-container a[href$=".GZIP"],
+.content a[href$=".zip"], .grid-container a[href$=".zip"],
+.content a[href$=".ZIP"], .grid-container a[href$=".ZIP"],
+.content .archive, .grid-container .archive {
+  padding-left: 22px;
+  padding-right: 0;
+  position: relative;
+  &:before {
+    font-family: 'FontAwesome';
+    content:'\f1c6';
+    position: absolute;
+    right: 0;
+    left: 0;
+  }
+}
+.content a[href$=".exe"], .grid-container a[href$=".exe"],
+.content a[href$=".EXE"], .grid-container a[href$=".EXE"],
+.content .application, .grid-container .application {
+  padding-left: 22px;
+  padding-right: 0;
+  position: relative;
+  &:before {
+    font-family: 'FontAwesome';
+    content:'\f1c9';
+    position: absolute;
+    right: 0;
+    left: 0;
+  }
+}
+.content a[href$=".pdf"], .grid-container a[href$=".pdf"],
+.content a[href$=".PDF"], .grid-container a[href$=".PDF"],
+.content .pdf, .grid-container .pdf {
+  padding-left: 22px;
+  padding-right: 0;
+  position: relative;
+  &:before {
+    font-family: 'FontAwesome';
+    content:'\f1c1';
+    position: absolute;
+    right: 0;
+    left: 0;
+  }
+}

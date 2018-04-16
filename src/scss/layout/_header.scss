@@ -45,3 +45,9 @@ header {
 .site-search-btn {
   @include rem(margin-left, 5px);
 }
+
+@media print {
+  .logo {
+    text-decoration: none !important;
+  }
+}
