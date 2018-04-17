@@ -7,17 +7,18 @@ I wasn't happy with the current selection of Bootstrap themes out there, they al
 ## Features
 - BrowserSync
 - jQuery v3.3.1
-- Bootstrap 4
-- NPM for front-end package managemnet
+- Bootstrap 4.1.0
+- NPM for front-end package management
 - Gulp for SCSS and JS Compiling
 - JShint for testing javascript
-- Menu loops integrated with Bootstraps navbar and dropdowns
+- Menu loops integrated with a custom navbar with dropdowns
 - Merged Bootstrap form styles with SilverStripes form markup
 - Responsive tables that output from the CMS (JS wraps all table elements with the table-responsive class)
 - Basic SCSS folder structure to keep things tidy
-- matchHeight for fixing the grid float bug with unequal columns (Check the footer)
+- matchHeight.js for fixing the grid float bug with unequal columns (Check the footer)
 - Kitchen sink included on page.ss featuring common bootstrap 4 elements (Just delete what you dont want)
 - Supports userforms
+- External link and file chevrons on content links
 
 ## Requirements
 1. NodeJS (sudo apt-get install nodejs)
