@@ -24,7 +24,11 @@
           <% else %>
           <%--------------------------%>
             <div class="content">
-              $Content
+              <% if $ElementalArea %>
+                $ElementalArea
+              <% else %>
+                $Content
+              <% end_if %>
             </div>
             $Form
             <% include PageFooter %>
