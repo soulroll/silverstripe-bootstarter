@@ -16,5 +16,11 @@
   ],
   "require": {
     "composer/installers": "~1.0"
+  },
+  "extra": {
+    "expose": [
+      "dist",
+      "images"
+    ]
   }
 }
