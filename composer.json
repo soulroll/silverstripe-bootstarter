@@ -19,8 +19,7 @@
   },
   "extra": {
     "expose": [
-      "dist",
-      "images"
+      "dist"
     ]
   }
 }
