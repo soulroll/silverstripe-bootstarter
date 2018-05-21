@@ -55,6 +55,6 @@ SilverStripe\View\SSViewer:
 8. Run "gulp build" for production, this will minify scss and js into the dist folder.
 
 ## Instructions
-- Run "gulp" to compile once.
 - Run "gulp watch" to watch for scss and javascript changes working with browsersync.
 - Run "gulp jshint" to check for javascript errors in js/src/ from your .jshintrc file.
+- Run "gulp build" to compress all files for production.

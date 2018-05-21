@@ -18,9 +18,7 @@
     "gulp-uglify": "^3.0.0",
     "jquery": "~3.3.1",
     "jquery-match-height": "~0.7.2",
-    "material-design-icons": "^3.0.1",
     "popper.js": "^1.14.3",
     "postcss-flexbugs-fixes": "^3.3.1"
-  },
-  "dependencies": {}
+  }
 }
