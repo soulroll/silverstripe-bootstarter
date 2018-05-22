@@ -101,8 +101,6 @@
     </div>
   </div>
 </footer>
-
 <a href="javascript:void(0);" class="back-to-top" title="Scroll to Top">
   <i class="fa fa-chevron-up" aria-hidden="true"></i>
 </a>
-
