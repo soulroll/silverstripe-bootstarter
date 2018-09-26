@@ -4,10 +4,19 @@ div {
     @extend .form-group;
   }
 }
+legend {
+  font-size: 1rem;
+}
 .middleColumn {
   .text,
   .textarea {
     @extend .form-control;
+  }
+  .checkbox {
+    @include rem(margin-right, 5px);
+  }
+  .radio {
+    @include rem(margin-right, 5px);
   }
 }
 .Actions {
@@ -29,12 +38,6 @@ div {
     position: relative;
     top: 1px;
   }
-  .odd,
-  .even {
-    label {
-      @include rem(padding-left, 7px);
-    }
-  }
 }
 .error.message {
   @extend .form-text;
@@ -42,7 +45,6 @@ div {
 .resetformaction {
   @extend .btn;
 }
-
 #popovers,
 #tooltips {
   .btn {

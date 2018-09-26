@@ -26,6 +26,7 @@
             <div class="content">
               <% if $ElementalArea %>
                 $ElementalArea
+                $Content
               <% else %>
                 $Content
               <% end_if %>

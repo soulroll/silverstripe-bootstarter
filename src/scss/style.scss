@@ -3,7 +3,7 @@
 @import "mixins/fonts";
 
 /* Bootstrap */
-@import "../../node_modules/bootstrap/scss/bootstrap"; // Brings in Bootstrap
+@import "bootstrap/bootstrap"; // Brings in Bootstrap
 @import "bootstrap/fixes"; // SilverStripe Bootstrap fixes
 @import "bootstrap/variables"; // Overide Bootstraps variables here
 
