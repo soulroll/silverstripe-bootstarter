@@ -32,8 +32,7 @@ var PATHS = {
   }
 }
 
-// SCSS
-gulp.task('scss', () => {
+function scss() {
   return gulp.src(PATHS.src.css)
     .pipe(sass({
         includePaths: [
@@ -51,10 +50,9 @@ gulp.task('scss', () => {
     ]))
     .pipe(gulp.dest(PATHS.dist.css))
     .pipe(browsersync.reload({stream:true}))
-});
+}
 
-// JS
-gulp.task('js', function() {
+function js() {
   return gulp.src([
       './node_modules/jquery/dist/jquery.min.js',
       './node_modules/popper.js/dist/umd/popper.min.js',
@@ -65,10 +63,9 @@ gulp.task('js', function() {
     .pipe(concatjs('main.min.js'))
     .pipe(gulp.dest(PATHS.dist.js))
     .pipe(browsersync.reload({stream:true}))
-});
+}
 
-// Watch
-gulp.task('watch', function () {
+function watch() {
   browsersync.init({
     proxy: PROXY_URL,
     files: [
@@ -78,11 +75,10 @@ gulp.task('watch', function () {
     ],
     notify: true
   });
-  gulp.watch('src/**/*', ['scss'],['js']);
-});
+  gulp.watch('src/**/*', gulp.parallel(scss, js))
+}
 
-// SCSS Build
-gulp.task('scss-build', () => {
+function scssBuild() {
   return gulp.src(PATHS.src.css)
     .pipe(sass({
         includePaths: [
@@ -102,10 +98,9 @@ gulp.task('scss-build', () => {
     ]))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(PATHS.dist.css))
-});
+}
 
-// JS Build
-gulp.task('js-build', () => {
+function jsBuild() {
   return gulp.src([
       './node_modules/jquery/dist/jquery.min.js',
       './node_modules/popper.js/dist/umd/popper.min.js',
@@ -118,37 +113,33 @@ gulp.task('js-build', () => {
     .pipe(uglifyjs({ mangle: false }))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(PATHS.dist.js));
-});
+}
 
-// Copy image files
-gulp.task('copy-img', () => {
+function copyImg() {
   return gulp.src(PATHS.src.img)
     .pipe(gulp.dest(PATHS.dist.img));
-});
+}
 
-// Copy font files
-gulp.task('copy-fonts', () => {
+function copyFonts() {
   return gulp.src(PATHS.src.fonts)
     .pipe(gulp.dest(PATHS.dist.fonts));
-});
+}
 
-// Copy fontawesome font files
-gulp.task('copy-fontawesome', () => {
+function copyFontAwesome() {
   return gulp.src(PATHS.src.fontawesome)
     .pipe(gulp.dest(PATHS.dist.fonts));
-});
+}
 
-// Copy favicon files
-gulp.task('copy-favicons', () => {
+function copyFavicons() {
   return gulp.src(PATHS.src.favicons)
     .pipe(gulp.dest(PATHS.dist.favicons));
-});
+}
 
 // Development
-gulp.task('serve', ['scss', 'js', 'copy-img', 'copy-fonts', 'copy-fontawesome', 'copy-favicons']);
+gulp.task('serve', gulp.parallel(scss, js, copyImg, copyFonts, copyFontAwesome, copyFavicons))
 
 // Production
-gulp.task('build', ['scss-build', 'js-build', 'copy-img', 'copy-fonts', 'copy-fontawesome', 'copy-favicons']);
+gulp.task('build', gulp.parallel(scssBuild, jsBuild, copyImg, copyFonts, copyFontAwesome, copyFavicons))
 
 // Default task (Serve and then watch for changes)
-gulp.task('default', ['serve','watch']);
+gulp.task('default', gulp.parallel('serve', watch))
