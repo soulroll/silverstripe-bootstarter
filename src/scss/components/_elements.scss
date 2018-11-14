@@ -1,0 +1,11 @@
+.dnadesign__elementaluserforms__model__elementform {
+  @include rem(margin-bottom, 30px);
+}
+.dnadesign__elementallist__model__elementlist {
+  @include rem(margin-bottom, 30px);
+}
+.file-element__file {
+  a {
+    color: #000;
+  }
+}

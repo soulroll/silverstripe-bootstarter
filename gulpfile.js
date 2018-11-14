@@ -10,7 +10,7 @@ var uglifyjs = require('gulp-uglify');
 var browsersync = require('browser-sync').create();
 
 // Silverstripe Project URL (Needed for BrowserSync)
-var PROXY_URL = 'silverstripe.davidm.wgtn.cat-it.co.nz';
+var PROXY_URL = 'eklektos.davidm.wgtn.cat-it.co.nz';
 
 // Source and Distributed Paths
 var PATHS = {
@@ -58,6 +58,8 @@ function js() {
       './node_modules/popper.js/dist/umd/popper.min.js',
       './node_modules/bootstrap/dist/js/bootstrap.min.js',
       './node_modules/jquery-match-height/dist/jquery.matchHeight-min.js',
+      './node_modules/magnific-popup/dist/jquery.magnific-popup.min.js',
+      './node_modules/slick-carousel/slick/slick.min.js',
       PATHS.src.js
     ])
     .pipe(concatjs('main.min.js'))
@@ -106,6 +108,8 @@ function jsBuild() {
       './node_modules/popper.js/dist/umd/popper.min.js',
       './node_modules/bootstrap/dist/js/bootstrap.min.js',
       './node_modules/jquery-match-height/dist/jquery.matchHeight-min.js',
+      './node_modules/magnific-popup/dist/jquery.magnific-popup.min.js',
+      './node_modules/slick-carousel/slick/slick.min.js',
       PATHS.src.js
     ])
     .pipe(sourcemaps.init())

@@ -1,0 +1,9 @@
+.gallery-image-border {
+  border: 1px solid #ccc;
+}
+.gallery-image-title {
+  @include rem(margin-bottom, 2px);
+}
+.gallery-image-description {
+  @include rem(padding, 8px 10px 6px 10px);
+}

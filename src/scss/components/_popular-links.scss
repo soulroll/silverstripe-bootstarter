@@ -1,0 +1,27 @@
+.popular-links {
+  top: 30px;
+  position: absolute;
+  z-index: 2;
+  ul {
+    padding-left: 0;
+    list-style: none;
+  }
+  li {
+    display: inline-block;
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+  a {
+    display: block;
+    background-color: #fff;
+    padding: 10px 15px 10px 15px;
+    color: #000;
+  }
+}
+.popular-links-heading {
+  background-color: #fff;
+  padding: 6px 15px 6px 15px;
+  margin-bottom: 5px;
+  display: inline-block;
+}

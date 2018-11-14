@@ -10,6 +10,12 @@
 /* Font Awesome */
 @import "../../node_modules/font-awesome/scss/font-awesome.scss";
 
+/* Slick Carousel */
+@import "../../node_modules/slick-carousel/slick/slick.scss";
+
+/* Magnific Popup */
+@import "magnific/magnific-popup";
+
 /* Base */
 @import "base/variables";
 @import "base/global";
@@ -38,6 +44,10 @@
 @import "components/back-to-top";
 @import "components/calendar";
 @import "components/forms";
+@import "components/popular-links";
+@import "components/elements";
+@import "components/carousel";
+@import "components/gallery";
 
 /* Forms */
 @import "forms/select";

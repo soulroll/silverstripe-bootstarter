@@ -1,0 +1,113 @@
+/* Carousel */
+.slick-carousel-container {
+  position: relative;
+  margin-left: -10px !important;
+  margin-right: -10px !important;
+}
+.slick-carousel-arrow-left,
+.slick-carousel-arrow-right {
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+  top: 42%;
+  &:before {
+    font-family: 'FontAwesome';
+    font-size: 22px;
+  }
+}
+.slick-carousel-arrow-left {
+  left: -26px;
+  &:before {
+    content:"\f053";
+  }
+}
+.slick-carousel-arrow-right {
+  right: -26px;
+  &:before {
+    content:"\f054";
+  }
+}
+.slick-slide {
+  @include rem(padding-left, 10px);
+  @include rem(padding-right, 10px);
+}
+
+.slick-overlay {
+  @include rem(padding, 8px 10px 6px 10px);
+  background: rgba(0,0,0,.7);
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  width: 100%;
+}
+
+.slick-title {
+  @include rem(margin-bottom, 2px);
+}
+
+.slick-caption {
+  margin-bottom: 0;
+}
+
+
+
+/* Dots */
+.slick-dots {
+  position: absolute;
+  bottom: -30px;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+  &.slick-active button:before {
+    color: #111;
+  }
+}
+.slick-dots button {
+  background: transparent;
+  border: 0;
+  outline: none;
+  color: transparent;
+  &:before {
+    font-family: "FontAwesome";
+    content: "\f111";
+    color: #bbb;
+    font-size: 12px;
+  }
+  &:hover {
+    &:before {
+      color: #111;
+    }
+  }
+}
+
+
+.popup {
+  position: relative;
+  display: block;
+}
+
+.popup-indicator {
+  &:before {
+    position: absolute;
+    z-index: 2;
+    top: 3px;
+    right: 7px;
+    font-family: "FontAwesome";
+    content: "\f2d0";
+    color: #fff;
+  }
+}
