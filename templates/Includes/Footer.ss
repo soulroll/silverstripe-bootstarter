@@ -81,11 +81,13 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-8 col-sm-12 col-12">
+          <% if $SiteConfig.FooterLink %>
           <ul class="footer-links">
-            <li><a href="#" target="_blank" rel="noopener noreferrer">Link one</a></li>
-            <li><a href="#" target="_blank" rel="noopener noreferrer">Link two</a></li>
-            <li><a href="#" target="_blank" rel="noopener noreferrer">Link three</a></li>
+            <% loop $SiteConfig.FooterLink %>
+              <li><a href="$PageLink.Link" target="_blank" rel="noopener noreferrer">$Title</a></li>
+            <% end_loop %>
           </ul>
+          <% end_if %>
           <p class="footer-copyright">&copy; Copyright Company</p>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-12 col-12">
