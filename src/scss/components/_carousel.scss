@@ -31,7 +31,6 @@
   @include rem(padding-left, 10px);
   @include rem(padding-right, 10px);
 }
-
 .slick-overlay {
   @include rem(padding, 8px 10px 6px 10px);
   background: rgba(0,0,0,.7);
@@ -42,16 +41,12 @@
   color: #fff;
   width: 100%;
 }
-
 .slick-title {
   @include rem(margin-bottom, 2px);
 }
-
 .slick-caption {
   margin-bottom: 0;
 }
-
-
 
 /* Dots */
 .slick-dots {
@@ -94,7 +89,6 @@
   }
 }
 
-
 .popup {
   position: relative;
   display: block;
@@ -110,4 +104,48 @@
     content: "\f2d0";
     color: #fff;
   }
+}
+
+.popup-youtube {
+  &:before {
+    position: absolute;
+    z-index: 2;
+    font-family: "FontAwesome";
+    content: "\f16a";
+    color: #fff;
+    font-size: 46px;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+  }
+}
+
+.popup-no-image {
+  background-color: #000;
+  height: 186px;
+  @include media-breakpoint-down(lg) {
+    height: 155px;
+  }
+  @include media-breakpoint-down(md) {
+    height: 112px;
+  }
+  &:before {
+    position: absolute;
+    z-index: 2;
+    font-family: "FontAwesome";
+    content: "\f16a";
+    color: #fff;
+    font-size: 46px;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+  }
+}
+
+.carousel-overlay {
+  position: absolute;
+  right: 0;
+  top: 30px;
+  left: 0;
+  z-index: 15;
 }

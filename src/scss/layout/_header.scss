@@ -1,9 +1,6 @@
 /* Header */
 header {
   @include rem(padding, 30px 0 30px 0);
-  @include media-breakpoint-down(sm) {
-    border-bottom: 1px solid #ccc;
-  }
 }
 
 .logo {
@@ -29,7 +26,7 @@ header {
 }
 
 .site-search-mobile-container {
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(lg) {
     display: none;
   }
 }
@@ -49,5 +46,46 @@ header {
 @media print {
   .logo {
     text-decoration: none !important;
+  }
+}
+
+.contact-info {
+  float: right;
+  margin-top: 10px;
+  margin-bottom: 0;
+  @include rem(font-size, 18px);
+  color: #666;
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+  .fa-phone {
+    position: relative;
+    top: 2px;
+    font-size: 23px;
+    margin-right: 2px;
+  }
+  .fa-envelope {
+    margin-right: 4px;
+    position: relative;
+    top: 1px;
+    @include rem(font-size, 22px);
+  }
+  li {
+    @include rem(margin-left, 35px);
+    list-style: none;
+    padding: 0;
+    float: right;
+    display: block;
+  }
+  li:last-child {
+    margin-right: 0;
+  }
+}
+
+.contact-info-email {
+  color: #666;
+  &:hover {
+    text-decoration: none;
+    color: #666;
   }
 }

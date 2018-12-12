@@ -90,11 +90,24 @@
         </div>
         <div class="col-lg-4 col-md-4 col-sm-12 col-12">
           <ul class="footer-social-media">
-            <li><a class="instagram" href="#" title="Check out our Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-            <li><a class="email" href="#" title="Contact us by email"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
-            <li><a class="google-plus" href="#" title="Add us on Google Plus"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-            <li><a class="facebook" href="#" title="Follow us on Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-            <li><a class="twitter" href="#" title="Follow us on Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <% if $SiteConfig.SiteVimeo %>
+            <li><a class="vimeo" href="$SiteConfig.SiteVimeo" target="_blank" rel="noopener noreferrer"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
+            <% end_if %>
+            <% if $SiteConfig.SiteYoutube %>
+            <li><a class="youtube" href="$SiteConfig.SiteYoutube" target="_blank" rel="noopener noreferrer"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+            <% end_if %>
+            <% if $SiteConfig.SiteInstagram %>
+            <li><a class="instagram" href="$SiteConfig.SiteInstagram" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <% end_if %>
+            <% if $SiteConfig.SiteLinkedin %>
+            <li><a class="linkedin" href="$SiteConfig.SiteLinkedin" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <% end_if %>
+            <% if $SiteConfig.SiteTwitter %>
+            <li><a class="twitter" href="$SiteConfig.SiteTwitter" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <% end_if %>
+            <% if $SiteConfig.SiteFacebook %>
+            <li><a class="facebook" href="$SiteConfig.SiteFacebook" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <% end_if %>
           </ul>
         </div>
       </div>

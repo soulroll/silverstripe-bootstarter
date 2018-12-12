@@ -1,0 +1,13 @@
+/* Landing page */
+.page-summary {
+  padding-left: 0;
+  list-style: none;
+}
+.page-summary-title {
+  display: inline-block;
+  color: #000;
+  &:hover {
+    text-decoration: none;
+    color: #000;
+  }
+}

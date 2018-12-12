@@ -34,6 +34,8 @@
 
 /* Pages */
 @import "pages/search-results";
+@import "pages/landing-page";
+
 
 /* Components */
 @import "components/navbar";
@@ -48,6 +50,8 @@
 @import "components/elements";
 @import "components/carousel";
 @import "components/gallery";
+@import "components/alerts";
+@import "components/demo-toggle-panel";
 
 /* Forms */
 @import "forms/select";

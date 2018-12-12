@@ -59,7 +59,6 @@
     float: none;
   }
 }
-
 .footer-social-media {
   padding: 0;
   float: right;
@@ -84,23 +83,15 @@
     background-color: #222;
     text-align: center;
     color: #fff;
+    @include rem(margin-bottom, 8px);
     @include media-breakpoint-down(sm) {
       @include rem(margin-left, 0);
       float: none;
       display: inline;
     }
-    @include media-breakpoint-down(sm) {
-      @include rem(margin-bottom, 8px);
-    }
   }
   li:last-child a{
     margin-left: 0;
-  }
-  .twitter {
-    background-color: #039BE5;
-    &:hover {
-      background-color: darken(#039BE5, 10%)
-    }
   }
   .facebook {
     background-color: #39589B;
@@ -108,22 +99,34 @@
       background-color: darken(#39589B, 10%)
     }
   }
-  .google-plus {
-    background-color: #DD4D3F;
+  .twitter {
+    background-color: #039BE5;
     &:hover {
-      background-color: darken(#DD4D3F, 10%)
+      background-color: darken(#039BE5, 10%)
     }
   }
-  .email {
-    background-color: #CD1D22;
+  .linkedin {
+    background-color: #0270AD;
     &:hover {
-      background-color: darken(#CD1D22, 10%)
+      background-color: darken(#0270AD, 10%)
     }
   }
   .instagram {
     background-color: #845A4F;
     &:hover {
       background-color: darken(#845A4F, 10%)
+    }
+  }
+  .youtube {
+    background-color: #F60000;
+    &:hover {
+      background-color: darken(#F60000, 10%)
+    }
+  }
+  .vimeo {
+    background-color: #4CB4F7;
+    &:hover {
+      background-color: darken(#4CB4F7, 10%)
     }
   }
   @include media-breakpoint-down(sm) {
@@ -133,14 +136,17 @@
     .facebook {
       @include rem(padding, 5px 12px 5px 12px);
     }
-    .google-plus {
-      @include rem(padding, 5px);
-    }
-    .email {
-      @include rem(padding, 5px 8px 5px 8px);
+    .linkedin {
+      @include rem(padding, 5px 8px 5px 9px);
     }
     .instagram {
-      @include rem(padding, 5px 9px 5px 9px);
+      @include rem(padding, 5px 8px 5px 8px);
+    }
+    .youtube {
+      @include rem(padding, 5px 8px 5px 8px);
+    }
+    .vimeo {
+      @include rem(padding, 5px 7px 5px 7px);
     }
   }
 }
