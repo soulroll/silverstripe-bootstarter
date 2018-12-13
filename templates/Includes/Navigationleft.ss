@@ -9,7 +9,7 @@
   <% end_if %>
   <ul class="navigation-menu">
     <% loop $Menu(1) %>
-      <li class="navigation-item <% if Children %>has-children<% end_if %>" >
+      <li class="navigation-item <% if Children %>has-children<% end_if %>">
         <a class="navigation-link" href="$Link">$MenuTitle.XML</a>
         <% if Children %>
           <button class="navigation-chevron collapsed" data-toggle="collapse" data-target="#navigation-submenu-$ID" aria-expanded="false" aria-controls="navigation-submenu-$ID"></button>
