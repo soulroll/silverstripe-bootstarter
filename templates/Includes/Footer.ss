@@ -1,82 +1,4 @@
 <footer class="d-print-none">
-  <div class="container-full footer-first">
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6">
-          <div class="footer-list">
-            <h4>Topic</h4>
-            <ul>
-              <li><a href="#">Secondary link</a></li>
-              <li><a href="#">Secondary link</a></li>
-              <li><a href="#">Secondary link</a></li>
-              <li><a href="#">Secondary link</a></li>
-              <li><a href="#">Secondary link</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6">
-          <div class="footer-list">
-            <h4>Topic</h4>
-            <ul>
-              <li><a href="#">Secondary link</a></li>
-              <li><a href="#">Secondary link</a></li>
-              <li><a href="#">Secondary link</a></li>
-              <li><a href="#">Secondary link</a></li>
-              <li><a href="#">Secondary link</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6">
-          <div class="footer-list">
-            <h4>Topic</h4>
-            <ul>
-              <li><a href="#">Secondary link</a></li>
-              <li><a href="#">Secondary link</a></li>
-              <li><a href="#">Secondary link</a></li>
-              <li><a href="#">Secondary link</a></li>
-              <li><a href="#">Secondary link</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6">
-          <div class="footer-list">
-            <h4>Topic</h4>
-            <ul>
-              <li><a href="#">Secondary link</a></li>
-              <li><a href="#">Secondary link</a></li>
-              <li><a href="#">Secondary link</a></li>
-              <li><a href="#">Secondary link</a></li>
-              <li><a href="#">Secondary link</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6">
-          <div class="footer-list">
-            <h4>Topic</h4>
-            <ul>
-              <li><a href="#">Secondary link</a></li>
-              <li><a href="#">Secondary link</a></li>
-              <li><a href="#">Secondary link</a></li>
-              <li><a href="#">Secondary link</a></li>
-              <li><a href="#">Secondary link</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6">
-          <div class="footer-list">
-            <h4>Topic</h4>
-            <ul>
-              <li><a href="#">Secondary link</a></li>
-              <li><a href="#">Secondary link</a></li>
-              <li><a href="#">Secondary link</a></li>
-              <li><a href="#">Secondary link</a></li>
-              <li><a href="#">Secondary link</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
   <div class="container-full footer-secondary">
     <div class="container">
       <div class="row">
@@ -100,6 +22,9 @@
             <% end_if %>
             <% if $SiteConfig.SiteInstagram %>
             <li><a class="instagram" href="$SiteConfig.SiteInstagram" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <% end_if %>
+            <% if $SiteConfig.SiteGooglePlus %>
+            <li><a class="google" href="$SiteConfig.SiteGooglePlus" target="_blank" rel="noopener noreferrer"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
             <% end_if %>
             <% if $SiteConfig.SiteLinkedin %>
             <li><a class="linkedin" href="$SiteConfig.SiteLinkedin" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>

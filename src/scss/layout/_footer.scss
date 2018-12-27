@@ -111,6 +111,12 @@
       background-color: darken(#0270AD, 10%)
     }
   }
+  .google {
+    background-color: #DD4C39;
+    &:hover {
+      background-color: darken(#DD4C39, 10%)
+    }
+  }
   .instagram {
     background-color: #845A4F;
     &:hover {
@@ -138,6 +144,9 @@
     }
     .linkedin {
       @include rem(padding, 5px 8px 5px 9px);
+    }
+    .google {
+      @include rem(padding, 5px 4px 5px 4px);
     }
     .instagram {
       @include rem(padding, 5px 8px 5px 8px);
