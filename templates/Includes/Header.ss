@@ -20,11 +20,13 @@
         </button>
         <% if $SiteConfig.SiteNavigation == Right %>
         <div class="navigation-desktop-right">
+          <% if $SearchForm %>
           <button class="search-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           </button>
           <div class="search-toggle-dropdown">
             $SearchForm
           </div>
+          <% end_if %>
           <ul class="navigation-desktop-right-menu">
             <% loop $Menu(1) %>
               <li class="navigation-desktop-right-item <% if Children %>navigation-desktop-right-item-has-children<% end_if %>">
@@ -70,6 +72,11 @@
 <div class="navigation-mobile-right">
   <div class="navigation collapse" id="navigation">
     <div class="container">
+      <% if $SearchForm %>
+        <div class="search-mobile">
+          $SearchForm
+        </div>
+      <% end_if %>
       <% include Menu %>
     </div>
   </div>
