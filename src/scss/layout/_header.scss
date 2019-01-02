@@ -1,7 +1,11 @@
 /* Header */
 header {
   @include rem(padding, 30px 0 30px 0);
-  border-bottom: 1px solid #ddd;
+}
+
+.header-left {
+  border-bottom: 1px #e0e2e5 solid;
+  box-shadow: 0 0 4px rgba(0,0,0,.1);
 }
 
 .logo {

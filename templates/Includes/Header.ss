@@ -1,11 +1,11 @@
-<header role="banner">
+<header role="banner" <% if $SiteConfig.SiteNavigation == Right %>class="header-left"<% end_if %>>
   <div class="container">
     <div class="row">
       <div class="col">
         <% if $SiteConfig.SiteLogo %>
           <a href="$BaseHref" class="logo" rel="home">
             <% with $SiteConfig %>
-              $SiteLogo.ScaleWidth(187)
+              $SiteLogo
             <% end_with %>
           </a>
         <% else %>
@@ -20,6 +20,11 @@
         </button>
         <% if $SiteConfig.SiteNavigation == Right %>
         <div class="navigation-desktop-right">
+          <button class="search-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          </button>
+          <div class="search-toggle-dropdown">
+            $SearchForm
+          </div>
           <ul class="navigation-desktop-right-menu">
             <% loop $Menu(1) %>
               <li class="navigation-desktop-right-item <% if Children %>navigation-desktop-right-item-has-children<% end_if %>">

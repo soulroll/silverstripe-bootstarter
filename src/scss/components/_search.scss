@@ -1,0 +1,33 @@
+/* Search */
+.search {
+  float: right;
+  width: 200px;
+}
+
+.search-toggle {
+  float: right;
+  background-color: transparent;
+  margin-top: 4px;
+  border: 0;
+  padding: 6px 0px 6px 14px;
+  &:before {
+    font-family: "FontAwesome";
+    content: "\f002";
+  }
+}
+
+.search-toggle-dropdown {
+  display: none;
+  position: absolute;
+  right: 50px;
+  top: 3px;
+  z-index: 99;
+}
+
+.search-toggle-dropdown.open {
+  display: block;
+}
+
+.btn-header-search {
+  border-radius: 0 3px 3px 0;
+}

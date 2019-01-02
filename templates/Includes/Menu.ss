@@ -1,14 +1,3 @@
-<%--
-<% if $SearchForm %>
-<div class="site-search-mobile-container">
-  <form action="/home/SearchForm" method="get" enctype="application/x-www-form-urlencoded" class="site-search-mobile">
-    <input class="form-control" type="text" placeholder="Search" name="Search">
-    <button class="btn btn-outline-success site-search-btn" type="submit" name="action_results" id="SearchForm_SearchForm_action_results">Search</button>
-  </form>
-</div>
-<% end_if %>
---%>
-
 <ul class="navigation-menu">
   <% loop $Menu(1) %>
     <li class="navigation-item <% if Children %>has-children<% end_if %>">
