@@ -31,7 +31,7 @@
 .search-mobile {
   margin-top: 15px;
   @include media-breakpoint-down(xs) {
-    padding: 15px 15px 2px 15px;
+    padding: 20px 15px 20px 15px;
     margin: 0;
   }
 }

@@ -35,7 +35,6 @@
 @import "pages/search-results";
 @import "pages/landing-page";
 
-
 /* Components */
 @import "components/navbar";
 @import "components/page-banner";
@@ -61,3 +60,6 @@
 @import "modules/blog/blog";
 @import "modules/events/events";
 @import "modules/forum/forum";
+
+/*Theme*/
+@import "theme/colours";

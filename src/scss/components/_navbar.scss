@@ -176,6 +176,9 @@
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  @include media-breakpoint-down(xs) {
+    border-top: 1px solid #eee;
+  }
 }
 
 /* List items */
@@ -187,6 +190,9 @@
   text-align: left;
   &:first-child {
     border-top: 0;
+  }
+  @include media-breakpoint-down(xs) {
+    border-top: 1px solid #eee;
   }
 }
 
@@ -245,8 +251,6 @@
     }
   }
 }
-
-
 
 .navigation-left {
   @include media-breakpoint-up(md) {

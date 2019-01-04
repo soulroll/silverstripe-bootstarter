@@ -15,7 +15,7 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png"> <!-- To Do -->
     <link rel="stylesheet" type="text/css" href="resources/themes/silverstripe-bootstarter/dist/css/style.css">
   </head>
-  <body class="$ClassName">
+  <body class="$ClassName $SiteConfig.SiteColor">
     <!--[if lte IE 9]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
     <![endif]-->

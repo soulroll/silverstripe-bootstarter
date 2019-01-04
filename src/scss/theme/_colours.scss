@@ -1,0 +1,78 @@
+$light-green-shine: #689F38;
+$light-green: #558B2F;
+$light-green-shade: #33691E;
+
+$green-shine: #388E3C;
+$green: #2E7D32;
+$green-shade: #1B5E20;
+
+$blue-shine: #039BE5;
+$blue: #0277BD;
+$blue-shade: #01579B;
+
+$navy-shine: #195f8b;
+$navy: #004673;
+$navy-shade: #00385C;
+
+$teal-shine: #009688;
+$teal: #00897B;
+$teal-shade: #00695C;
+
+$cyan-shine: #0097A7;
+$cyan: #00838F;
+$cyan-shade: #006064;
+
+$red-shine: #af1f22;
+$red: #D2232A;
+$red-shade: #af1f22;
+
+$orange-shine: #f8a037;
+$orange: #f38809;
+$orange-shade: #da6908;
+
+$purple-shine: #9C27B0;
+$purple: #7B1FA2;
+$purple-shade: #4A148C;
+
+$brown-shine: #8D6E63;
+$brown: #795548;
+$brown-shade:#3E2723;
+
+$theme-colours: (
+  theme-light-green: $light-green,
+  theme-green: $green,
+  theme-blue: $blue,
+  theme-navy: $navy,
+  theme-teal: $teal,
+  theme-cyan: $cyan,
+  theme-red: $red,
+  theme-orange: $orange,
+  theme-purple: $purple,
+  theme-brown: $brown
+);
+
+$theme-colours-shine: (
+  theme-light-green: $light-green-shine,
+  theme-green: $green-shine,
+  theme-blue: $blue-shine,
+  theme-navy: $navy-shine,
+  theme-teal: $teal-shine,
+  theme-cyan: $cyan-shine,
+  theme-red: $red-shade,
+  theme-orange: $orange-shine,
+  theme-purple: $purple-shine,
+  theme-brown: $brown-shine
+);
+
+$theme-colours-shade: (
+  theme-light-green: $light-green-shade,
+  theme-green: $green-shade,
+  theme-blue: $blue-shade,
+  theme-navy: $navy-shade,
+  theme-teal: $teal-shade,
+  theme-cyan: $cyan-shade,
+  theme-red: $red-shade,
+  theme-orange: $orange-shade,
+  theme-purple: $purple-shade,
+  theme-brown: $brown-shade
+);
