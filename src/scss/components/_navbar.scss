@@ -373,6 +373,21 @@
   }
 }
 
+.navigation-left,
+.navigation-justified {
+  @include media-breakpoint-down(xs) {
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  @include media-breakpoint-up(md) {
+    .navigation-submenu {
+      display: none;
+    }
+  }
+}
+
 .navigation-mobile-right {
   @include media-breakpoint-up(lg) {
     display: none;

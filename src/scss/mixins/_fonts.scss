@@ -1,4 +1,3 @@
-// fonts
 @mixin font-face($fontname, $filename: $fontname, $weight: normal, $style: normal) {
  @font-face {
    font-family: $fontname;
