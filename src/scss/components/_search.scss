@@ -1,6 +1,5 @@
 .search {
   float: right;
-  width: 200px;
 }
 
 .search-toggle {
@@ -32,6 +31,9 @@
   @include media-breakpoint-down(xs) {
     padding: 20px 15px 20px 15px;
     margin: 0;
+  }
+  .input-group {
+    width: 100%;
   }
 }
 

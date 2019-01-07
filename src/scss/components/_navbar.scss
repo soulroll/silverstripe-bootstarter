@@ -215,18 +215,18 @@
 
 .navigation-submenu-link,
 .navigation-sub-submenu-link {
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(md) {
     @include rem(padding, 8px 20px 8px 20px);
   }
 }
 
 .navigation-submenu-link {
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(sm) {
     @include rem(padding-left, 35px);
   }
 }
 .navigation-sub-submenu-link {
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(sm) {
     @include rem(padding-left, 65px);
   }
 }

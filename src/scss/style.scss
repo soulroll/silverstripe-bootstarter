@@ -1,3 +1,6 @@
+/*Theme*/
+@import "theme/colours";
+
 /* Mixins */
 @import "mixins/rem";
 @import "mixins/fonts";
@@ -61,5 +64,5 @@
 @import "modules/events/events";
 @import "modules/forum/forum";
 
-/*Theme*/
-@import "theme/colours";
+/* Theme */
+@import "theme/site-colours";

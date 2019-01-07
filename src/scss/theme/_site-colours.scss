@@ -1,0 +1,64 @@
+.navigation-left {
+  @include media-breakpoint-up(md) {
+    @each $theme, $color in $theme-colours {
+      body.#{$theme} & {
+        background-color: $color;
+        .navigation-link {
+          color: #fff;
+        }
+      }
+    }
+    @each $theme, $color in $theme-colours-shade {
+      body.#{$theme} & {
+        border-top: 1px solid $color;
+        border-bottom: 1px solid $color;
+        .navigation-item {
+          border-left: 1px solid $color;
+          &:last-child {
+            border-right: 1px solid $color;
+          }
+        }
+      }
+    }
+  }
+}
+.contact-info {
+  @each $theme, $color in $theme-colours {
+    body.#{$theme} & {
+      .fa {
+        color: $color;
+      }
+    }
+  }
+}
+.page-banner-background {
+  background-color: #ddd;
+  @each $theme, $color in $theme-colours-shade {
+    body.#{$theme} & {
+      background-color: $color;
+      h1 {
+        color: #fff;
+      }
+    }
+  }
+}
+.navigation-submenu {
+  @include media-breakpoint-up(md) {
+    @each $theme, $color in $theme-colours {
+      body.#{$theme} & {
+        background-color: $color !important;
+        .navigation-submenu-link {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+.navigation-toggle {
+  @each $theme, $color in $theme-colours {
+    body.#{$theme} & {
+      background-color: $color !important;
+      color: #fff;
+    }
+  }
+}
