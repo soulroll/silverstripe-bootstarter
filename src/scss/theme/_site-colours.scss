@@ -1,10 +1,14 @@
-.navigation-left {
+.navigation-left,
+.navigation-justified {
   @include media-breakpoint-up(md) {
     @each $theme, $color in $theme-colours {
       body.#{$theme} & {
         background-color: $color;
         .navigation-link {
           color: #fff;
+          &:hover {
+            background-color: lighten($color, 5%)
+          };
         }
       }
     }
@@ -59,6 +63,65 @@
     body.#{$theme} & {
       background-color: $color !important;
       color: #fff;
+    }
+  }
+}
+.copyright-symbol {
+  @each $theme, $color in $theme-colours {
+    body.#{$theme} & {
+      color: $color;
+    }
+  }
+}
+.btn-card-theme {
+  @each $theme, $color in $theme-colours {
+    body.#{$theme} & {
+      background-color: $color;
+      color: #fff;
+      &:hover {
+        background-color: lighten($color, 5%)
+      };
+    }
+  }
+}
+.btn-theme {
+  padding: 15px;
+  margin-bottom: 5px;
+}
+.btn-theme-light-green {
+  background-color: $light-green;
+}
+.btn-theme-green {
+  background-color: $green;
+}
+.btn-theme-blue {
+  background-color: $blue;
+}
+.btn-theme-navy {
+  background-color: $navy;
+}
+.btn-theme-teal {
+  background-color: $teal;
+}
+.btn-theme-cyan {
+  background-color: $cyan;
+}
+.btn-theme-red {
+  background-color: $red;
+}
+.btn-theme-orange {
+  background-color: $orange;
+}
+.btn-theme-purple {
+  background-color: $purple;
+}
+.btn-theme-brown {
+  background-color: $brown;
+}
+.back-to-top {
+  @each $theme, $color in $theme-colours {
+    body.#{$theme} & {
+      background-color: $color !important;
     }
   }
 }

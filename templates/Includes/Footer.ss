@@ -10,7 +10,7 @@
             <% end_loop %>
           </ul>
           <% end_if %>
-          <% if $SiteConfig.SiteCopyright %><p class="footer-copyright">&copy; $SiteConfig.SiteCopyright</p><% end_if %>
+          <% if $SiteConfig.SiteCopyright %><p class="footer-copyright"><span class="copyright-symbol">&copy;</span> $SiteConfig.SiteCopyright</p><% end_if %>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-12 col-12">
           <ul class="footer-social-media">
