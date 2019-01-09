@@ -252,7 +252,8 @@
   }
 }
 
-.navigation-left {
+.navigation-left,
+.navigation-megamenu {
   @include media-breakpoint-up(md) {
     width: 100%;
     background-color: #eee;
@@ -395,4 +396,17 @@
       padding-right: 0;
     }
   }
+}
+
+.navigation-megamenu-panel {
+  display: none;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 148px;
+  min-height: 420px;
+  z-index: 99;
+  clear: both;
+  background-color: #eee;
 }

@@ -1,5 +1,6 @@
 .navigation-left,
-.navigation-justified {
+.navigation-justified,
+.navigation-megamenu {
   @include media-breakpoint-up(md) {
     @each $theme, $color in $theme-colours {
       body.#{$theme} & {
