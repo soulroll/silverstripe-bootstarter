@@ -2,28 +2,25 @@
   <% loop $Menu(1) %>
     <li class="navigation-item <% if Children %>has-children<% end_if %>">
       <a class="navigation-link $LinkingMode" href="$Link">$MenuTitle.XML</a>
-    </li>
-    <% if Children %>
       <div class="navigation-megamenu-panel">
         <div class="container">
           <div class="row">
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-              <ul>
-
+            <div class="col-lg-4 col-md-4">
+              <h3><a href="$Link">$MenuTitle.XML</a></h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu nisi eu ex venenatis semper eu et sapien.</p>
+            </div>
+            <div class="col-lg-8 col-md-8">
+              <ul class="navigation-megamenu-menu row">
+              <% loop $Children %>
+                <div class="col-lg-4 col-md-4">
+                  <li class="navigation-megamenu-item"><a href="$Link">$MenuTitle.XML</a></li>
+                </div>
+              <% end_loop %>
               </ul>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-              test
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-              test
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-              test
             </div>
           </div>
         </div>
       </div>
-    <% end_if %>
+    </li>
   <% end_loop %>
 </ul>

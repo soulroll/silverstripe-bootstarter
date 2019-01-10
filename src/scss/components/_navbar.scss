@@ -404,9 +404,33 @@
   width: 100%;
   left: 0;
   right: 0;
-  top: 148px;
-  min-height: 420px;
+  top: 150px;
   z-index: 99;
   clear: both;
   background-color: #eee;
+  padding: 20px 0 20px 0;
+}
+
+.navigation-megamenu {
+  .navigation-item {
+    position: static;
+  }
+  @include media-breakpoint-up(md) {
+    .navigation-item.has-children {
+      &:hover {
+        .navigation-megamenu-panel {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.navigation-megamenu-menu {
+  padding-left: 0;
+  list-style: none;
+}
+
+.navigation-megamenu-item {
+  padding: 3px 0 3px 0;
 }
