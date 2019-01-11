@@ -126,3 +126,18 @@
     }
   }
 }
+
+.navigation-megamenu-panel {
+  @each $theme, $color in $theme-colours {
+    body.#{$theme} & {
+      background-color: $color !important;
+      color: #fff;
+      h3 a {
+        color: #fff;
+      }
+      .navigation-megamenu-item a {
+        color: #fff;
+      }
+    }
+  }
+}

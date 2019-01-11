@@ -7,7 +7,7 @@
           <div class="row">
             <div class="col-lg-4 col-md-4">
               <h3><a href="$Link">$MenuTitle.XML</a></h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu nisi eu ex venenatis semper eu et sapien.</p>
+              <p>$MegamenuDescription</p>
             </div>
             <div class="col-lg-8 col-md-8">
               <ul class="navigation-megamenu-menu row">

@@ -1,9 +1,4 @@
 <div class="demo-toggle-panel">
-  <h3>Navigation</h3>
-  <select name="navigation_style" id="navigation_style" class="mb-3">
-    <option selected="selected">navigation-left</option>
-    <option>navigation-justified</option>
-  </select>
   <h3>Colour</h3>
   <button type="button" class="btn btn-theme btn-theme-light-green"></button>
   <button type="button" class="btn btn-theme btn-theme-green"></button>
