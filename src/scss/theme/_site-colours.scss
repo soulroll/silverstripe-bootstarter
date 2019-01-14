@@ -141,3 +141,24 @@
     }
   }
 }
+
+.page-summary-title {
+  @each $theme, $color in $theme-colours {
+    body.#{$theme} & {
+      &:hover {
+        color: $color !important;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.sidebar {
+  li a:hover {
+    @each $theme, $color in $theme-colours {
+      body.#{$theme} & {
+        color: $color !important;
+      }
+    }
+  }
+}
