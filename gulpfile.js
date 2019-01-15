@@ -20,7 +20,7 @@ var PATHS = {
     'img': './src/img/**/*',
     'fonts': './src/fonts/**/*',
     'fontawesome': './node_modules/font-awesome/fonts/**/*',
-    'favicons': './src/favicons/**/*'
+    'ico': './src/ico/**/*'
   },
   'dist': {
     'css': './dist/css/',
@@ -28,7 +28,7 @@ var PATHS = {
     'img': './dist/img/',
     'fonts': './dist/fonts/',
     'fontawesome': './dist/fonts/',
-    'favicons': './dist/'
+    'ico': './dist/ico/'
   }
 }
 
@@ -135,8 +135,8 @@ function copyFontAwesome() {
 }
 
 function copyFavicons() {
-  return gulp.src(PATHS.src.favicons)
-    .pipe(gulp.dest(PATHS.dist.favicons));
+  return gulp.src(PATHS.src.ico)
+    .pipe(gulp.dest(PATHS.dist.ico));
 }
 
 // Development

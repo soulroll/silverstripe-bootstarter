@@ -11,21 +11,21 @@
       display: block;
     }
     .link {
-      color: $colour-sidebar-link;
+      color: #000;
       &:hover {
-        color: $colour-sidebar-link-hover;
+        color: #222;
       }
     }
     .current {
-      color: $colour-sidebar-link-current;
+      color: #000;
       &:hover {
-        color: $colour-sidebar-link-current-hover;
+        color: #222;
       }
     }
     .section {
-      color: $colour-sidebar-link-section;
+      color: #000;
       &:hover {
-        color: $colour-sidebar-link-section-hover;
+        color: #222;
       }
     }
   }

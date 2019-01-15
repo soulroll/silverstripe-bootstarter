@@ -1,10 +1,16 @@
 /* Javascript for the gallery popups */
 $('.gallery-popup').magnificPopup({
-  type: 'image'
+  type: 'image',
+  gallery: {
+    enabled: true
+  }
 });
 
 $('.popup-image').magnificPopup({
-  type: 'image'
+  type: 'image',
+  gallery: {
+    enabled: true
+  }
 });
 
 $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({

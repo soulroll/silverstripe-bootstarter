@@ -126,7 +126,6 @@
     }
   }
 }
-
 .navigation-megamenu-panel {
   @each $theme, $color in $theme-colours {
     body.#{$theme} & {
@@ -141,7 +140,6 @@
     }
   }
 }
-
 .page-summary-title {
   @each $theme, $color in $theme-colours {
     body.#{$theme} & {
@@ -152,12 +150,14 @@
     }
   }
 }
-
 .sidebar {
-  li a:hover {
+  li {
     @each $theme, $color in $theme-colours {
       body.#{$theme} & {
-        color: $color !important;
+        a:hover,
+        .current {
+          color: $color !important;
+        }
       }
     }
   }

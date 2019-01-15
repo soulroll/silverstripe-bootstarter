@@ -6,6 +6,10 @@ $('#navigation_style').change(function(){
     selectedScheme = $(this).val();
 });
 
+$('.demo-close').click(function(){
+    $('.demo-toggle-panel').toggleClass('demo-toggle-panel-close');
+});
+
 $('.btn-theme-light-green').click(function(){
     $('body').removeClass(selectedColour)
     $('body').addClass('theme-light-green');
