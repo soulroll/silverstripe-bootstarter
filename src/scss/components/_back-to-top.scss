@@ -1,5 +1,4 @@
 .back-to-top {
-  @include transition(color, 0.5s, ease-in-out);
   @include rem(padding, 6px 13px 10px 13px);
   position: fixed;
   right: 20px;

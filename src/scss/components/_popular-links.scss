@@ -4,22 +4,22 @@
     list-style: none;
   }
   li {
+    @include rem(margin-right, 5px);
+    @include rem(margin-bottom, 5px);
     display: inline-block;
     float: left;
-    margin-right: 5px;
-    margin-bottom: 5px;
   }
   a {
+    @include rem(padding, 10px 15px 10px 15px);
     display: block;
     background-color: #fff;
-    padding: 10px 15px 10px 15px;
     color: #000;
   }
 }
 
 .popular-links-heading {
+  @include rem(padding, 6px 15px 6px 15px);
+  @include rem(margin-bottom, 5px);
   background-color: #fff;
-  padding: 6px 15px 6px 15px;
-  margin-bottom: 5px;
   display: inline-block;
 }

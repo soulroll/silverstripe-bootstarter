@@ -1,12 +1,12 @@
 .demo-toggle-panel {
   @include rem(padding, 35px);
+  @include rem(margin-top, 120px);
+  @include rem(width, 320px);
   position: absolute;
   z-index: 99;
   right: 25px;
   top: 0;
-  margin-top: 120px;
   background-color: #eee;
-  width: 320px;
   box-shadow: 0 0 4px rgba(0,0,0,.2);
   border: 1px solid #aaa;
 }

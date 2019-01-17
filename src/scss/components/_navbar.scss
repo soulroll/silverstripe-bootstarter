@@ -399,6 +399,7 @@
 }
 
 .navigation-megamenu-panel {
+  @include rem(padding, 30px 0 30px 0);
   display: none;
   position: absolute;
   width: 100%;
@@ -408,12 +409,17 @@
   z-index: 99;
   clear: both;
   background-color: #eee;
-  padding: 30px 0 30px 0;
 }
 
 .navigation-megamenu {
   .navigation-item {
     position: static;
+  }
+  .container {
+    @include media-breakpoint-down(xs) {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
   @include media-breakpoint-up(md) {
     .navigation-item.has-children {
@@ -432,5 +438,5 @@
 }
 
 .navigation-megamenu-item {
-  padding: 3px 0 3px 0;
+  @include rem(padding, 3px 0 3px 0);
 }

@@ -8,6 +8,7 @@
         .navigation-link {
           color: #fff;
           &:hover {
+            transition: background-color 0.6s ease;
             background-color: lighten($color, 5%)
           };
         }
@@ -122,7 +123,11 @@
 .back-to-top {
   @each $theme, $color in $theme-colours {
     body.#{$theme} & {
-      background-color: $color !important;
+      transition: background-color 0.6s ease;
+      background-color: $color;
+      &:hover {
+        background-color: lighten($color, 10%)
+      };
     }
   }
 }
