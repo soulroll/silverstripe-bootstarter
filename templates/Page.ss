@@ -21,7 +21,9 @@
     <![endif]-->
     <% include Header %>
     <% include Navigation %>
-    <% include DemoTogglePanel %>
+    <% if $SiteConfig.ShowDemoTogglePanel %>
+      <% include DemoTogglePanel %>
+    <% end_if %>
     <main role="main">
       $Layout
     </main>

@@ -372,7 +372,8 @@
 }
 
 .navigation-left,
-.navigation-justified {
+.navigation-justified,
+.navigation-megamenu {
   @include media-breakpoint-down(xs) {
     .container {
       padding-left: 0;
@@ -382,6 +383,14 @@
   @include media-breakpoint-up(md) {
     .navigation-submenu {
       display: none;
+    }
+  }
+}
+
+.navigation-megamenu {
+  @include media-breakpoint-up(md) {
+    .navigation-submenu {
+      display: none !important;
     }
   }
 }
@@ -414,6 +423,9 @@
 .navigation-megamenu {
   .navigation-item {
     position: static;
+    @include media-breakpoint-down(sm) {
+      position: relative;
+    }
   }
   .container {
     @include media-breakpoint-down(xs) {
