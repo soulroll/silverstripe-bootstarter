@@ -1,11 +1,15 @@
-.card-img-top {
-  transform: scale(1);
-  -webkit-transition: 0.6s ease;
-  transition: 0.6s ease;
-  &:hover {
-    transform: scale(1.1);
-  };
+.card a {
+  .card-img-top {
+    transform: scale(1);
+    -webkit-transition: 0.6s ease;
+    transition: 0.6s ease;
+    &:hover {
+      transform: scale(1.1);
+    };
+  }
 }
+
 .card-img-holder {
   overflow: hidden;
 }
+

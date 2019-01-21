@@ -270,9 +270,9 @@
       width: 100%;
       .navigation-item {
         float: left;
-        border-left: 1px solid #ccc;
+        // border-left: 1px solid #ccc;
         &:last-child {
-          border-right: 1px solid #ccc;
+          // border-right: 1px solid #ccc;
         }
       }
       .navigation-link {
@@ -302,7 +302,7 @@
           @include rem(width, 220px);
           display: block;
           position: absolute;
-          top: 49px;
+          top: 48px;
           left: 0;
           background-color: #eee;
           height: auto;
@@ -339,7 +339,7 @@
         display: table-cell;
         text-align: center;
         width: 1%;
-        border-left: 1px solid #ccc;
+        // border-left: 1px solid #ccc;
       }
     }
   }
@@ -360,7 +360,7 @@
           @include rem(width, 220px);
           display: block;
           position: absolute;
-          top: 49px;
+          top: 48px;
           left: 0;
           background-color: #eee;
           height: auto;
@@ -414,7 +414,7 @@
   width: 100%;
   left: 0;
   right: 0;
-  top: 150px;
+  top: 148px;
   z-index: 99;
   clear: both;
   background-color: #eee;

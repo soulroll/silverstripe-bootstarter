@@ -24,4 +24,16 @@
       <% end_if %>
     </li>
   <% end_loop %>
+
+  <% if $SiteConfig.SiteNavigation != Justified %>
+
+  <% if $SearchForm %>
+  <button class="search-toggle search-toggle-navigation" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  </button>
+  <div class="search-toggle-dropdown search-toggle-dropdown-navigation">
+    $SearchForm
+  </div>
+  <% end_if %>
+  <% end_if %>
+
 </ul>

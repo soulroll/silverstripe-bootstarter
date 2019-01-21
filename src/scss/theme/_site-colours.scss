@@ -16,12 +16,13 @@
     }
     @each $theme, $color in $theme-colours-shade {
       body.#{$theme} & {
-        border-top: 1px solid $color;
-        border-bottom: 1px solid $color;
+        // border-top: 1px solid $color;
+        // border-bottom: 1px solid $color;
+        border: 0;
         .navigation-item {
-          border-left: 1px solid $color;
+          // border-left: 1px solid $color;
           &:last-child {
-            border-right: 1px solid $color;
+            // border-right: 1px solid $color;
           }
         }
       }
@@ -134,7 +135,7 @@
 .navigation-megamenu-panel {
   @each $theme, $color in $theme-colours {
     body.#{$theme} & {
-      background-color: $color !important;
+      background-color: darken($color, 4%);
       color: #fff;
       h3 a {
         color: #fff;
@@ -165,5 +166,10 @@
         }
       }
     }
+  }
+}
+
+.search-toggle-navigation {
+  @each $theme, $color in $theme-colours {
   }
 }

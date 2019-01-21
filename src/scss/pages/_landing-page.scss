@@ -3,6 +3,7 @@
   list-style: none;
   float: left;
   width: 100%;
+  margin-bottom: 30px;
 }
 .page-summary-title {
   display: inline-block;
@@ -14,7 +15,7 @@
 }
 .page-summary-image {
   float: left;
-  margin-right: 15px;
+  margin-right: 20px;
   overflow: hidden;
   img {
     transform: scale(1);
