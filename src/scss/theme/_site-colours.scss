@@ -168,8 +168,30 @@
     }
   }
 }
-
 .search-toggle-navigation {
   @each $theme, $color in $theme-colours {
+  }
+}
+.navigation-menu {
+  @include media-breakpoint-down(xs) {
+    @each $theme, $color in $theme-colours {
+      body.#{$theme} & {
+        background-color: $color;
+        .navigation-chevron {
+          &:after {
+            color: #fff;
+          }
+        }
+        .navigation-link,
+        .navigation-submenu-link {
+          color: #fff;
+        }
+        .navigation-submenu,
+        .navigation-submenu-item,
+        .navigation-item {
+          border-color: darken($color, 5%);
+        }
+      }
+    }
   }
 }

@@ -1,7 +1,7 @@
-.dnadesign__elementaluserforms__model__elementform {
-  @include rem(margin-bottom, 30px);
-}
-.dnadesign__elementallist__model__elementlist {
+.dnadesign__elementaluserforms__model__elementform,
+.dnadesign__elementallist__model__elementlist,
+.silverstripe__elementalbannerblock__block__bannerblock,
+.silverstripe__elementalfileblock__block__fileblock {
   @include rem(margin-bottom, 30px);
 }
 .file-element__file {

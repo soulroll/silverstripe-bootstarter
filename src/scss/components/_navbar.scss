@@ -2,7 +2,7 @@
   float: right;
   border: none;
   background-color: #eee;
-  @include rem(margin-top, 3px);
+  @include rem(margin-top, 0px);
   @include rem(padding, 4px 14px 4px 14px);
   &:after {
     @include rem(font-size, 24px);

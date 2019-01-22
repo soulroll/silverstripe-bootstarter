@@ -1,9 +1,13 @@
 .page-summary {
-  padding-left: 0;
-  list-style: none;
   float: left;
+  position: relative;
+  list-style: none;
   width: 100%;
   margin-bottom: 30px;
+}
+.page-summary.with-image {
+  padding-left: 160px;
+  min-height: 107px;
 }
 .page-summary-title {
   display: inline-block;
@@ -14,10 +18,11 @@
   }
 }
 .page-summary-image {
-  float: left;
-  margin-right: 20px;
+  left: 0;
+  position: absolute;
   overflow: hidden;
   img {
+    border: 1px solid #ccc;
     transform: scale(1);
     -webkit-transition: 0.6s ease;
     transition: 0.6s ease;
