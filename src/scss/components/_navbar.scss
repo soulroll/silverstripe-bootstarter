@@ -452,3 +452,9 @@
 .navigation-megamenu-item {
   @include rem(padding, 3px 0 3px 0);
 }
+
+.navigation-chevron {
+  @include media-breakpoint-down(xs) {
+    border-left: 1px solid #ccc;
+  }
+}

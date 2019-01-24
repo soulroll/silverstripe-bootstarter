@@ -189,8 +189,17 @@
         .navigation-submenu,
         .navigation-submenu-item,
         .navigation-item {
-          border-color: darken($color, 3%);
+          border-color: darken($color, 5%);
         }
+      }
+    }
+  }
+}
+.navigation-chevron {
+  @include media-breakpoint-down(xs) {
+    @each $theme, $color in $theme-colours {
+      body.#{$theme} & {
+        border-color: darken($color, 5%);
       }
     }
   }
