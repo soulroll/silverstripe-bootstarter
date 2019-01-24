@@ -1,3 +1,12 @@
 .alert-page {
   @include rem(margin-top, 30px);
 }
+.alert-title {
+  font-weight: bold;
+}
+.alert-body {
+  display: inline-block;
+  p {
+    margin-bottom: 0;
+  }
+}
