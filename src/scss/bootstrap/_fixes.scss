@@ -57,7 +57,7 @@ button {
 #accordion {
   .card-header {
     cursor: pointer;
-    padding-right: 40px;
+    @include rem(padding-right, 40px);
     &:after {
       position: absolute;
       font-family: "FontAwesome";

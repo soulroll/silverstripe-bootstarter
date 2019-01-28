@@ -1,12 +1,10 @@
 header {
   @include rem(padding, 30px 0 30px 0);
 }
-
 .header-left {
   border-bottom: 1px #e0e2e5 solid;
   box-shadow: 0 0 4px rgba(0,0,0,.1);
 }
-
 .logo {
   float: left;
   color: #000;
@@ -15,26 +13,21 @@ header {
     color: #000;
   }
 }
-
 .site-title,
 .site-tagline {
   margin: 0;
 }
-
 .site-title {
   @include rem(font-size, 22px);
 }
-
 .site-tagline {
   @include rem(font-size, 16px);
 }
-
 .site-search-mobile-container {
   @include media-breakpoint-up(lg) {
     display: none;
   }
 }
-
 .site-search {
   @include rem(margin-top, 6px);
   float: right;
@@ -42,17 +35,14 @@ header {
     display: none;
   }
 }
-
 .site-search-btn {
   @include rem(margin-left, 5px);
 }
-
 @media print {
   .logo {
     text-decoration: none !important;
   }
 }
-
 .contact-info {
   float: right;
   margin-top: 5px;
@@ -85,7 +75,6 @@ header {
     margin-right: 0;
   }
 }
-
 .contact-info-email {
   color: #666;
   &:hover {

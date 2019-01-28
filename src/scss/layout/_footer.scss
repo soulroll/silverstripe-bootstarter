@@ -57,11 +57,10 @@
     float: none;
   }
 }
-
 .footer-social-media {
+  @include rem(margin-top, 10px);
   padding: 0;
   float: right;
-  @include rem(margin-top, 10px);
   @include media-breakpoint-down(sm) {
     width: 100%;
     text-align: center;
@@ -152,12 +151,12 @@
 }
 
 .page-footer {
+  @include rem(margin-top, 30px);
+  @include rem(padding, 15px 0 15px 0);
   clear: both;
   float: left;
   width: 100%;
   border-top: 1px solid #eee;
-  @include rem(margin-top, 30px);
-  @include rem(padding, 15px 0 15px 0);
   color: #999;
 }
 

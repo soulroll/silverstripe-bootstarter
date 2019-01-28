@@ -1,8 +1,8 @@
 .post-summary {
+  @include rem(max-width, 900px);
+  @include rem(margin-bottom, 30px);
   position: relative;
   width: 100%;
-  max-width: 900px;
-  @include rem(margin-bottom, 30px);
   h3 {
     display: inline-block;
     a {
@@ -14,16 +14,25 @@
   @include rem(padding-left, 160px);
   min-height: 105px;
 }
-.post-summary-image {
+.post-summary-image-holder {
+  @include rem(width, 140px);
   position: absolute;
   left: 0;
   top: 0;
-  width: 140px;
   border: 1px solid #ccc;
+  overflow: hidden;
+  .post-summary-image {
+    transform: scale(1);
+    -webkit-transition: 0.6s ease;
+    transition: 0.6s ease;
+    &:hover {
+      transform: scale(1.1);
+    };
+  }
 }
 .post-image {
-  float: right;
   @include rem(margin-left, 40px);
+  float: right;
   @include media-breakpoint-down(sm) {
     @include rem(margin, 0 0 30px 0);
     text-align: center;
@@ -77,7 +86,6 @@
     color: #292b2c;
   }
 }
-
 .page-blog {
   float: left;
   width: 100%;
