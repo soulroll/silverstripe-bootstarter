@@ -1,11 +1,26 @@
 .post-summary {
   float: left;
+  position: relative;
   width: 100%;
-  @include rem(margin-bottom, 60px);
-  h2 {
-    display: inline;
-    text-decoration: underline;
+  max-width: 900px;
+  @include rem(margin-bottom, 30px);
+  h3 {
+    display: inline-block;
+    a {
+      color: #000;
+    }
   }
+}
+.post-summary.with-image {
+  @include rem(padding-left, 160px);
+  min-height: 105px;
+}
+.post-summary-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 140px;
+  border: 1px solid #ccc;
 }
 .post-image {
   float: right;
@@ -17,7 +32,7 @@
   }
   img {
     @include media-breakpoint-up(sm) {
-      @include rem(max-width, 180px);
+      @include rem(max-width, 220px);
     }
   }
 }
@@ -58,10 +73,4 @@
     color: #292b2c;
   }
 }
-#Form_CommentsForm {
-  @include rem(margin-bottom, 20px);
-}
-.start-topic-header {
-  @include rem(margin-top, 30px);
-  display: block;
-}
+
