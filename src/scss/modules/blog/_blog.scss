@@ -1,5 +1,4 @@
 .post-summary {
-  float: left;
   position: relative;
   width: 100%;
   max-width: 900px;
@@ -44,6 +43,11 @@
     text-decoration: underline;
   }
 }
+.post-summary-read-more {
+  display: block;
+  clear: both;
+  margin-top: 20px;
+}
 .tag {
   @include rem(padding, 4px 6px 4px 6px);
   @include rem(border-radius, 3px);
@@ -74,3 +78,7 @@
   }
 }
 
+.page-blog {
+  float: left;
+  width: 100%;
+}
