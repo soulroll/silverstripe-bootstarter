@@ -15,25 +15,22 @@
         <div class="col-lg-4 col-md-4 col-sm-12 col-12">
           <ul class="footer-social-media">
             <% if $SiteConfig.SiteVimeo %>
-            <li><a class="vimeo" href="$SiteConfig.SiteVimeo" target="_blank" rel="noopener noreferrer"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
+            <li><a class="vimeo" href="https://www.vimeo.com/$SiteConfig.SiteVimeo" target="_blank" rel="noopener noreferrer"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
             <% end_if %>
             <% if $SiteConfig.SiteYoutube %>
-            <li><a class="youtube" href="$SiteConfig.SiteYoutube" target="_blank" rel="noopener noreferrer"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+            <li><a class="youtube" href="https://www.youtube.com/$SiteConfig.SiteYoutube" target="_blank" rel="noopener noreferrer"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
             <% end_if %>
             <% if $SiteConfig.SiteInstagram %>
-            <li><a class="instagram" href="$SiteConfig.SiteInstagram" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-            <% end_if %>
-            <% if $SiteConfig.SiteGooglePlus %>
-            <li><a class="google" href="$SiteConfig.SiteGooglePlus" target="_blank" rel="noopener noreferrer"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+            <li><a class="instagram" href="https://www.linkedin.com/$SiteConfig.SiteInstagram" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
             <% end_if %>
             <% if $SiteConfig.SiteLinkedin %>
-            <li><a class="linkedin" href="$SiteConfig.SiteLinkedin" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <li><a class="linkedin" href="https://www.linkedin.com/$SiteConfig.SiteLinkedin" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
             <% end_if %>
             <% if $SiteConfig.SiteTwitter %>
-            <li><a class="twitter" href="$SiteConfig.SiteTwitter" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a class="twitter" href="https://twitter.com/$SiteConfig.SiteTwitter" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
             <% end_if %>
             <% if $SiteConfig.SiteFacebook %>
-            <li><a class="facebook" href="$SiteConfig.SiteFacebook" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a class="facebook" href="https://facebook.com/$SiteConfig.SiteFacebook" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
             <% end_if %>
           </ul>
         </div>
