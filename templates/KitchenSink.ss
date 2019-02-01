@@ -1,4 +1,5 @@
-<div id="myCarousel" class="carousel carousel-fade slide bg-inverse d-print-none mt-3" data-ride="carousel">
+<h2>Carousel</h2>
+<div id="myCarousel" class="carousel slide carousel-fade bg-inverse d-print-none mt-1 mb-5" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
     <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -36,11 +37,13 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-
-<h2 class="mt-5 mb-4">Typography</h2>
+<h2>Typography</h2>
 <ul class="nav nav-tabs" id="typographyTab" role="tablist">
   <li class="nav-item">
     <a class="nav-link active" id="headings-tab" data-toggle="tab" href="#headings" role="tab" aria-controls="headings" aria-expanded="true">Headings</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="inline-tab" data-toggle="tab" href="#inline" role="tab" aria-controls="inline">Inline</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" id="paragraph-tab" data-toggle="tab" href="#paragraph" role="tab" aria-controls="paragraph">Paragraph</a>
@@ -73,6 +76,9 @@
   </div>
   <div class="tab-pane fade" id="paragraph" role="tabpanel" aria-labelledby="paragraph-tab">
     <% include Includes/Bootstrap/Paragraph %>
+  </div>
+  <div class="tab-pane fade" id="inline" role="tabpanel" aria-labelledby="inline-tab">
+    <% include Includes/Bootstrap/Inline %>
   </div>
   <div class="tab-pane fade" id="lists" role="tabpanel" aria-labelledby="lists-tab">
     <% include Includes/Bootstrap/Lists %>
@@ -112,6 +118,9 @@
   <li class="nav-item">
     <a class="nav-link" id="cards-tab" data-toggle="tab" href="#cards" role="tab" aria-controls="dropdowns">Cards</a>
   </li>
+  <li class="nav-item">
+    <a class="nav-link" id="spinners-tab" data-toggle="tab" href="#spinners" role="tab" aria-controls="dropdowns">Spinners</a>
+  </li>
 </ul>
 <div class="tab-content" id="componentsTabContent">
   <div class="tab-pane fade show active" id="collapse" role="tabpanel" aria-labelledby="collapse-tab">
@@ -128,5 +137,8 @@
   </div>
   <div class="tab-pane fade" id="cards" role="tabpanel" aria-labelledby="cards-tab">
     <% include Includes/Bootstrap/Cards %>
+  </div>
+  <div class="tab-pane fade" id="spinners" role="tabpanel" aria-labelledby="spinners-tab">
+    <% include Includes/Bootstrap/Spinners %>
   </div>
 </div>
