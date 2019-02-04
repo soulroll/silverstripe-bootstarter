@@ -9,8 +9,11 @@
 @import "bootstrap/bootstrap"; // Brings in Bootstrap
 @import "bootstrap/fixes"; // SilverStripe Bootstrap fixes
 
-/* Font Awesome */
-@import "../../node_modules/font-awesome/scss/font-awesome.scss";
+/* Font Awesome 5 */
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/regular";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/solid";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/brands";
 
 /* Slick Carousel */
 @import "../../node_modules/slick-carousel/slick/slick.scss";

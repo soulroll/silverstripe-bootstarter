@@ -20,8 +20,8 @@
   </div>
   <div class="col">
     <p>Search icon: <i class="fa fa-search" aria-hidden="true"></i></p>
-    <p>Facebook icon: <i class="fa fa-facebook" aria-hidden="true"></i></p>
-    <p>Twitter icon: <i class="fa fa-twitter" aria-hidden="true"></i></p>
-    <p>Linked In icon: <i class="fa fa-linkedin" aria-hidden="true"></i></p>
+    <p>Facebook icon: <i class="fab fa-facebook" aria-hidden="true"></i></p>
+    <p>Twitter icon: <i class="fab fa-twitter" aria-hidden="true"></i></p>
+    <p>Linked In icon: <i class="fab fa-linkedin" aria-hidden="true"></i></p>
   </div>
 </div>
