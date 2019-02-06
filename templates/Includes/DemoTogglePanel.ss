@@ -14,12 +14,11 @@
   <button type="button" class="btn btn-theme btn-theme-purple"></button>
   <button type="button" class="btn btn-theme btn-theme-brown"></button>
   <br/><br/>
-  <%--
-  <h3>Font</h3>
-  <select name="navigation_style" id="navigation_style" class="mb-3">
-    <option selected="selected">Arial</option>
-    <option>Roboto</option>
+  <h3>Font family</h3>
+  <select name="font_family" id="font_family" class="mb-3">
+    <option selected="selected">roboto</option>
+    <option>nunito-sans</option>
+    <option>fira-sans</option>
+    <option>merriweather</option>
   </select>
-  --%>
 </div>
-

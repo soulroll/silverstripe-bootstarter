@@ -1,9 +1,10 @@
 var selectedScheme = 'navigation-left';
 var selectedColour = '';
+var selectedFont = '';
 
-$('#navigation_style').change(function(){
-    $('#navigation-wrapper').removeClass(selectedScheme).addClass($(this).val());
-    selectedScheme = $(this).val();
+$('#font_family').change(function(){
+    $('body').removeClass(selectedFont).addClass($(this).val());
+    selectedFont = $(this).val();
 });
 
 $('.demo-close').click(function(){

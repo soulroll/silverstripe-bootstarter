@@ -1,0 +1,33 @@
+@mixin font-face($fontname, $foldername, $filename: $fontname, $weight: normal, $style: normal) {
+ @font-face {
+   font-family: $fontname;
+   src: url('../fonts/#{$foldername}/#{$filename}.ttf') format('truetype');
+   font-weight: $weight;
+   font-style: $style;
+ }
+}
+
+@include font-face('Roboto', 'Roboto', 'Roboto-Regular', 400, normal);
+@include font-face('Roboto', 'Roboto', 'Roboto-Bold', 700, bold);
+
+@include font-face('NunitoSans', 'NunitoSans', 'NunitoSans-Regular', 400, normal);
+@include font-face('NunitoSans', 'NunitoSans', 'NunitoSans-Bold', 700, bold);
+
+@include font-face('FiraSans', 'FiraSans', 'FiraSans-Regular', 400, normal);
+@include font-face('FiraSans', 'FiraSans', 'FiraSans-Bold', 700, bold);
+
+@include font-face('Merriweather', 'Merriweather', 'Merriweather-Regular', 400, normal);
+@include font-face('Merriweather', 'Merriweather', 'Merriweather-Bold', 700, bold);
+
+.roboto {
+  font-family: 'Roboto';
+}
+.nunito-sans {
+  font-family: 'NunitoSans';
+}
+.fira-sans {
+  font-family: 'FiraSans';
+}
+.merriweather {
+  font-family: 'Merriweather';
+}

@@ -13,15 +13,5 @@
       Fancy display heading
       <small class="text-muted">With faded secondary text</small>
     </h3>
-    <div class="row">
-      <div class="col-lg-7">
-        <h1 class="display-1">Display 1</h1>
-        <h1 class="display-2">Display 2</h1>
-      </div>
-      <div class="col-lg-5">
-        <h1 class="display-3">Display 3</h1>
-        <h1 class="display-4">Display 4</h1>
-      </div>
-    </div>
   </div>
 </div>
