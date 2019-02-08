@@ -73,3 +73,7 @@ button {
     }
   }
 }
+
+#MemberLoginForm_LoginForm_action_doLogin {
+  @extend .btn;
+}

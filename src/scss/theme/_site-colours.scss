@@ -205,3 +205,27 @@
     }
   }
 }
+
+#MemberLoginForm_LoginForm_action_doLogin {
+  @each $theme, $color in $theme-colours {
+    body.#{$theme} & {
+      background-color: $color;
+      color: #fff;
+    }
+  }
+}
+
+.btn-toolbar {
+  .action {
+    @each $theme, $color in $theme-colours {
+      body.#{$theme} & {
+        background-color: $color;
+        color: #fff;
+        &:hover {
+          border-color: $color;
+          background-color: lighten($color, 4%)
+        };
+      }
+    }
+  }
+}

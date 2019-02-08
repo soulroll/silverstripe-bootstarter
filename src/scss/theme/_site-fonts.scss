@@ -21,13 +21,45 @@
 
 .roboto {
   font-family: 'Roboto';
+  h1,
+  h2,
+  h3,
+  h4,
+  h5, {
+    font-family: 'Roboto';
+    font-style: bold;
+  }
 }
 .nunito-sans {
   font-family: 'NunitoSans';
+  h1,
+  h2,
+  h3,
+  h4,
+  h5, {
+    font-family: 'NunitoSans';
+    font-style: bold;
+  }
 }
 .fira-sans {
   font-family: 'FiraSans';
+  h1,
+  h2,
+  h3,
+  h4,
+  h5, {
+    font-family: 'FiraSans';
+    font-style: bold;
+  }
 }
 .merriweather {
   font-family: 'Merriweather';
+  h1,
+  h2,
+  h3,
+  h4,
+  h5, {
+    font-family: 'Merriweather';
+    font-style: bold;
+  }
 }
