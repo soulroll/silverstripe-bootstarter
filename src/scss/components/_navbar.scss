@@ -49,6 +49,9 @@
   margin-bottom: 0;
   padding-left: 0;
 }
+.navigation-desktop-right-menu.search-open {
+  display: none;
+}
 .navigation-desktop-right-item-has-children {
   .navigation-desktop-right-link {
     &:after {
@@ -87,7 +90,7 @@
   display: block;
   float: left;
   position: relative;
-  line-height: 46px;
+  line-height: 38px;
 }
 .navigation-desktop-right-link {
   @include rem(padding, 5px 15px 5px 15px);
@@ -120,7 +123,8 @@
   border: 1px solid #ccc;
 }
 .navigation-desktop-right-submenu-item {
-  line-height: 36px;
+  line-height: 20px;
+  padding: 5px 0px 5px 0px;
 }
 .navigation-desktop-right-submenu-link {
   display: block;

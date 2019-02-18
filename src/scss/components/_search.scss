@@ -4,7 +4,7 @@
 
 .search-toggle {
   @include rem(margin-top, 4px);
-  @include rem(padding, 6px 0 6px 14px);
+  @include rem(padding, 2px 0 10px 14px);
   float: right;
   background-color: transparent;
   border: 0;
@@ -27,8 +27,14 @@
   display: none;
   position: absolute;
   right: 50px;
-  top: 3px;
+  top: 0;
   z-index: 99;
+  background-color: #fff;
+  padding: 4px 5px 4px 4px;
+  .input-group-btn {
+    border: 0;
+    background-color: #ccc;
+  }
 }
 
 .search-toggle-dropdown.open {
@@ -48,4 +54,8 @@
 
 .btn-header-search {
   @include rem(border-radius, 0 3px 3px 0);
+}
+
+.btn-header-search {
+  background-color: #ddd;
 }
