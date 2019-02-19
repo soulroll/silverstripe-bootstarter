@@ -7,6 +7,17 @@
     <% else %>
         <% include Menu %>
     <% end_if %>
+    <% if $SiteConfig.SiteNavigation != Justified %>
+      <% if $SearchForm %>
+      <div class="search-toggle-in-navigation-container">
+        <button class="search-toggle search-toggle-in-navigation" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        </button>
+        <div class="search-toggle-in-navigation-dropdown">
+          $SearchForm
+        </div>
+      </div>
+      <% end_if %>
+    <% end_if %>
     </div>
     <div class="clearfix"></div>
   </div>
