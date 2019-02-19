@@ -4,4 +4,14 @@
 }
 .search-results-listing {
   @include rem(margin-bottom, 30px);
+  a {
+    color: #000;
+    &:hover {
+      @each $theme, $color in $theme-colours {
+        body.#{$theme} & {
+          color: $color;
+        }
+      }
+    }
+  }
 }
