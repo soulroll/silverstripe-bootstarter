@@ -60,7 +60,8 @@ button {
     @include rem(padding-right, 40px);
     &:after {
       position: absolute;
-      font-family: "FontAwesome";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
       content: "\f077";
       top: 11px;
       right: 15px;

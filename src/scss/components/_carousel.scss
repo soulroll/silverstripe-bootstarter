@@ -11,7 +11,8 @@
   z-index: 2;
   top: 42%;
   &:before {
-    font-family: 'FontAwesome';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
     font-size: 22px;
   }
 }
@@ -77,7 +78,8 @@
   outline: none;
   color: transparent;
   &:before {
-    font-family: "FontAwesome";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
     content: "\f111";
     color: #bbb;
     font-size: 12px;
@@ -100,7 +102,8 @@
     z-index: 2;
     top: 3px;
     right: 7px;
-    font-family: "FontAwesome";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
     content: "\f065";
     color: #fff;
   }
@@ -110,7 +113,8 @@
   &:before {
     position: absolute;
     z-index: 2;
-    font-family: "FontAwesome";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
     content: "\f16a";
     color: #fff;
     font-size: 46px;
@@ -132,7 +136,8 @@
   &:before {
     position: absolute;
     z-index: 2;
-    font-family: "FontAwesome";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
     content: "\f16a";
     color: #fff;
     font-size: 46px;
