@@ -16,7 +16,6 @@
     background-color: #555;
   }
 }
-
 @include media-breakpoint-down(md) {
   .back-to-top {
     display: none !important;

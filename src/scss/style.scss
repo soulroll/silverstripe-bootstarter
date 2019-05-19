@@ -3,7 +3,6 @@
 
 /* Mixins */
 @import "mixins/rem";
-@import "mixins/fonts";
 
 /* Bootstrap */
 @import "bootstrap/bootstrap"; // Brings in Bootstrap
@@ -59,6 +58,9 @@
 @import "components/search";
 @import "components/demo-toggle-panel";
 @import "components/userforms-sidebar";
+@import "components/introduction";
+@import "components/home-slider";
+@import "components/cards";
 
 /* Forms */
 @import "forms/select";

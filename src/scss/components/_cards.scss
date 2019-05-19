@@ -1,0 +1,26 @@
+.cards-wrapper {
+  @include rem(padding, 0px 0 50px 0);
+  @include media-breakpoint-down(md) {
+    @include rem(padding, 50px 0 30px 0);
+  }
+  @include media-breakpoint-down(sm) {
+    @include rem(padding, 30px 0 30px 0);
+  }
+}
+
+.cards-wrapper-grey {
+  @include rem(padding, 50px 0 50px 0);
+  background-color: #ddd;
+}
+
+.card {
+  border: 1px solid #bbb;
+  border-radius: 0;
+  box-shadow: rgba(0,0,0,0.0980392) 0 1px 4px;
+  img {
+    border-radius: 0;
+  }
+  @include media-breakpoint-down(md) {
+    @include rem(margin-bottom, 30px);
+  }
+}

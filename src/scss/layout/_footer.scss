@@ -16,17 +16,14 @@
     list-style: none;
   }
 }
-
 .footer-list {
   @include rem(margin-bottom, 25px);
 }
-
 .footer-secondary {
   @include rem(padding, 25px 0 25px 0);
   background-color: #111;
   color: #9d9d9d;
 }
-
 .footer-links {
   @include rem(margin-top, 5px);
   @include rem(margin-bottom, 6px);
@@ -45,7 +42,6 @@
     color: #fff;
   }
 }
-
 .footer-copyright {
   float: left;
   display: block;
@@ -149,7 +145,6 @@
     }
   }
 }
-
 .page-footer {
   @include rem(margin-top, 30px);
   @include rem(padding, 15px 0 15px 0);
@@ -159,12 +154,10 @@
   border-top: 1px solid #eee;
   color: #999;
 }
-
 .page-footer-last-modified {
   @include rem(font-size, 14px);
   float: left;
 }
-
 .page-footer-print {
   @include rem(font-size, 18px);
   position: relative;

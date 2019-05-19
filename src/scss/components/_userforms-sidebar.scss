@@ -3,7 +3,6 @@
   @include rem(margin-top, 15px);
   background-color: #eee;
 }
-
 .contact-sidebar-info {
   padding-left: 0;
   list-style: none;
@@ -19,7 +18,6 @@
     margin-bottom: 0;
   }
 }
-
 .contact-sidebar-icons {
   li {
     @include rem(padding-left, 40px);
@@ -38,14 +36,12 @@
     }
   }
 }
-
 .contact-sidebar-phone {
   &:before {
     font-size: 23px;
     content:'\f095';
   }
 }
-
 .contact-sidebar-mobile {
   &:before {
     position: absolute;
@@ -55,25 +51,21 @@
     content:'\f10b';
   }
 }
-
 .contact-sidebar-email {
   &:before {
     font-size: 19px;
     content:'\f0e0';
   }
 }
-
 .contact-sidebar-address {
   &:before {
     font-size: 23px;
     content:'\f015';
   }
 }
-
 .contact-map {
   @include rem(margin-top, 30px);
 }
-
 .contact-sidebar-opening-hours {
   @include rem(margin-top, 20px);
   ul {

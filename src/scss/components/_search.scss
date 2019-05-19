@@ -1,7 +1,6 @@
 .search {
   float: right;
 }
-
 .search-toggle {
   @include rem(margin-top, 4px);
   @include rem(padding, 2px 0 10px 14px);
@@ -14,12 +13,17 @@
     content: "\f002";
   }
 }
-
 .search-toggle-in-navigation {
   margin-top: 0;
   height: 48px;
   padding-right: 15px;
   line-height: 40px;
+  &:before {
+    color: #777;
+    &:hover {
+      color: #000;
+    }
+  }
   @each $theme, $color in $theme-colours {
     body.#{$theme} & {
       background-color: $color;
@@ -27,10 +31,13 @@
         cursor: pointer;
         background-color: lighten($color, 5%)
       }
+      &:before {
+        color: #fff;
+        &:hover {
+          color: #fff;
+        }
+      }
     }
-  }
-  &:before {
-    color: #fff;
   }
   @include media-breakpoint-down(sm) {
     display: none;
@@ -43,7 +50,6 @@
     }
   }
 }
-
 .search-toggle-dropdown {
   display: none;
   position: absolute;
@@ -57,11 +63,9 @@
     background-color: #ccc;
   }
 }
-
 .search-toggle-dropdown.open {
   display: block;
 }
-
 .search-mobile {
   @include rem(margin-top, 15px);
   @include media-breakpoint-down(xs) {
@@ -72,15 +76,12 @@
     width: 100%;
   }
 }
-
 .btn-header-search {
   @include rem(border-radius, 0 3px 3px 0);
 }
-
 .btn-header-search {
   background-color: #ddd;
 }
-
 .search-toggle-in-navigation-container {
   position: relative;
 }

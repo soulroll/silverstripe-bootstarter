@@ -2,6 +2,7 @@
   @include rem(max-width, 500px);
 }
 #MemberLoginForm_LoginForm_action_doLogin {
+  background-color: #ddd;
   @include rem(margin-bottom, 20px);
   @extend .btn;
 }
