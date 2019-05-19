@@ -1,0 +1,15 @@
+/* Tagline */
+
+.tagline-background {
+  border-top: 1px solid #eee;
+  @include rem(padding, 25px 0 25px 0);
+}
+
+.tagline-content {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.btn-tagline {
+  @include rem(margin-left, 15px);
+}

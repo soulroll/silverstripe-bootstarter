@@ -10,6 +10,7 @@
 
 .cards-wrapper-grey {
   @include rem(padding, 50px 0 50px 0);
+  border-top: 1px solid #bbb;
   background-color: #ddd;
 }
 
@@ -19,8 +20,13 @@
   box-shadow: rgba(0,0,0,0.0980392) 0 1px 4px;
   img {
     border-radius: 0;
+    border-bottom:1px solid #ddd;
   }
   @include media-breakpoint-down(md) {
     @include rem(margin-bottom, 30px);
   }
+}
+
+.card-body {
+  @include rem(padding, 30px);
 }
