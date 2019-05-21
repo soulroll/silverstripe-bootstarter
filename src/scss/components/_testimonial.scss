@@ -1,0 +1,41 @@
+/* Testimonials Page */
+.testimonial {
+  position: relative;
+  background-color: #eee;
+  @include rem(padding, 40px 40px 40px 135px);
+  @include rem(margin-bottom, 30px);
+  @include media-breakpoint-down(xs) {
+    @include rem(padding, 40px 40px 40px 40px);
+  }
+  &:before {
+    background-color: #ddd;
+    border-radius: 100%;
+    position: absolute;
+    @include rem(padding, 16px 24px 16px 24px);
+    @include rem(left, 35px);
+    @include rem(top, 30px);
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f10d";
+    @each $theme, $color in $theme-colours {
+      body.#{$theme} & {
+        color: $color;
+      }
+    }
+    @include media-breakpoint-down(xs) {
+      display: none;
+    }
+  }
+}
+
+.testimonial-content {
+  @include rem(margin-bottom, 10px);
+}
+
+.testimonial-person,
+.testimonial-position,
+.testimonial-location,
+.testimonial-company {
+  display: block;
+  font-weight: bold;
+}
