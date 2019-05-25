@@ -1,0 +1,23 @@
+/* Pagination styles */
+
+.pagination {
+  .page-item.active {
+    .page-link {
+      background-color: #ddd;
+      border-color: #ddd;
+      @each $theme, $color in $theme-colours {
+        body.#{$theme} & {
+          background-color: $color;
+          border-color: $color;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .page-item {
+    .page-link {
+      border-radius: 0;
+      color: #000;
+    }
+  }
+}
