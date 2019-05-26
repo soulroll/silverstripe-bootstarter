@@ -11,7 +11,7 @@
     background-color: #ddd;
     border-radius: 100%;
     position: absolute;
-    @include rem(padding, 16px 24px 16px 24px);
+    @include rem(padding, 20px 24px 20px 24px);
     @include rem(left, 35px);
     @include rem(top, 30px);
     font-family: "Font Awesome 5 Free";
