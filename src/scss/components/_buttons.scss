@@ -1,60 +1,6 @@
-/* Buttons */
 .btn {
   border-radius: 0;
   max-width: 100%;
   white-space: normal;
   @include rem(padding, 10px 20px 10px 20px);
-}
-
-.btn-theme {
-  background-color: #ddd;
-  color: $body-color;
-  @each $theme, $color in $theme-colours {
-    body.#{$theme} & {
-      background-color: $color;
-      color: #fff;
-    }
-  }
-  &:hover {
-    background-color: #ccc;
-    color: $body-color;
-    @each $theme, $color in $theme-colours-shine {
-      body.#{$theme} & {
-        background-color: $color;
-      }
-    }
-  }
-}
-
-.btn-file {
-  display: inline-block;
-  @include rem(padding, 4px 0 4px 0);
-  color: #000;
-  &:hover {
-    @each $theme, $color in $theme-colours {
-      body.#{$theme} & {
-        color: $color;
-      }
-    }
-  }
-}
-
-.btn-view-online {
-  &:before {
-    font-family: FontAwesome;
-    content:'\f1c5';
-    @include rem(margin-right, 7px);
-  }
-}
-
-.btn-download {
-  &:before {
-    font-family: FontAwesome;
-    content:'\f019';
-    @include rem(margin-right, 7px);
-  }
-}
-
-.btn-tagline {
-  @include rem(margin-left, 15px);
 }

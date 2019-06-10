@@ -106,23 +106,10 @@
     color: #fff;
   }
 }
-.popup-youtube {
-  &:before {
-    position: absolute;
-    z-index: 2;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f16a";
-    color: #fff;
-    font-size: 46px;
-    top:50%;
-    left:50%;
-    transform:translate(-50%, -50%);
-  }
-}
+
 .popup-no-image {
   background-color: #000;
-  height: 186px;
+  height: 196.5px;
   @include media-breakpoint-down(lg) {
     height: 155px;
   }
@@ -142,6 +129,38 @@
     transform:translate(-50%, -50%);
   }
 }
+
+.popup-youtube {
+  &:before {
+    position: absolute;
+    z-index: 2;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f04b";
+    color: #fff;
+    font-size: 46px;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+  }
+}
+
+.popup-vimeo {
+  &:before {
+    position: absolute;
+    z-index: 2;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f04b";
+    color: #fff;
+    font-size: 46px;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+  }
+}
+
+
 .carousel-overlay {
   position: absolute;
   right: 0;

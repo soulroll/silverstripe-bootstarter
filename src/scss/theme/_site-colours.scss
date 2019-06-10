@@ -88,9 +88,20 @@
     }
   }
 }
+
 .btn-theme {
   margin-bottom: 5px;
+  @each $theme, $color in $theme-colours {
+    body.#{$theme} & {
+      background-color: $color;
+      color: #fff;
+      &:hover {
+        background-color: lighten($color, 5%)
+      };
+    }
+  }
 }
+
 .btn-theme-light-green {
   background-color: $light-green;
 }
