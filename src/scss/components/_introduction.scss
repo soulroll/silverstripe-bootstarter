@@ -1,3 +1,7 @@
-.carousel-introduction-half {
-  @include rem(padding, 50px 20px 30px 0px);
+.introduction {
+  @include rem(padding, 50px 20px 30px 0);
+}
+.introduction-bullets {
+  list-style: none;
+  padding-left: 0;
 }
