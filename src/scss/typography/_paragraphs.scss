@@ -1,15 +1,4 @@
 /* Space after paragraphs */
-p + ul {
-
-}
-p + ol {
-
-}
-
-/* Space after lists */
-ul + p {
-
-}
-ol + p {
-
+p + h2, h3, h4, h5, h6 {
+  margin-top: 25px;
 }

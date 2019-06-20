@@ -1,6 +1,23 @@
 .page-background {
   background-color: #fff;
 }
+
 .page {
   @include rem(padding, 30px 0 30px 0);
+}
+
+.left.image {
+  float: left;
+  height: auto;
+  @include rem(margin, 0 25px 20px 0);
+}
+
+.right.image {
+  float: right;
+  height: auto;
+  @include rem(margin, 0 0 20px 25px);
+  @include media-breakpoint-down(xs) {
+    float: left;
+    @include rem(margin, 0 25px 20px 0);
+  }
 }
