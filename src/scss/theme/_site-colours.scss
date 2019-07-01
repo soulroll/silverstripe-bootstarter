@@ -103,35 +103,36 @@
 }
 
 .btn-theme-light-green {
-  background-color: $light-green;
+  background-color: $light-green !important;
 }
 .btn-theme-green {
-  background-color: $green;
+  background-color: $green !important;
 }
 .btn-theme-blue {
-  background-color: $blue;
+  background-color: $blue !important;
 }
 .btn-theme-navy {
-  background-color: $navy;
+  background-color: $navy !important;
 }
 .btn-theme-teal {
-  background-color: $teal;
+  background-color: $teal !important;
 }
 .btn-theme-cyan {
-  background-color: $cyan;
+  background-color: $cyan !important;
 }
 .btn-theme-red {
-  background-color: $red;
+  background-color: $red !important;
 }
 .btn-theme-orange {
-  background-color: $orange;
+  background-color: $orange !important;
 }
 .btn-theme-purple {
-  background-color: $purple;
+  background-color: $purple !important;
 }
 .btn-theme-brown {
-  background-color: $brown;
+  background-color: $brown !important;
 }
+
 .back-to-top {
   @each $theme, $color in $theme-colours {
     body.#{$theme} & {
