@@ -170,6 +170,8 @@
 .navigation-menu,
 .navigation-submenu,
 .navigation-sub-submenu {
+  position: relative;
+  z-index: 99;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
