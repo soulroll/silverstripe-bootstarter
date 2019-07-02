@@ -1,4 +1,4 @@
-<div class="demo-toggle-panel">
+<div class="demo-toggle-panel d-print-none">
   <button type="button" class="close demo-close" aria-label="Close">
     <span aria-hidden="true">&times;</span>
   </button>
