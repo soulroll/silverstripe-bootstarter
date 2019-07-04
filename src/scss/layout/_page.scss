@@ -21,3 +21,9 @@
     @include rem(margin, 0 25px 20px 0);
   }
 }
+
+.leftAlone {
+  &:after {
+    content:"lol";
+  };
+}

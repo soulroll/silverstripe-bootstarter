@@ -232,9 +232,13 @@
       body.#{$theme} & {
         background-color: $color;
         color: #fff;
-        &:hover {
-          border-color: $color;
-          background-color: lighten($color, 4%)
+        &:hover,
+        &:visited,
+        &:link,
+        &:active,
+        &:focus {
+          border-color: $color !important;
+          background-color: lighten($color, 4%) !important;
         };
       }
     }

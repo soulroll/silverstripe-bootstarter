@@ -165,7 +165,17 @@
   right: 0;
   top: 30px;
   left: 0;
-  z-index: 98;
+  .alert {
+    z-index: 98;
+  }
+  .popular-links-heading {
+    position: relative;
+    z-index: 98;
+  }
+  .popular-link {
+    position: relative;
+    z-index: 98;
+  }
 }
 
 .carousel-caption {
