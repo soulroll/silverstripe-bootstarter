@@ -6,7 +6,7 @@ I wasn't happy with the current selection of Bootstrap themes out there, they al
 
 ## Features
 - BrowserSync
-- jQuery v3.3.1
+- jQuery v3.4.1
 - Bootstrap 4.3.1
 - NPM for front-end package management
 - Gulp for SCSS and JS Compiling
@@ -17,7 +17,7 @@ I wasn't happy with the current selection of Bootstrap themes out there, they al
 - Basic SCSS folder structure to keep things tidy
 - matchHeight.js for fixing the grid float bug with unequal columns (Check the footer)
 - Kitchen sink included on page.ss featuring common bootstrap 4 elements (Just delete what you dont want)
-- Supports SilverStripe 4.3
+- Supports SilverStripe 4.4
 - Supports userforms
 - Supports elemental blocks
 - External link and file chevrons on content links
@@ -29,7 +29,7 @@ I wasn't happy with the current selection of Bootstrap themes out there, they al
 4. Gulp (sudo npm install gulp -g)
 
 ## Branches
-- Master (Bootstrap 4.3.1 - SilverStripe 4.3)
+- Master (Bootstrap 4.3.1 - SilverStripe 4.4)
 
 ## Installation
 1. Clone or download the respository into your SilverStripe themes directory.
