@@ -12,7 +12,7 @@
     <link rel='alternate' type='application/rss+xml' title='RSS' href='$RSSLink'>
     <% end_if %>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <link rel="stylesheet" type="text/css" href="resources/themes/silverstripe-bootstarter/dist/css/style.css">
+    <% require css($resourceURL('themes/silverstripe-bootstarter/dist/css/style.css')) %>
     <% include Favicon %>
   </head>
   <body class="$ClassName $SiteConfig.SiteColor $SiteConfig.SiteFont">
@@ -28,6 +28,6 @@
       $Layout
     </main>
     <% include Footer %>
-    <script src="resources/themes/silverstripe-bootstarter/dist/js/main.min.js"></script>
+    <% require javascript($resourceURL('themes/silverstripe-bootstarter/dist/js/main.min.js')) %>
   </body>
 </html>

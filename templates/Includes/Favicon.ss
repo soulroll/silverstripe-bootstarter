@@ -1,7 +1,7 @@
 <% if $SiteConfig.FavIcon %>
   <link rel="shortcut icon" href="$SiteConfig.FavIcon.Link" />
 <% else %>
-  <link rel="shortcut icon" href="resources/themes/silverstripe-bootstarter/dist/ico/favicon.ico" />
+  <link rel="shortcut icon" href="_resources/themes/silverstripe-bootstarter/dist/ico/favicon.ico" />
 <% end_if %>
 
 <!-- Change to rel="apple-touch-icon-precomposed" if you do not want apple chrome on icons (rounded corners and gloss) -->
