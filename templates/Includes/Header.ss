@@ -16,7 +16,7 @@
             <% end_if %>
           </a>
         <% end_if %>
-        <button class="navigation-toggle d-print-none <% if $SiteConfig.SiteNavigation == Left %>navigation-toggle-left<% else_if $SiteConfig.SiteNavigation == Justified %>navigation-toggle-justified<% else_if $SiteConfig.SiteNavigation == Right %>navigation-toggle-right<% else_if $SiteConfig.SiteNavigation == Megamenu %>navigation-toggle-megamenu<% end_if %>" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-controls="navigation">
+        <button class="navigation-toggle d-print-none <% if $SiteConfig.SiteNavigation == Left %>navigation-toggle-left<% else_if $SiteConfig.SiteNavigation == Justified %>navigation-toggle-justified<% else_if $SiteConfig.SiteNavigation == Right %>navigation-toggle-right<% else_if $SiteConfig.SiteNavigation == Megamenu %>navigation-toggle-megamenu <% else %>navigation-toggle-left<% end_if %>" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-controls="navigation">
         </button>
         <% if $SiteConfig.SiteNavigation == Right %>
         <div class="navigation-desktop-right">
