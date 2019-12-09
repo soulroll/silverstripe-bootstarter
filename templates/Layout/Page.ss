@@ -26,9 +26,9 @@
             <div class="content">
               <% if $ElementalArea %>
                 $ElementalArea
-                $Content
+                $Content.RichLinks
               <% else %>
-                $Content
+                $Content.RichLinks
               <% end_if %>
             </div>
             $Form
