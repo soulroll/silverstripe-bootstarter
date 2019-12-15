@@ -1,6 +1,7 @@
 .navigation-left,
 .navigation-justified,
-.navigation-megamenu {
+.navigation-megamenu,
+.navigation-mobile-right {
   @include media-breakpoint-up(md) {
     @each $theme, $color in $theme-colours {
       body.#{$theme} & {
@@ -26,10 +27,41 @@
             // border-right: 1px solid $color;
           }
         }
+        .navigation-link.current {
+          background-color: $color;
+        }
       }
     }
   }
 }
+
+.navigation-mobile-right {
+  .navigation-link.current {
+    background-color: transparent;
+  }
+}
+
+
+/* Megamenu */
+.navigation-megamenu {
+  @each $theme, $color in $theme-colours {
+    body.#{$theme} & {
+      background-color: $color;
+      .navigation-link,
+      .navigation-submenu-link,
+      .navigation-submenu-item,
+      .navigation-sub-submenu-link {
+        color: #fff;
+      }
+      .navigation-chevron {
+        &:after {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
 .contact-info {
   @each $theme, $color in $theme-colours {
     body.#{$theme} & {
@@ -39,6 +71,7 @@
     }
   }
 }
+
 .page-banner-background {
   background-color: #ddd;
   @each $theme, $color in $theme-colours-shade {
@@ -50,6 +83,7 @@
     }
   }
 }
+
 .navigation-submenu {
   @include media-breakpoint-up(md) {
     @each $theme, $color in $theme-colours {
@@ -62,6 +96,7 @@
     }
   }
 }
+
 .navigation-toggle {
   @each $theme, $color in $theme-colours {
     body.#{$theme} & {
@@ -70,13 +105,15 @@
     }
   }
 }
+
 .copyright-symbol {
-  @each $theme, $color in $theme-colours {
+  @each $theme, $color in $theme-colours-shine {
     body.#{$theme} & {
       color: $color;
     }
   }
 }
+
 .btn-card-theme {
   @each $theme, $color in $theme-colours {
     body.#{$theme} & {
@@ -105,30 +142,39 @@
 .btn-theme-light-green {
   background-color: $light-green !important;
 }
+
 .btn-theme-green {
   background-color: $green !important;
 }
+
 .btn-theme-blue {
   background-color: $blue !important;
 }
+
 .btn-theme-navy {
   background-color: $navy !important;
 }
+
 .btn-theme-teal {
   background-color: $teal !important;
 }
+
 .btn-theme-cyan {
   background-color: $cyan !important;
 }
+
 .btn-theme-red {
   background-color: $red !important;
 }
+
 .btn-theme-orange {
   background-color: $orange !important;
 }
+
 .btn-theme-purple {
   background-color: $purple !important;
 }
+
 .btn-theme-brown {
   background-color: $brown !important;
 }
@@ -144,6 +190,7 @@
     }
   }
 }
+
 .navigation-megamenu-panel {
   @each $theme, $color in $theme-colours {
     body.#{$theme} & {
@@ -158,6 +205,7 @@
     }
   }
 }
+
 .page-summary-title {
   @each $theme, $color in $theme-colours {
     body.#{$theme} & {
@@ -168,6 +216,7 @@
     }
   }
 }
+
 .sidebar {
   li {
     @each $theme, $color in $theme-colours {
@@ -180,10 +229,12 @@
     }
   }
 }
+
 .search-toggle-navigation {
   @each $theme, $color in $theme-colours {
   }
 }
+
 .navigation-menu {
   @include media-breakpoint-down(xs) {
     @each $theme, $color in $theme-colours {
@@ -195,11 +246,14 @@
           }
         }
         .navigation-link,
-        .navigation-submenu-link {
+        .navigation-submenu-link,
+        .navigation-sub-submenu-link {
           color: #fff;
         }
         .navigation-submenu,
         .navigation-submenu-item,
+        .navigation-sub-submenu,
+        .navigation-sub-submenu-item,
         .navigation-item {
           border-color: darken($color, 5%);
         }
@@ -207,6 +261,7 @@
     }
   }
 }
+
 .navigation-chevron {
   @include media-breakpoint-down(xs) {
     @each $theme, $color in $theme-colours {
@@ -231,6 +286,7 @@
     @each $theme, $color in $theme-colours {
       body.#{$theme} & {
         background-color: $color;
+        border-color: $color !important;
         color: #fff;
         &:hover,
         &:visited,

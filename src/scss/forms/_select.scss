@@ -20,6 +20,7 @@ select {
     display: none;
   }
 }
+
 .select-wrapper {
   position: relative;
   &:after {
@@ -35,6 +36,7 @@ select {
     content: "\f078";
   }
 }
+
 .select-wrapper-ajax {
   &:after {
     top: -3px !important;

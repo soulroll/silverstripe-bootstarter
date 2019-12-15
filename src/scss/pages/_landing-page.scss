@@ -5,10 +5,12 @@
   width: 100%;
   @include rem(margin-bottom, 25px);
 }
+
 .page-summary.with-image {
   padding-left: 160px;
   min-height: 107px;
 }
+
 .page-summary-title {
   display: inline-block;
   color: #000;
@@ -17,17 +19,12 @@
     color: #000;
   }
 }
+
 .page-summary-image {
   left: 0;
   position: absolute;
   overflow: hidden;
   img {
     border: 1px solid #ccc;
-    transform: scale(1);
-    -webkit-transition: 0.6s ease;
-    transition: 0.6s ease;
-    &:hover {
-      transform: scale(1.1);
-    };
   }
 }

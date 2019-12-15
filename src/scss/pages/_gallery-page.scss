@@ -9,21 +9,26 @@
     }
   }
 }
+
 .gallery-popup-holder {
   overflow: hidden;
 }
+
 .gallery-image-border {
   background-color: #fff;
   border: 1px solid #ddd;
 }
+
 .gallery-image-description {
   @include rem(padding, 8px 14px 8px 14px);
   border-top: 1px solid #ddd;
 }
+
 .gallery-image-title {
   display: block;
   font-weight: bold;
 }
+
 .gallery-image-caption {
   width: 100%;
 }

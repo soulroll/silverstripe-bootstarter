@@ -16,14 +16,17 @@
     list-style: none;
   }
 }
+
 .footer-list {
   @include rem(margin-bottom, 25px);
 }
+
 .footer-secondary {
   @include rem(padding, 25px 0 25px 0);
   background-color: #111;
   color: #9d9d9d;
 }
+
 .footer-links {
   @include rem(margin-top, 5px);
   @include rem(margin-bottom, 6px);
@@ -42,6 +45,7 @@
     color: #fff;
   }
 }
+
 .footer-copyright {
   float: left;
   display: block;
@@ -53,6 +57,7 @@
     float: none;
   }
 }
+
 .footer-social-media {
   @include rem(margin-top, 10px);
   padding: 0;
@@ -145,6 +150,7 @@
     }
   }
 }
+
 .page-footer {
   @include rem(margin-top, 30px);
   @include rem(padding, 15px 0 15px 0);
@@ -152,20 +158,81 @@
   float: left;
   width: 100%;
   border-top: 1px solid #eee;
-  color: #999;
+  color: #888;
+  @include media-breakpoint-down(md) {
+    text-align: center;
+  }
 }
+
 .page-footer-last-modified {
-  @include rem(font-size, 14px);
-  float: left;
+  @include rem(font-size, 16px);
+  @include media-breakpoint-up(md) {
+    float: left;
+  }
 }
-.page-footer-print {
-  @include rem(font-size, 18px);
+
+.page-footer-actions {
+  @include media-breakpoint-down(sm) {
+    @include rem(margin-top, 10px);
+    float: left;
+    clear: both;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.page-footer-action {
+  @include rem(font-size, 16px);
   position: relative;
   top: 0;
   float: right;
-  color: #999;
-  &:hover{
+  color: #888;
+  &:hover {
     text-decoration: none;
     color: #292b2c;
+  }
+  @include media-breakpoint-down(sm) {
+    float: none;
+    display: inline-block;
+  }
+}
+
+.page-footer-action-rss {
+  margin-right: 15px;
+  &:hover{
+  }
+}
+
+.page-footer-action-print {
+  margin-right: 25px;
+  padding-left: 22px;
+  &:before {
+    @include rem(font-size, 17px);
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: '\f02f';
+    position: absolute;
+    top: -1px;
+    left: 0;
+  }
+  @include media-breakpoint-down(sm) {
+    margin-right: 0;
+  }
+}
+
+.page-footer-action-email {
+  padding-left: 26px;
+  &:before {
+    @include rem(font-size, 20px);
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: '\f0e0';
+    position: absolute;
+    top: -3px;
+    left: 0;
+  }
+  @include media-breakpoint-down(sm) {
+    @include rem(margin-right, 15px);
+    clear: left;
   }
 }

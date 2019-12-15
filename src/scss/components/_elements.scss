@@ -1,14 +1,17 @@
 .dnadesign__elementaluserforms__model__elementform,
 .dnadesign__elementallist__model__elementlist,
+.eklektos__eklektos__element__elementtabs,
 .silverstripe__elementalbannerblock__block__bannerblock,
 .silverstripe__elementalfileblock__block__fileblock {
   @include rem(margin-bottom, 30px);
 }
+
 .file-element__file {
   a {
     color: #000;
   }
 }
+
 .banner-element__title {
   color: #fff;
 }

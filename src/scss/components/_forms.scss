@@ -1,13 +1,19 @@
 #MemberLoginForm_LoginForm {
   @include rem(max-width, 500px);
 }
+
 #MemberLoginForm_LoginForm_action_doLogin {
   background-color: #ddd;
   @include rem(margin-bottom, 20px);
   @extend .btn;
 }
+
 #ForgotPassword {
   float: left;
   clear: both;
   width: 100%;
+}
+
+.contact-form {
+  @include rem(margin-bottom, 50px);
 }

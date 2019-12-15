@@ -3,9 +3,11 @@ div {
     @extend .form-group;
   }
 }
+
 legend {
   font-size: 1rem;
 }
+
 .middleColumn {
   .text,
   .textarea {
@@ -18,6 +20,7 @@ legend {
     @include rem(margin-right, 5px);
   }
 }
+
 .Actions {
   .action {
     @extend .btn;
@@ -27,6 +30,7 @@ legend {
     @include rem(margin-top, 20px);
   }
 }
+
 .optionset {
   list-style: none;
   padding-left: 0;
@@ -38,12 +42,15 @@ legend {
     top: 1px;
   }
 }
+
 .error.message {
   @extend .form-text;
 }
+
 .resetformaction {
   @extend .btn;
 }
+
 #popovers,
 #tooltips {
   .btn {
@@ -51,9 +58,11 @@ legend {
     float: left;
   }
 }
+
 button {
   cursor: pointer;
 }
+
 #accordion {
   .card-header {
     cursor: pointer;
@@ -74,9 +83,11 @@ button {
     }
   }
 }
+
 #MemberLoginForm_LoginForm_action_doLogin {
   @extend .btn;
 }
+
 .carousel-control-prev,
 .carousel-control-next {
   z-index: 16;

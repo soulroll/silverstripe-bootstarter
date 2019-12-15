@@ -1,6 +1,7 @@
 .search {
   float: right;
 }
+
 .search-toggle {
   @include rem(margin-top, 4px);
   @include rem(padding, 2px 0 10px 14px);
@@ -13,6 +14,7 @@
     content: "\f002";
   }
 }
+
 .search-toggle-in-navigation {
   margin-top: 0;
   height: 48px;
@@ -43,6 +45,7 @@
     display: none;
   }
 }
+
 .search-toggle-in-navigation.open {
   @each $theme, $color in $theme-colours {
     body.#{$theme} & {
@@ -50,6 +53,7 @@
     }
   }
 }
+
 .search-toggle-dropdown {
   display: none;
   position: absolute;
@@ -63,9 +67,11 @@
     background-color: #ccc;
   }
 }
+
 .search-toggle-dropdown.open {
   display: block;
 }
+
 .search-mobile {
   @include rem(margin-top, 15px);
   @include media-breakpoint-down(xs) {
@@ -76,16 +82,20 @@
     width: 100%;
   }
 }
+
 .btn-header-search {
-  border-radius: 0 3px 3px 0 !important; 
+  border-radius: 0 3px 3px 0 !important;
   padding: 6px 20px 6px 20px !important;
 }
+
 .btn-header-search {
   background-color: #ddd;
 }
+
 .search-toggle-in-navigation-container {
   position: relative;
 }
+
 .search-toggle-in-navigation-dropdown {
   position: absolute;
   right: 0;
@@ -99,6 +109,7 @@
     }
   }
 }
+
 .search-toggle-in-navigation-dropdown.open {
   display: block;
 }

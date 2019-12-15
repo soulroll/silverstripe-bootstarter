@@ -15,26 +15,31 @@
     background-color: #ddd;
   }
 }
+
 .navigation-toggle-left {
   @include media-breakpoint-up(md) {
     display: none;
   }
 }
+
 .navigation-toggle-right {
   @include media-breakpoint-up(lg) {
     display: none;
   }
 }
+
 .navigation-toggle-justified {
   @include media-breakpoint-up(md) {
     display: none;
   }
 }
+
 .navigation-toggle-megamenu {
   @include media-breakpoint-up(md) {
     display: none;
   }
 }
+
 .navigation-desktop-right {
   float: right;
   display: none;
@@ -42,6 +47,7 @@
     display: block;
   }
 }
+
 .navigation-desktop-right-menu {
   float: right;
   list-style: none;
@@ -49,9 +55,11 @@
   margin-bottom: 0;
   padding-left: 0;
 }
+
 .navigation-desktop-right-menu.search-open {
   display: none;
 }
+
 .navigation-desktop-right-item-has-children {
   .navigation-desktop-right-link {
     &:after {
@@ -87,12 +95,14 @@
     }
   }
 }
+
 .navigation-desktop-right-item {
   display: block;
   float: left;
   position: relative;
   line-height: 38px;
 }
+
 .navigation-desktop-right-link {
   @include rem(padding, 5px 15px 5px 15px);
   color: #555 !important;
@@ -110,6 +120,7 @@
     color: #000 !important;
   }
 }
+
 .navigation-desktop-right-submenu {
   @include rem(width, 220px);
   padding-left: 0;
@@ -123,10 +134,12 @@
   left: -1px;
   border: 1px solid #ccc;
 }
+
 .navigation-desktop-right-submenu-item {
   line-height: 20px;
   padding: 5px 0px 5px 0px;
 }
+
 .navigation-desktop-right-submenu-link {
   display: block;
   @include rem(padding, 0 15px 0 15px);
@@ -135,6 +148,7 @@
     text-decoration: none;
   };
 }
+
 .navigation-desktop-right-submenu-hover-triangle {
   background-color: #fff !important;
   border: 1px solid #bdc3c7;
@@ -170,8 +184,6 @@
 .navigation-menu,
 .navigation-submenu,
 .navigation-sub-submenu {
-  position: relative;
-  z-index: 99;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
@@ -310,7 +322,7 @@
           left: 0;
           background-color: #eee;
           height: auto;
-          z-index: 22;
+          z-index: 99;
         }
       }
     }
@@ -368,7 +380,7 @@
           left: 0;
           background-color: #eee;
           height: auto;
-          z-index: 22;
+          z-index: 99;
         }
       }
     }
@@ -413,12 +425,12 @@
 
 .navigation-megamenu-panel {
   @include rem(padding, 30px 0 30px 0);
-  display: none;
   position: absolute;
+  display: none;
   width: 100%;
   left: 0;
   right: 0;
-  top: 148px;
+  top: 155px;
   z-index: 99;
   clear: both;
   background-color: #eee;
@@ -447,10 +459,12 @@
     }
   }
 }
+
 .navigation-megamenu-menu {
   padding-left: 0;
   list-style: none;
 }
+
 .navigation-megamenu-item {
   @include rem(padding, 3px 0 3px 0);
 }

@@ -1,9 +1,9 @@
-// Carousel
 .slick-carousel-container {
   position: relative;
   margin-left: -10px !important;
   margin-right: -10px !important;
 }
+
 .slick-carousel-arrow-left,
 .slick-carousel-arrow-right {
   cursor: pointer;
@@ -16,22 +16,26 @@
     font-size: 22px;
   }
 }
+
 .slick-carousel-arrow-left {
   left: -26px;
   &:before {
     content:"\f053";
   }
 }
+
 .slick-carousel-arrow-right {
   right: -26px;
   &:before {
     content:"\f054";
   }
 }
+
 .slick-slide {
   @include rem(padding-left, 10px);
   @include rem(padding-right, 10px);
 }
+
 .slick-overlay {
   @include rem(padding, 8px 10px 6px 10px);
   background: rgba(0,0,0,.7);
@@ -42,14 +46,15 @@
   color: #fff;
   width: 100%;
 }
+
 .slick-title {
   @include rem(margin-bottom, 2px);
 }
+
 .slick-caption {
   margin-bottom: 0;
 }
 
-// Dots
 .slick-dots {
   position: absolute;
   bottom: -30px;
@@ -60,6 +65,7 @@
   margin: 0;
   width: 100%;
 }
+
 .slick-dots li {
   position: relative;
   display: inline-block;
@@ -72,6 +78,7 @@
     color: #111;
   }
 }
+
 .slick-dots button {
   background: transparent;
   border: 0;
@@ -90,10 +97,13 @@
     }
   }
 }
+
 .popup {
   position: relative;
   display: block;
+  overflow: hidden;
 }
+
 .popup-indicator {
   &:before {
     position: absolute;
@@ -181,8 +191,23 @@
 .carousel-caption {
   text-shadow: 1px 2px 2px black;
 }
+
 .carousel-half {
   @include media-breakpoint-down(md) {
     border-top: 1px solid #ddd;
+  }
+}
+
+.carousel-introduction-half {
+  .introduction-bullets-container {
+    margin-top: 15px;
+    @include media-breakpoint-down(md) {
+      margin-bottom: 0;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    .introduction {
+      padding-bottom: 0;
+    }
   }
 }

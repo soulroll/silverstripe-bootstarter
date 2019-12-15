@@ -1,6 +1,7 @@
-.calebdar-widget-table-holder {
+.calendar-widget-table-holder {
   @include rem(margin-bottom, 35px);
 }
+
 .calendar-widget-table {
   margin: 0 !important;
   width: 100%;
@@ -21,9 +22,11 @@
     border-top: 0;
   }
 }
+
 .calendar-widget {
   width: 100%;
 }
+
 #event-calendar-events {
   ul {
     li:last-child {
