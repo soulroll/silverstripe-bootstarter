@@ -9,6 +9,15 @@
 .file-element__file {
   a {
     color: #000;
+    text-decoration: underline;
+    &:before {
+      @include rem(font-size, 14px);
+      position: relative;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f15b";
+      margin-right: 5px;
+    }
   }
 }
 
