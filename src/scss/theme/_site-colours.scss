@@ -127,6 +127,7 @@
 }
 
 .btn-theme {
+  background-color: #ddd;
   margin-bottom: 5px;
   @each $theme, $color in $theme-colours {
     body.#{$theme} & {

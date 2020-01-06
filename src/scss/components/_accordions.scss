@@ -3,6 +3,12 @@
   border-bottom: 4px solid #fff;
 }
 
+#accordion {
+  .card {
+    margin-bottom: 0;
+  }
+}
+
 .accordion-header {
   @each $theme, $color in $theme-colours {
     body.#{$theme} & {
