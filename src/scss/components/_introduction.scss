@@ -9,14 +9,18 @@
   list-style: none;
   padding-left: 0;
   li {
+    padding-left: 35px;
     margin-bottom: 7px;
+    position: relative;
   }
-  a {
-    color: #000;
-    text-decoration: underline;
-    &:hover {
-      color: #014771;
-    };
+  li:before {
+    @include rem(font-size, 6px);
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f111";
+    position: absolute;
+    left: 20px;
+    top: 8px;
   }
 }
 

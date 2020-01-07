@@ -1,10 +1,10 @@
 .cards-wrapper {
-  @include rem(padding, 50px 0 50px 0);
+  @include rem(padding, 0 0 50px 0);
   @include media-breakpoint-down(md) {
-    @include rem(padding, 50px 0 30px 0);
+    @include rem(padding, 0 0 30px 0);
   }
   @include media-breakpoint-down(sm) {
-    @include rem(padding, 30px 0 30px 0);
+    @include rem(padding, 0 0 30px 0);
   }
 }
 

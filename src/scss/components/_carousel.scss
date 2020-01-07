@@ -212,6 +212,10 @@
   }
 }
 
+.carousel-boxed {
+  @include rem(margin-top, 40px);
+}
+
 .carousel-boxed-container  {
   @include media-breakpoint-down(xs) {
     padding-left: 0;
@@ -220,10 +224,8 @@
   @include media-breakpoint-down(sm) {
     .carousel-boxed {
       margin-top: 0;
+      margin-bottom: 0;
     }
   }
 }
 
-.carousel-boxed {
-  @include rem(margin-top, 40px);
-}
